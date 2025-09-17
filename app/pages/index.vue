@@ -253,14 +253,6 @@ const shuffleItems = () => {
             card.style.transition = 'opacity 0.4s ease, transform 0.4s ease'
           }, index * 50) // Faster staggered effect for shuffle
         })
-        
-        // Re-add tilt effects
-        const { utils } = useAnimations()
-        if (utils?.addTiltToAllCards) {
-          setTimeout(() => {
-            utils.addTiltToAllCards()
-          }, 600)
-        }
       }
     }
   })
