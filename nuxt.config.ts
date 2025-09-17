@@ -9,23 +9,30 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Nuxt 4 Template - Swiss Style',
+      title: 'Movie Computer Screens Collection',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'A comprehensive finance viewer application' }
+        { name: 'description', content: 'A collection of computer interfaces from movies recreated for the web' },
+        { name: 'keywords', content: 'movie computer screens, movie interfaces, web recreation, UI collection, movie tech' },
+        { name: 'author', content: 'Manuel Hintermayr' },
+        { property: 'og:title', content: 'Movie Computer Screens Collection' },
+        { property: 'og:description', content: 'A collection of computer interfaces from movies recreated for the web' },
+        { property: 'og:url', content: 'https://projects.manuelhintermayr.com/movie-os-collection' },
+        { property: 'og:type', content: 'website' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'canonical', href: 'https://projects.manuelhintermayr.com/movie-os-collection' }
       ]
     },
-    baseURL: '/nuxt4-template-swiss-style/', // Change this to your desired subfolder name
+    baseURL: '/movie-os-collection/', // Updated for movie collection project
     buildAssetsDir: '/_nuxt/', // Keep assets in _nuxt folder
     cdnURL: '' // Leave empty for relative paths
   },
   runtimeConfig: {
     public: {
-      mediaBasePath: `${process.env.NUXT_APP_BASE_URL || '/nuxt4-template-swiss-style/'}media/`
+      mediaBasePath: `${process.env.NUXT_APP_BASE_URL || '/movie-os-collection/'}media/`
     }
   },
 
