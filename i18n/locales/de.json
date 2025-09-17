@@ -548,7 +548,16 @@
         "openPage": "Seite öffnen",
         "openRepo": "GitHub öffnen",
         "stack": "Tech-Stack",
-        "disclaimer": "Alle Marken/Filmtitel gehören ihren jeweiligen Rechteinhabern. Diese Seite verlinkt Fan-Nachbauten und Demonstrationen."
+        "disclaimer": "Alle Marken/Filmtitel gehören ihren jeweiligen Rechteinhabern. Diese Seite verlinkt Fan-Nachbauten und Demonstrationen.",
+        "cursorText": {
+            "viewProject": "Projekt erkunden",
+            "search": "Suche in Projekten",
+            "shuffle": "Sammlung mischen",
+            "lightMode": "Zum Lichtmodus wechseln",
+            "darkMode": "Zum Dunkelmodus wechseln",
+            "openPage": "Seite öffnen",
+            "openRepo": "GitHub Repository"
+        }
     },
     "components": {
         "darkModeToggle": {

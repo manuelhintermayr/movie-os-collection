@@ -548,7 +548,16 @@
         "openPage": "Open page",
         "openRepo": "Open GitHub",
         "stack": "Tech stack",
-        "disclaimer": "All trademarks/movies belong to their rights holders. This page links to fan recreations and demos."
+        "disclaimer": "All trademarks/movies belong to their rights holders. This page links to fan recreations and demos.",
+        "cursorText": {
+            "viewProject": "Explore project",
+            "search": "Search projects",
+            "shuffle": "Shuffle collection",
+            "lightMode": "Switch to light mode",
+            "darkMode": "Switch to dark mode",
+            "openPage": "View live demo",
+            "openRepo": "View source code"
+        }
     },
     "components": {
         "darkModeToggle": {

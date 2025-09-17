@@ -15,7 +15,9 @@
             </div>
             <div class="flex items-center space-x-4">
               <LanguageSwitcher />
-              <div ref="darkModeButton" data-cursor-pointer>
+              <div ref="darkModeButton" 
+                   data-cursor-stick
+                   :data-cursor-text="colorMode.preference === 'dark' ? $t('movieCollection.cursorText.lightMode') : $t('movieCollection.cursorText.darkMode')">
                 <UButton 
                   :icon="colorMode.preference === 'dark' ? 'i-heroicons-sun' : 'i-heroicons-moon'"
                   variant="ghost" 
@@ -34,7 +36,7 @@
               class="flex-1 min-w-72" 
               size="lg"
               icon="i-heroicons-magnifying-glass"
-              data-cursor-pointer
+              :data-cursor-text="$t('movieCollection.cursorText.search')"
             />
             <UButton 
               @click="shuffleItems" 
@@ -42,7 +44,7 @@
               variant="outline" 
               size="lg"
               icon="i-heroicons-arrow-path"
-              data-cursor-pointer
+              :data-cursor-text="$t('movieCollection.cursorText.shuffle')"
             >
               {{ $t('movieCollection.shuffle') }}
             </UButton>
@@ -68,11 +70,11 @@
               v-for="(item, index) in filteredItems" 
               :key="`${item.title}-${index}`"
               class="card-tilt overflow-hidden project-card" 
-              :ui="{ body: { padding: '' } }"
-              data-cursor-pointer
+              :ui="{ body: 'p-0' }"
+              :data-cursor-img="item.image || placeholderImage"
             >
               <!-- Image -->
-              <div class="aspect-video bg-gray-100 dark:bg-gray-800 overflow-hidden">
+              <div class="aspect-video bg-gray-100 dark:bg-gray-800 overflow-hidden" :data-cursor-text="$t('movieCollection.cursorText.viewProject')">
                 <img 
                   :src="item.image || placeholderImage" 
                   :alt="`${item.title} – ${item.film}`"
@@ -128,7 +130,7 @@
                     color="primary" 
                     variant="outline"
                     icon="i-heroicons-arrow-top-right-on-square"
-                    data-cursor-pointer
+                    :data-cursor-text="$t('movieCollection.cursorText.openPage')"
                   >
                     {{ $t('movieCollection.openPage') }}
                   </UButton>
@@ -141,7 +143,7 @@
                     color="neutral" 
                     variant="outline"
                     icon="i-heroicons-code-bracket"
-                    data-cursor-pointer
+                    :data-cursor-text="$t('movieCollection.cursorText.openRepo')"
                   >
                     {{ $t('movieCollection.openRepo') }}
                   </UButton>
