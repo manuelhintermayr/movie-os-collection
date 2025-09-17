@@ -1,0 +1,158 @@
+[
+  {
+    "title": "Jurassic Systems",
+    "film": "Jurassic Park (1993)",
+    "url": "https://archive.quenq.com/jurassic-park/",
+    "repo": "https://github.com/iiegor/jurassic-park-terminal",
+    "image": "https://raw.githubusercontent.com/iiegor/jurassic-park-terminal/master/screenshot.png",
+    "stack": "HTML, CSS, JavaScript",
+    "desc": {
+      "de": "Replika der ikonischen Konsole inkl. 'You didn't say the magic word'.",
+      "en": "Replica of the iconic console including 'You didn't say the magic word'."
+    },
+    "tags": ["terminal", "fan-recreation"]
+  },
+  {
+    "title": "Syndrome – Main Computer",
+    "film": "Die Unglaublichen (2004)",
+    "url": "https://syndromemaincomputer.netlify.app/authentication",
+    "repo": "https://github.com/Giuseppetm/syndrome-main-computer",
+    "image": "https://raw.githubusercontent.com/Giuseppetm/syndrome-main-computer/master/public/og-image.jpg",
+    "stack": "React, TypeScript, Vite",
+    "desc": {
+      "de": "Nachbildung der Kronos/Authentication-Sequenz.",
+      "en": "Recreation of the Kronos/Authentication sequence."
+    },
+    "tags": ["react", "animation"]
+  },
+  {
+    "title": "Tron: Legacy – Encom Boardroom",
+    "film": "TRON: Legacy (2010)",
+    "url": "https://arscan.github.io/encom-boardroom/",
+    "repo": "https://github.com/arscan/encom-boardroom",
+    "image": "https://raw.githubusercontent.com/arscan/encom-boardroom/master/img/screenshot.jpg",
+    "stack": "HTML5, WebGL, JavaScript",
+    "desc": {
+      "de": "WebGL-Visualisierung inspiriert von der Encom-Boardroom-Szene.",
+      "en": "WebGL visualization inspired by the Encom boardroom scene."
+    },
+    "tags": ["webgl", "data-viz"]
+  },
+  {
+    "title": "Matrix Digital Rain",
+    "film": "The Matrix (1999)",
+    "url": "https://rezmason.github.io/matrix/",
+    "repo": "https://github.com/Rezmason/matrix",
+    "image": "https://raw.githubusercontent.com/Rezmason/matrix/main/docs/demo.gif",
+    "stack": "JavaScript, WebGL (REGL)",
+    "desc": {
+      "de": "Ikonischer grüner Code-Regen als performante Shader-Demo.",
+      "en": "Iconic green code rain as a performant shader demo."
+    },
+    "tags": ["shader", "canvas"]
+  },
+  {
+    "title": "Alien Console",
+    "film": "Alien / Alien: Isolation",
+    "url": null,
+    "repo": "https://github.com/brenns10/alien-console",
+    "image": "https://raw.githubusercontent.com/brenns10/alien-console/master/docs/demo.gif",
+    "stack": "C, ncurses",
+    "desc": {
+      "de": "Terminal-UI im Stil der Alien-Rechner.",
+      "en": "Terminal UI in the style of Alien computers."
+    },
+    "tags": ["terminal"]
+  },
+  {
+    "title": "Back to the Future – Time Circuits",
+    "film": "Zurück in die Zukunft (1985)",
+    "url": "https://lawrenceabaeo.github.io/back-to-the-future-time-circuits/",
+    "repo": "https://github.com/lawrenceabaeo/back-to-the-future-time-circuits",
+    "image": "https://raw.githubusercontent.com/lawrenceabaeo/back-to-the-future-time-circuits/master/screenshot.png",
+    "stack": "HTML, CSS, JavaScript",
+    "desc": {
+      "de": "Zeitanzeige mit Destination/Present/Last Time.",
+      "en": "Time display with Destination/Present/Last Time."
+    },
+    "tags": ["retro", "ui"]
+  },
+  {
+    "title": "LCARS Web",
+    "film": "Star Trek (diverse Filme)",
+    "url": "https://www.lcars.org.uk/lcars",
+    "repo": "https://github.com/joernweissenborn/lcars",
+    "image": "https://raw.githubusercontent.com/joernweissenborn/lcars/master/docs/assets/lcars-ui.jpg",
+    "stack": "HTML, CSS, JS",
+    "desc": {
+      "de": "Klassisches LCARS-Interface (Film/TV-Universum).",
+      "en": "Classic LCARS interface (movie/TV universe)."
+    },
+    "tags": ["ui", "design-system"]
+  },
+  {
+    "title": "HAL 9000 Panel",
+    "film": "2001: A Space Odyssey (1968)",
+    "url": "https://codepen.io/jkantner/pen/MWeJrP",
+    "repo": null,
+    "image": "https://assets.codepen.io/416221/internal/screenshots/pens/MWeJrP.default.png",
+    "stack": "HTML, CSS",
+    "desc": {
+      "de": "Statisches HAL-Panel (Web-Nachbau).",
+      "en": "Static HAL panel (web recreation)."
+    },
+    "tags": ["codepen", "iconic"]
+  },
+  {
+    "title": "WOPR / WarGames Terminal",
+    "film": "WarGames (1983)",
+    "url": "https://wopr.adrianherbez.net/",
+    "repo": "https://github.com/aherbez/wopr",
+    "image": "https://raw.githubusercontent.com/aherbez/wopr/master/screenshot.png",
+    "stack": "JavaScript, Canvas",
+    "desc": {
+      "de": "Terminal-Spielerei inspiriert von WOPR.",
+      "en": "Terminal game inspired by WOPR."
+    },
+    "tags": ["terminal", "game"]
+  },
+  {
+    "title": "J.A.R.V.I.S. (UI Demo)",
+    "film": "Iron Man (2008)",
+    "url": "https://codepen.io/markhillard/pen/xwQZbM",
+    "repo": null,
+    "image": "https://assets.codepen.io/32887/internal/screenshots/pens/xwQZbM.default.png",
+    "stack": "HTML, CSS, JS",
+    "desc": {
+      "de": "HUD-Stil-UI inspiriert von Jarvis.",
+      "en": "HUD-style UI inspired by Jarvis."
+    },
+    "tags": ["hud", "codepen"]
+  },
+  {
+    "title": "T-800 HUD",
+    "film": "Terminator (1984)",
+    "url": "https://codepen.io/suez/pen/wvQpWp",
+    "repo": null,
+    "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/wvQpWp.default.png",
+    "stack": "HTML, CSS",
+    "desc": {
+      "de": "Rotes Terminator-HUD als CSS-Demo.",
+      "en": "Red Terminator HUD as CSS demo."
+    },
+    "tags": ["hud", "css"]
+  },
+  {
+    "title": "Death Star Targeting",
+    "film": "Star Wars (1977)",
+    "url": "https://codepen.io/tholman/pen/yenmEK",
+    "repo": null,
+    "image": "https://assets.codepen.io/174675/internal/screenshots/pens/yenmEK.default.png",
+    "stack": "Canvas, JS",
+    "desc": {
+      "de": "Zielcomputer-UI inspiriert vom Todesstern-Anflug.",
+      "en": "Targeting computer UI inspired by Death Star approach."
+    },
+    "tags": ["canvas", "animation"]
+  }
+]
