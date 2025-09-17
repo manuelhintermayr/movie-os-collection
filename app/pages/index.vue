@@ -4,153 +4,19 @@
 
     <div v-show="!isLoading" class="min-h-screen swiss-grid">
       <!-- Header -->
-      <header class="border-b-2 border-current sticky top-0 bg-white dark:bg-gray-900 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between items-center py-6">
-            <div class="flex items-center">
-              <UIcon name="i-heroicons-film" class="w-8 h-8 text-black dark:text-white mr-3" />
-              <h1 class="text-3xl font-bold text-black dark:text-white uppercase tracking-wide">
-                {{ $t('movieCollection.title') }}
-              </h1>
-            </div>
-            <div class="flex items-center space-x-4">
-              <LanguageSwitcher />
-              <div ref="darkModeButton" 
-                   data-cursor-stick
-                   :data-cursor-text="colorMode.preference === 'dark' ? $t('movieCollection.cursorText.lightMode') : $t('movieCollection.cursorText.darkMode')">
-                <UButton 
-                  :icon="colorMode.preference === 'dark' ? 'i-heroicons-sun' : 'i-heroicons-moon'"
-                  variant="ghost" 
-                  @click="toggleColorMode"
-                  :aria-label="colorMode.preference === 'dark' ? $t('header.switchToLight') : $t('header.switchToDark')" 
-                />
-              </div>
-            </div>
-          </div>
-          
-          <!-- Controls -->
-          <div class="flex gap-4 items-center pb-6 flex-wrap">
-            <UInput 
-              v-model="searchQuery" 
-              :placeholder="$t('movieCollection.search')" 
-              class="flex-1 min-w-72" 
-              size="lg"
-              icon="i-heroicons-magnifying-glass"
-              :data-cursor-text="$t('movieCollection.cursorText.search')"
-            />
-            <UButton 
-              @click="shuffleItems" 
-              color="neutral" 
-              variant="outline" 
-              size="lg"
-              icon="i-heroicons-arrow-path"
-              :data-cursor-text="$t('movieCollection.cursorText.shuffle')"
-            >
-              {{ $t('movieCollection.shuffle') }}
-            </UButton>
-          </div>
-        </div>
-      </header>
+      <MovieCollectionHeader 
+        ref="headerRef"
+        v-model:search-query="searchQuery"
+        @shuffle="shuffleItems"
+      />
 
       <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div class="space-y-8">
-          <!-- Section Title -->
-          <div ref="heroContainer" class="text-center reveal">
-            <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl">
-              {{ $t('movieCollection.collection') }}
-            </h2>
-            <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">
-              {{ $t('movieCollection.subtitle') }}
-            </p>
-          </div>
+          <!-- Hero Section -->
+          <MovieCollectionHero ref="heroRef" />
 
-          <!-- Grid -->
-          <div ref="gridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
-            <UCard 
-              v-for="(item, index) in filteredItems" 
-              :key="`${item.title}-${index}`"
-              class="card-tilt overflow-hidden project-card" 
-              :ui="{ body: 'p-0' }"
-              :data-cursor-img="item.image || placeholderImage"
-            >
-              <!-- Image -->
-              <div class="aspect-video bg-gray-100 dark:bg-gray-800 overflow-hidden" :data-cursor-text="$t('movieCollection.cursorText.viewProject')">
-                <img 
-                  :src="item.image || placeholderImage" 
-                  :alt="`${item.title} – ${item.film}`"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                  data-cursor="-media"
-                />
-              </div>
-
-              <!-- Content -->
-              <div class="p-6 space-y-4">
-                <!-- Title & Film -->
-                <div>
-                  <h3 class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">
-                    {{ item.title }}
-                  </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                    {{ item.film }}
-                  </p>
-                </div>
-
-                <!-- Description -->
-                <p v-if="getLocalizedDescription(item)" class="text-sm text-gray-700 dark:text-gray-300">
-                  {{ getLocalizedDescription(item) }}
-                </p>
-
-                <!-- Tech Stack -->
-                <div v-if="item.stack" class="text-xs text-gray-500 dark:text-gray-400">
-                  <strong>{{ $t('movieCollection.stack') }}:</strong> {{ item.stack }}
-                </div>
-
-                <!-- Tags -->
-                <div v-if="item.tags && item.tags.length" class="flex flex-wrap gap-2">
-                  <UBadge 
-                    v-for="tag in item.tags" 
-                    :key="tag" 
-                    variant="outline" 
-                    size="xs"
-                    color="neutral"
-                  >
-                    {{ tag }}
-                  </UBadge>
-                </div>
-
-                <!-- Links -->
-                <div class="flex gap-2 pt-2">
-                  <UButton 
-                    v-if="item.url" 
-                    :to="item.url" 
-                    external 
-                    target="_blank"
-                    size="sm" 
-                    color="primary" 
-                    variant="outline"
-                    icon="i-heroicons-arrow-top-right-on-square"
-                    :data-cursor-text="$t('movieCollection.cursorText.openPage')"
-                  >
-                    {{ $t('movieCollection.openPage') }}
-                  </UButton>
-                  <UButton 
-                    v-if="item.repo" 
-                    :to="item.repo" 
-                    external 
-                    target="_blank"
-                    size="sm" 
-                    color="neutral" 
-                    variant="outline"
-                    icon="i-heroicons-code-bracket"
-                    :data-cursor-text="$t('movieCollection.cursorText.openRepo')"
-                  >
-                    {{ $t('movieCollection.openRepo') }}
-                  </UButton>
-                </div>
-              </div>
-            </UCard>
-          </div>
+          <!-- Project Grid -->
+          <ProjectGrid ref="gridRef" :projects="filteredItems" />
 
           <!-- Footer -->
           <div class="border-t-2 border-current pt-8 mt-12">
@@ -173,45 +39,22 @@ useHead({
   ]
 })
 
-// Color mode and dark mode toggle
-const colorMode = useColorMode()
-const darkModeButton = ref<HTMLElement>()
-const heroContainer = ref<HTMLElement | null>(null)
-const gridContainer = ref<HTMLElement | null>(null)
+// Imports
+import projectsData from '~/assets/data/projects.json'
+import type { MovieProjects } from '~/assets/data/types'
 
-const toggleColorMode = () => {
-  colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
-}
+// Component refs
+const headerRef = ref()
+const heroRef = ref() 
+const gridRef = ref()
 
-// Loading state
+// Reactive data
 const isLoading = ref(true)
 const loadingFinished = ref(false)
-
-// Search functionality
 const searchQuery = ref('')
-
-// Import project data
-import projectsData from '~/assets/data/projects.json'
-import type { MovieProject, MovieProjects } from '~/assets/data/types'
-
-// Placeholder image for missing images
-const placeholderImage = "data:image/svg+xml;charset=utf8," + encodeURIComponent(
-  `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 675'><rect width='100%' height='100%' fill='%23fafafa'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Helvetica,Arial' font-size='28' fill='%23999'>No Image</text></svg>`
-)
 
 // Movie OS Collection Data from JSON
 const movieItems = ref<MovieProjects>(projectsData as MovieProjects)
-
-// Get current locale
-const { locale } = useI18n()
-
-// Function to get localized description
-const getLocalizedDescription = (item: MovieProject) => {
-  if (typeof item.desc === 'object') {
-    return item.desc[locale.value as keyof typeof item.desc] || item.desc.en || ''
-  }
-  return item.desc || ''
-}
 
 // Computed filtered items
 const filteredItems = computed(() => {
@@ -219,7 +62,11 @@ const filteredItems = computed(() => {
   if (!query) return movieItems.value
   
   return movieItems.value.filter(item => {
-    const localizedDesc = getLocalizedDescription(item)
+    const { locale } = useI18n()
+    const localizedDesc = typeof item.desc === 'object' 
+      ? item.desc[locale.value as keyof typeof item.desc] || item.desc.en || ''
+      : item.desc || ''
+    
     const searchableText = [
       item.title,
       item.film,
@@ -238,8 +85,9 @@ const shuffleItems = () => {
   
   // Reinitialize animations after shuffle
   nextTick(() => {
-    if (gridContainer.value) {
-      const projectCards = Array.from(gridContainer.value.querySelectorAll('.project-card'))
+    const gridContainer = gridRef.value?.gridContainer
+    if (gridContainer) {
+      const projectCards = Array.from(gridContainer.querySelectorAll('.project-card'))
       
       if (projectCards.length > 0) {
         // Reset and animate cards
@@ -258,7 +106,7 @@ const shuffleItems = () => {
   })
 }
 
-// Loading management
+// Loading management and GSAP animations
 onMounted(async () => {
   // Hide loading screen when page is fully loaded
   if (document.readyState === 'complete') {
@@ -287,11 +135,16 @@ onMounted(async () => {
         gsap.registerPlugin(ScrollTrigger)
 
         if (!reduce) {
+          // Get component containers
+          const heroContainer = heroRef.value?.heroContainer
+          const gridContainer = gridRef.value?.gridContainer
+          const darkModeButton = headerRef.value?.darkModeButton
+
           // Hero entrance animation (like in Alba Emoting)
-          if (heroContainer.value) {
+          if (heroContainer) {
             const heroTl = gsap.timeline({ defaults: { ease: 'power2.out', duration: 0.9 } })
-            heroTl.from(heroContainer.value.querySelector('h2'), { y: 40, opacity: 0, scale: 0.96 }, 0)
-              .from(heroContainer.value.querySelector('p'), { y: 20, opacity: 0 }, '-=0.4')
+            heroTl.from(heroContainer.querySelector('h2'), { y: 40, opacity: 0, scale: 0.96 }, 0)
+              .from(heroContainer.querySelector('p'), { y: 20, opacity: 0 }, '-=0.4')
           }
 
           // Reveal cards with GSAP (similar to Alba Emoting card animations)
@@ -338,7 +191,7 @@ onMounted(async () => {
           })
 
           // Add magnetic effect to dark mode button
-          if (darkModeButton.value) {
+          if (darkModeButton) {
             const makeMagnet = (el: HTMLElement) => {
               const magnetic = gsap.quickTo(el, 'x', { duration: 0.3, ease: 'power2.out' })
               const magneticY = gsap.quickTo(el, 'y', { duration: 0.3, ease: 'power2.out' })
@@ -361,7 +214,7 @@ onMounted(async () => {
               })
             }
 
-            makeMagnet(darkModeButton.value)
+            makeMagnet(darkModeButton)
           }
         }
       })
