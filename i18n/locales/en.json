@@ -539,6 +539,17 @@
             }
         }
     },
+    "movieCollection": {
+        "title": "Movie Computer Screens",
+        "subtitle": "A collection of computer interfaces from movies recreated for the web",
+        "collection": "Collection",
+        "search": "Search by title, film, stack…",
+        "shuffle": "Shuffle",
+        "openPage": "Open page",
+        "openRepo": "Open GitHub",
+        "stack": "Tech stack",
+        "disclaimer": "All trademarks/movies belong to their rights holders. This page links to fan recreations and demos."
+    },
     "components": {
         "darkModeToggle": {
             "label": "Toggle Dark Mode"

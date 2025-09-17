@@ -539,6 +539,17 @@
             }
         }
     },
+    "movieCollection": {
+        "title": "Movie Computer Screens",
+        "subtitle": "Eine Sammlung von Computer-Interfaces aus Filmen, nachgebaut für das Web",
+        "collection": "Sammlung",
+        "search": "Suche nach Titel, Film, Stack…",
+        "shuffle": "Zufall",
+        "openPage": "Seite öffnen",
+        "openRepo": "GitHub öffnen",
+        "stack": "Tech-Stack",
+        "disclaimer": "Alle Marken/Filmtitel gehören ihren jeweiligen Rechteinhabern. Diese Seite verlinkt Fan-Nachbauten und Demonstrationen."
+    },
     "components": {
         "darkModeToggle": {
             "label": "Dark Mode umschalten"
