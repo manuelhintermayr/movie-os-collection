@@ -1,8 +1,25 @@
 {
-  "name": "nuxt4-template-siwss-style",
+  "name": "movie-os-collection",
   "version": "1.0.0",
-  "description": "Nuxt 4 template with nuxt/ui (including Tailwind CSS) and i18n support in the Swiss Style (International Typographic Style).",
-  "author": "Manuel Hintermayr - https://github.com/manuelhintermayr/nuxt4-template-swiss-style",
+  "description": "A collection of computer interfaces from movies recreated for the web. Built with Nuxt 4, featuring GSAP animations and Swiss Style design.",
+  "author": "Manuel Hintermayr - https://github.com/manuelhintermayr/movie-os-collection",
+  "homepage": "https://projects.manuelhintermayr.com/movie-os-collection",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manuelhintermayr/movie-os-collection.git"
+  },
+  "keywords": [
+    "movie",
+    "computer",
+    "interfaces",
+    "web",
+    "collection",
+    "nuxt4",
+    "vue3",
+    "gsap",
+    "swiss-style",
+    "ui-recreation"
+  ],
   "type": "module",
   "private": true,
   "scripts": {
