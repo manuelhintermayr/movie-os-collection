@@ -1,0 +1,33 @@
+{
+  "name": "nuxt4-template-siwss-style",
+  "version": "1.0.0",
+  "description": "Nuxt 4 template with nuxt/ui (including Tailwind CSS) and i18n support in the Swiss Style (International Typographic Style).",
+  "author": "Manuel Hintermayr - https://github.com/manuelhintermayr/nuxt4-template-swiss-style",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "check:unused-vars": "npx tsc --noEmit --noUnusedLocals --noUnusedParameters",
+    "check:unused-vars-enhanced": "node scripts/check-unused-vars-enhanced.js",
+    "analyze:i18n": "node scripts/analyze-i18n-strings.js",
+    "cleanup:i18n": "node scripts/cleanup-i18n-strings.js",
+    "lint:check": "npm run check:unused-vars && npm run analyze:i18n"
+  },
+  "dependencies": {
+    "@internationalized/date": "^3.8.2",
+    "@nuxt/ui": "^3.3.2",
+    "@nuxtjs/i18n": "^10.0.6",
+    "gsap": "^3.13.0",
+    "mouse-follower": "^1.1.2",
+    "nuxt": "^4.0.3",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@iconify-json/heroicons": "^1.2.2"
+  }
+}

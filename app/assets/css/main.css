@@ -1,0 +1,316 @@
+/* --- Imports --- */
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* ==========================================================================
+   SWISS STYLE THEME VARIABLES
+   ========================================================================== */
+:root {
+  /* Typography */
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+  /* Core palette – strict black & white */
+  --c-bg: #ffffff;
+  --c-fg: #000000;
+
+  /* Border + shadow - Updated values */
+  --border-w: 2px;
+  --border-w-thin: 1px;
+  --ring-w: 2px;
+
+  /* Spacing rhythm - Refined scale */
+  --rhythm-1: 0.25rem;
+  --rhythm-2: 0.5rem;
+  --rhythm-3: 1rem;
+  --rhythm-4: 2rem;
+
+  /* Mouse Follower sizing */
+  --mf-size: 48px;
+
+  /* ==========================================================================
+     UI COLOR SYSTEM - Swiss Style Black/White
+     ========================================================================== */
+
+  /* Swiss Style: Schwarz/Weiß für alle UI-Farben */
+  --ui-color-primary-50: #fff;
+  --ui-color-primary-100: #fff;
+  --ui-color-primary-200: #fff;
+  --ui-color-primary-300: #fff;
+  --ui-color-primary-400: #000;
+  --ui-color-primary-500: #000;
+  --ui-color-primary-600: #000;
+  --ui-color-primary-700: #000;
+  --ui-color-primary-800: #000;
+  --ui-color-primary-900: #000;
+  --ui-color-primary-950: #000;
+
+  --ui-color-secondary-50: #fafafa;
+  --ui-color-secondary-100: #f5f5f5;
+  --ui-color-secondary-200: #f0f0f0;
+  --ui-color-secondary-300: #e0e0e0;
+  --ui-color-secondary-400: #c0c0c0;
+  --ui-color-secondary-500: #a3a3a3;
+  --ui-color-secondary-600: #808080;
+  --ui-color-secondary-700: #606060;
+  --ui-color-secondary-800: #404040;
+  --ui-color-secondary-900: #262626;
+  --ui-color-secondary-950: #171717;
+
+  /* Neutral Scale → klassisch hell bis dunkel */
+  --ui-color-neutral-50: #ffffff;
+  --ui-color-neutral-100: #f5f5f5;
+  --ui-color-neutral-200: #e5e5e5;
+  --ui-color-neutral-300: #d4d4d4;
+  --ui-color-neutral-400: #a3a3a3;
+  --ui-color-neutral-500: #737373;
+  --ui-color-neutral-600: #525252;
+  --ui-color-neutral-700: #404040;
+  --ui-color-neutral-800: #262626;
+  --ui-color-neutral-900: #171717;
+  --ui-color-neutral-950: #0a0a0a;
+}
+
+/* ==========================================================================
+   LIGHT/DARK MODE ALIASES
+   ========================================================================== */
+
+/* Light mode (default) */
+:root,
+.light {
+  --ui-primary: var(--ui-color-primary-500);
+  --ui-secondary: var(--ui-color-secondary-500);
+  --ui-success: var(--ui-color-success-500);
+  --ui-info: var(--ui-color-info-500);
+  --ui-warning: var(--ui-color-warning-500);
+  --ui-error: var(--ui-color-error-500);
+}
+
+/* Dark mode variables */
+.dark {
+  --c-bg: #000000;
+  --c-fg: #ffffff;
+
+  /* Dark mode UI aliases - use lighter variants */
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-secondary: var(--ui-color-secondary-400);
+  --ui-success: var(--ui-color-success-400);
+  --ui-info: var(--ui-color-info-400);
+  --ui-warning: var(--ui-color-warning-400);
+  --ui-error: var(--ui-color-error-400);
+}
+
+/* ==========================================================================
+   BASE RESET / TAILWIND OVERRIDES
+   ========================================================================== */
+@layer base {
+
+  html,
+  body {
+    background: var(--c-bg);
+    color: var(--c-fg);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Headings – Swiss poster typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 4.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3.75vw, 3rem);
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+  }
+
+  /* Links – Underline on hover only */
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
+
+  a:hover {
+    color: currentColor;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+  }
+
+  /* Selection */
+  ::selection {
+    background: var(--c-fg);
+    color: var(--c-bg);
+  }
+
+  /* Scrollbar minimal */
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: var(--c-fg);
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--c-bg);
+    border-left: 2px solid var(--c-fg);
+  }
+}
+
+/* ==========================================================================
+   UTILITIES (small helpers)
+   ========================================================================== */
+@layer utilities {
+  .swiss-grid {
+    /* fine grid as background (optional) */
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, .07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, .07) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .dark .swiss-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, .08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, .08) 1px, transparent 1px);
+  }
+
+  .swiss-section {
+    border-top: var(--border-w) solid var(--c-fg);
+    padding-top: var(--rhythm-3);
+  }
+
+  .swiss-kicker {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .08em;
+  }
+
+  .swiss-invert:hover {
+    background: var(--c-fg);
+    color: var(--c-bg);
+  }
+
+  /* Tailwind radius overrides */
+  .rounded-none {
+    border-radius: 0 !important;
+  }
+
+  .rounded-sm {
+    border-radius: 0 !important;
+  }
+
+  .rounded {
+    border-radius: 0 !important;
+  }
+
+  .rounded-md {
+    border-radius: 0 !important;
+  }
+
+  .rounded-lg {
+    border-radius: 0 !important;
+  }
+
+  .rounded-xl {
+    border-radius: 0 !important;
+  }
+
+  .rounded-2xl {
+    border-radius: 0 !important;
+  }
+
+  .rounded-3xl {
+    border-radius: 0 !important;
+  }
+
+  /* Tailwind shadow overrides */
+  .shadow-sm {
+    box-shadow: none !important;
+  }
+
+  .shadow {
+    box-shadow: none !important;
+  }
+
+  .shadow-md {
+    box-shadow: none !important;
+  }
+
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  .shadow-xl {
+    box-shadow: none !important;
+  }
+
+  .shadow-2xl {
+    box-shadow: none !important;
+  }
+
+  .shadow-inner {
+    box-shadow: none !important;
+  }
+
+  .shadow-none {
+    box-shadow: none !important;
+  }
+}
+
+/* ==========================================================================
+   ACCESSIBILITY - Swiss Style
+   ========================================================================== */
+
+/* Focus states (generic hard focus) */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+[role="menuitem"]:focus-visible,
+[role="tab"]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: var(--ring-w) solid var(--c-fg);
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ==========================================================================
+   PRINT (optional, clean black/white)
+   ========================================================================== */
+@media print {
+  * {
+    box-shadow: none !important;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

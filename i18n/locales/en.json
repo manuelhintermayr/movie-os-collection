@@ -1,0 +1,551 @@
+{
+    "header": {
+        "title": "Nuxt 4 + UI Template",
+        "switchToLight": "Switch to light mode",
+        "switchToDark": "Switch to dark mode"
+    },
+    "welcome": {
+    "title": "Nuxt 4 Template – Swiss Style",
+    "subtitle": "A Nuxt 4 template with Nuxt UI, Tailwind CSS and i18n support in the Swiss Style (International Typographic Style).",
+    "repository": "View Repository",
+        "productionReady": "Production Ready",
+        "builtWith": "Built with",
+        "by": "by",
+        "clickHere": "Click here"
+    },
+    "features": {
+        "nuxt4": {
+            "title": "Nuxt 4",
+            "description": "The latest version of Nuxt with improved performance and new features."
+        },
+        "nuxtUI": {
+            "title": "Nuxt UI",
+            "description": "Modern UI components based on Tailwind CSS and Headless UI."
+        },
+        "mouseFollower": {
+            "title": "Mouse Follower",
+            "description": "Smooth and professional cursor effects with GSAP animations."
+        },
+        "darkMode": {
+            "title": "Dark Mode",
+            "description": "Automatic Dark Mode support with easy switching."
+        }
+    },
+    "examples": {
+        "title": "Example Components",
+        "buttons": {
+            "title": "Buttons",
+            "description": "Interactive button components with various styles and states",
+            "default": "Default",
+            "primary": "Primary",
+            "softNeutral": "Soft Neutral",
+            "outlineError": "Outline Error",
+            "ghost": "Ghost",
+            "link": "Link",
+            "defaultSection": "Default Buttons",
+            "buttonGroupsSection": "Button Groups",
+            "buttonGroups": {
+                "horizontal": "Horizontal Group",
+                "vertical": "Vertical Group",
+                "input": "Input with Button",
+                "edit": "Edit",
+                "share": "Share",
+                "delete": "Delete",
+                "profile": "Profile",
+                "settings": "Settings",
+                "logout": "Logout",
+                "emailPlaceholder": "Enter your email",
+                "subscribe": "Subscribe"
+            }
+        },
+        "forms": {
+            "title": "Forms",
+            "description": "Form components for data input and user interaction",
+            "namePlaceholder": "Your Name",
+            "messagePlaceholder": "Your message...",
+            "basicSection": "Basic Forms",
+            "submit": "Submit"
+        },
+        "accordion": {
+            "title": "Accordion Components",
+            "description": "Collapsible panels for organizing content with smooth animations",
+            "basic": "Basic Accordion",
+            "multiple": "Multiple Open",
+            "items": {
+                "setup": {
+                    "title": "Quick Setup",
+                    "content": "Install dependencies and configure your project with our easy setup guide."
+                },
+                "customization": {
+                    "title": "Customization",
+                    "content": "Customize components with classes, themes, and configuration options."
+                },
+                "deployment": {
+                    "title": "Deployment",
+                    "content": "Deploy your application to production with optimized build configurations."
+                },
+                "features": {
+                    "title": "Key Features",
+                    "content": "Discover all the powerful features included in this template."
+                },
+                "support": {
+                    "title": "Community Support",
+                    "content": "Join our community for help, discussions, and feature requests."
+                }
+            }
+        },
+        "avatar": {
+            "title": "Avatar Components",
+            "description": "User profile images with fallbacks and group displays",
+            "basic": "Different Sizes",
+            "group": "Avatar Group",
+            "fallback": "Fallback Options"
+        },
+        "formsAdvanced": {
+            "title": "Advanced Forms",
+            "description": "Complex form components with rich functionality",
+            "calendar": {
+                "title": "Calendar",
+                "rangeTitle": "Date Range",
+                "pickerTitle": "Date Picker",
+                "rangePickerTitle": "Date Range Picker",
+                "selectDate": "Select Date",
+                "selectRange": "Select Date Range",
+                "placeholder": "Select a date",
+                "rangePlaceholder": "Select date range"
+            },
+            "checkboxGroup": {
+                "title": "Checkbox Group",
+                "darkMode": "Dark Mode",
+                "animations": "Animations",
+                "notifications": "Notifications"
+            },
+            "radioGroup": {
+                "title": "Radio Group",
+                "light": "Light",
+                "dark": "Dark",
+                "system": "System"
+            },
+            "switch": {
+                "title": "Switches",
+                "notifications": "Enable notifications",
+                "autoSave": "Auto-save changes",
+                "autoSaveDesc": "Automatically save your changes as you work."
+            },
+            "slider": {
+                "title": "Sliders",
+                "volume": "Volume Control",
+                "range": "Price Range"
+            },
+            "progress": {
+                "title": "Progress",
+                "indeterminate": "Indeterminate Progress"
+            },
+            "colorPicker": {
+                "basic": "Basic Color Picker",
+                "withPopover": "Color Picker with Popover",
+                "title": "Color Picker"
+            },
+            "fileUpload": {
+                "title": "File Upload",
+                "label": "Drop your files here",
+                "description": "SVG, PNG, JPG or GIF (max. 2MB)"
+            },
+            "kbd": {
+                "title": "Keyboard Shortcuts",
+                "color": "Color",
+                "variant": "Variant",
+                "selectColor": "Select color",
+                "selectVariant": "Select variant"
+            }
+        },
+        "layout": {
+            "title": "Layout Components",
+            "description": "Structure and container components for better organization",
+            "card": {
+                "title": "Card Variants",
+                "default": "Default Card",
+                "defaultDescription": "This is a standard card with header, content and footer sections.",
+                "subtle": "Subtle Card",
+                "subtleDescription": "A card with subtle styling for less emphasis.",
+                "footer": "Card Footer",
+                "action": "Action",
+                "cancel": "Cancel",
+                "confirm": "Confirm"
+            },
+            "container": {
+                "title": "Container",
+                "responsive": "Responsive Container",
+                "content": "This content is centered and constrained within the container bounds."
+            },
+            "chip": {
+                "title": "Chip Indicators",
+                "withButton": "With Button",
+                "withAvatar": "With Avatar"
+            }
+        },
+        "dataDisplay": {
+            "title": "Data Display",
+            "description": "Components for displaying and organizing content",
+            "carousel": {
+                "title": "Carousel"
+            },
+            "collapsible": {
+                "title": "Collapsible Sections",
+                "firstToggle": "Toggle First Section",
+                "firstContent": "This is the content of the first collapsible section. You can put any content here.",
+                "secondToggle": "Toggle Second Section",
+                "secondContent": "This is the content of the second collapsible section with an action button.",
+                "action": "Action"
+            },
+            "contextMenu": {
+                "title": "Context Menu",
+                "rightClick": "Right click here",
+                "copy": "Copy",
+                "cut": "Cut",
+                "paste": "Paste"
+            },
+            "dropdownMenu": {
+                "title": "Dropdown Menu",
+                "trigger": "Open Menu",
+                "profile": "Profile",
+                "settings": "Settings",
+                "billing": "Billing",
+                "logout": "Logout"
+            },
+            "drawer": {
+                "title": "Drawer",
+                "bottom": "Bottom Drawer",
+                "right": "Right Drawer",
+                "contentTitle": "Drawer Content",
+                "contentText": "This is the content inside the drawer. You can put any components here.",
+                "sidebarTitle": "Navigation",
+                "profile": "Profile",
+                "settings": "Settings",
+                "logout": "Logout"
+            },
+            "tree": {
+                "title": "Tree View"
+            },
+            "table": {
+                "title": "Data Table",
+                "nameColumn": "Name",
+                "roleColumn": "Role",
+                "statusColumn": "Status",
+                "emailColumn": "Email"
+            },
+            "timeline": {
+                "title": "Timeline",
+                "step1Title": "Project Kickoff",
+                "step1Desc": "Kicked off the project with team alignment. Set up project milestones.",
+                "step2Title": "Design Phase",
+                "step2Desc": "User research and design workshops. Created wireframes and prototypes.",
+                "step3Title": "Development Sprint",
+                "step3Desc": "Frontend and backend development. Implemented core features and APIs.",
+                "step4Title": "Testing & Deployment",
+                "step4Desc": "QA testing and performance optimization. Deployed to production."
+            }
+        },
+        "utility": {
+            "title": "Utility Components",
+            "description": "Helpful tools and interactive elements",
+            "commandPalette": {
+                "title": "Command Palette",
+                "openButton": "Open Command Palette",
+                "openCollapsible": "Open Command Palette",
+                "placeholder": "Type a command or search...",
+                "keyboardShortcut": "Use keyboard shortcut:",
+                "groups": {
+                    "navigation": "Navigation",
+                    "actions": "Actions",
+                    "settings": "Settings"
+                },
+                "commands": {
+                    "home": "Go to Home",
+                    "about": "About Page",
+                    "contact": "Contact Us",
+                    "toggleTheme": "Toggle Theme",
+                    "copy": "Copy Current URL",
+                    "refresh": "Refresh Page",
+                    "language": "Change Language",
+                    "preferences": "Preferences"
+                }
+            }
+        },
+        "navigation": {
+            "title": "Navigation Elements",
+            "description": "Badges, breadcrumbs, and button groups for interface navigation",
+            "badges": {
+                "title": "Badges",
+                "primary": "New",
+                "success": "Success",
+                "warning": "Beta",
+                "error": "Error",
+                "featured": "Featured",
+                "next": "Next",
+                "small": "Small",
+                "medium": "Medium",
+                "large": "Large"
+            },
+            "breadcrumb": {
+                "title": "Breadcrumb",
+                "home": "Home",
+                "components": "Components",
+                "navigation": "Navigation"
+            }
+        },
+        "alert": {
+            "title": "Info",
+            "description": "This is an example notification with Nuxt UI!"
+        },
+        "mouseFollower": {
+            "title": "Mouse Follower",
+            "description": "Interactive cursor effects and animations powered by GSAP",
+            "projectCards": "Project Cards",
+            "project1": {
+                "title": "Web Application",
+                "description": "A modern web app with smooth animations and interactions."
+            },
+            "project2": {
+                "title": "UI Components",
+                "description": "Beautiful UI components with custom cursor effects."
+            },
+            "textEffects": "Text Effects",
+            "textDemo": {
+                "intro": "This is regular text with a",
+                "hoverText": "special hover effect",
+                "middle": "and this text has a",
+                "stickyText": "sticky cursor effect",
+                "outro": "that follows your mouse."
+            },
+            "specialStates": "Special Cursor States",
+            "states": {
+                "inverse": "Inverse Cursor",
+                "inverseDesc": "Light cursor on dark background",
+                "inverseDarkMode": "This demo is not available in dark mode",
+                "hidden": "Hidden Cursor",
+                "hiddenDesc": "Cursor becomes invisible",
+                "theme": "Theme Element",
+                "themeDesc": "Custom gradient styling",
+                "opaque": "Opaque State",
+                "opaqueDesc": "Semi-transparent cursor",
+                "pointer": "Pointer State",
+                "pointerDesc": "Custom pointer styling",
+                "custom": "Custom State",
+                "customDesc": "Dynamic custom styling"
+            },
+            "mediaEffects": "Media Effects (Images & Videos)",
+            "media": {
+                "image1": {
+                    "title": "Landscape Photo",
+                    "description": "Hover to preview a beautiful landscape image"
+                },
+                "image2": {
+                    "title": "Portrait Photo",
+                    "description": "Hover to see a stunning portrait photo"
+                },
+                "video": {
+                    "title": "Sample Video",
+                    "description": "Hover to preview Big Buck Bunny video"
+                }
+            },
+            "stickyEffects": "Sticky Cursor Effects",
+            "sticky": {
+                "element1": "STICK",
+                "element2": "TARGET",
+                "hover": "Hover here to stick cursor to target:",
+                "description": "The cursor will magnetically stick to elements with sticky effect"
+            },
+            "skewingEffects": "Skewing Effects",
+            "skewing": {
+                "light": "Light Skew",
+                "lightDesc": "Subtle distortion effect",
+                "strong": "Strong Skew",
+                "strongDesc": "Medium distortion effect",
+                "extreme": "Extreme Skew",
+                "extremeDesc": "Maximum distortion effect"
+            },
+            "configuration": {
+                "title": "Configuration Options",
+                "speed": "Cursor Speed",
+                "slow": "Slow",
+                "fast": "Fast",
+                "currentSpeed": "Current Speed"
+            },
+            "cursorText": {
+                "viewDetails": "View Details",
+                "exploreProject": "Explore Project",
+                "customMessage": "Custom message!",
+                "stickyCursor": "Sticky cursor",
+                "themeElement": "Theme Element",
+                "lightSkewing": "Light Skewing",
+                "strongSkewing": "Strong Skewing",
+                "extremeSkewing": "Extreme Skewing"
+            }
+        },
+        "inputShowcase": {
+            "title": "Specialized Input Components",
+            "description": "Advanced input controls and data entry components",
+            "inputNumber": {
+                "title": "Number Input",
+                "basic": "Basic Number Input",
+                "step": "Step Input (step 10)"
+            },
+            "inputTags": {
+                "title": "Input Tags",
+                "skills": "Add your skills",
+                "placeholder": "Type and press Enter..."
+            },
+            "pinInput": {
+                "title": "PIN Input",
+                "otp": "OTP Code",
+                "password": "PIN Password"
+            },
+            "select": {
+                "title": "Select Components",
+                "basic": "Basic Select",
+                "multiple": "Multiple Selection",
+                "multiplePlaceholder": "Choose multiple options..."
+            },
+            "advancedInput": {
+                "title": "Advanced Input",
+                "searchPlaceholder": "Search...",
+                "emailPlaceholder": "Enter your email",
+                "passwordPlaceholder": "Enter password"
+            },
+            "kbd": {
+                "title": "Keyboard Shortcuts",
+                "shortcuts": "Common shortcuts",
+                "commandPalette": "Command Palette",
+                "copy": "Copy",
+                "escape": "Escape"
+            },
+            "textarea": {
+                "title": "Textarea",
+                "basic": "Basic Textarea",
+                "placeholder": "Enter your message...",
+                "autoresize": "Auto-resize Textarea",
+                "autoPlaceholder": "This textarea will grow as you type...",
+                "sampleText": "This is sample text that demonstrates the autoresize functionality of the textarea component."
+            },
+            "tooltip": {
+                "title": "Tooltips",
+                "description": "Interactive tooltip examples",
+                "basicTooltip": "This is a basic tooltip",
+                "hoverMe": "Hover me",
+                "withKbd": "Save your work",
+                "save": "Save",
+                "withDelay": "Instant tooltip",
+                "instant": "Instant"
+            }
+        },
+        "navigationAdvanced": {
+            "title": "Advanced Navigation",
+            "description": "Complex navigation patterns and overlay components",
+            "tabs": {
+                "title": "Tab Navigation",
+                "tab1": "Account",
+                "tab1Content": "Manage your account settings and preferences here.",
+                "tab2": "Security",
+                "tab2Content": "Configure your security settings and two-factor authentication.",
+                "tab3": "Notifications",
+                "tab3Content": "Control your notification preferences and email settings."
+            },
+            "navigationMenu": {
+                "title": "Navigation Menu",
+                "home": "Home",
+                "products": "Products",
+                "web": "Web Development",
+                "webDesc": "Modern web solutions",
+                "mobile": "Mobile Apps",
+                "mobileDesc": "Cross-platform development",
+                "about": "About",
+                "contact": "Contact"
+            },
+            "pagination": {
+                "title": "Pagination",
+                "showing": "Showing {start}-{end} of {total} entries"
+            },
+            "stepper": {
+                "title": "Progress Stepper",
+                "previous": "Previous",
+                "next": "Next",
+                "step1": "Personal Info",
+                "step1Desc": "Enter your details",
+                "step2": "Preferences",
+                "step2Desc": "Set your preferences",
+                "step3": "Complete",
+                "step3Desc": "Review and finish"
+            },
+            "link": {
+                "title": "Link Navigation",
+                "home": "Home Page",
+                "about": "About Us",
+                "contact": "Contact",
+                "active": "Active",
+                "external": "GitHub Repository"
+            },
+            "overlays": {
+                "title": "Overlay Components",
+                "openModal": "Open Modal",
+                "openSlideover": "Open Slideover",
+                "openPopover": "Show Popover"
+            },
+            "modal": {
+                "title": "Modal Dialog",
+                "content": "This is a modal dialog with custom content and actions.",
+                "cancel": "Cancel",
+                "confirm": "Confirm"
+            },
+            "slideover": {
+                "title": "Slideover Panel",
+                "content": "This is a slideover panel that slides in from the side.",
+                "option1": "Option 1",
+                "option2": "Option 2",
+                "option3": "Option 3"
+            },
+            "popover": {
+                "title": "Popover Content",
+                "content": "This is a simple popover with additional information.",
+                "close": "Close"
+            }
+        },
+        "overlay": {
+            "title": "Overlay Components",
+            "description": "Interactive overlays, notifications, and feedback components",
+            "toast": {
+                "title": "Toast Notifications",
+                "success": "Success Toast",
+                "error": "Error Toast",
+                "withAction": "Toast with Action",
+                "withProgress": "Toast with Progress",
+                "successTitle": "Success!",
+                "successDesc": "Your changes have been saved successfully.",
+                "errorTitle": "Error occurred",
+                "errorDesc": "Something went wrong. Please try again.",
+                "actionTitle": "Item deleted",
+                "actionDesc": "The item has been removed from your list.",
+                "undo": "Undo",
+                "progressTitle": "Downloading...",
+                "progressDesc": "Please wait while we process your request."
+            },
+            "tooltip": {
+                "title": "Tooltip Positions",
+                "basic": "Basic tooltip message",
+                "hoverTop": "Hover (Top)",
+                "left": "Left",
+                "right": "Right",
+                "withKbd": "Command Palette"
+            }
+        }
+    },
+    "components": {
+        "darkModeToggle": {
+            "label": "Toggle Dark Mode"
+        }
+    },
+    "loadingScreen": {
+        "title": "Nuxt 4 Template - Swiss Style",
+        "subtitle": "Loading your experience..."
+    }
+}

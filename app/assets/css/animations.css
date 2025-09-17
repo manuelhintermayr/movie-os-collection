@@ -1,0 +1,112 @@
+/* ============================================================================
+   GSAP Animation Enhancements
+   ============================================================================ */
+
+/* Animation CSS Custom Properties */
+:root {
+  --animation-duration-fast: 0.2s;
+  --animation-duration-normal: 0.3s;
+  --animation-duration-slow: 0.8s;
+  --animation-easing-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --animation-easing-bounce: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-translate-small: 20px;
+  --animation-translate-medium: 30px;
+  --animation-translate-large: 40px;
+}
+
+/* ============================================================================
+   Base Animation Setup
+   ============================================================================ */
+
+/* Prevent flash of unstyled content during animations */
+.gsap-loading {
+  opacity: 0;
+  transform: translateY(var(--animation-translate-small));
+}
+
+/* Smooth transform-origin for better animations */
+* {
+  transform-origin: center center;
+}
+
+/* Improved will-change for animated elements */
+[data-gsap] {
+  will-change: transform, opacity;
+}
+
+/* ============================================================================
+   Interactive Element Styles
+   ============================================================================ */
+
+/* Unified card styles - applied dynamically by JavaScript */
+.tilt-enabled {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: all var(--animation-duration-fast) ease;
+  backface-visibility: hidden;
+  transform-origin: center center;
+}
+
+/* Smooth hover transitions for interactive elements */
+.magnetic-element {
+  transition: transform var(--animation-duration-fast) var(--animation-easing-smooth);
+  will-change: transform;
+}
+
+/* Enhanced scroll reveal for sections */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(var(--animation-translate-large)) scale(0.95);
+  will-change: transform, opacity;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: all var(--animation-duration-slow) var(--animation-easing-smooth);
+}
+
+/* ============================================================================
+   Accessibility - Reduced Motion Support
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .gsap-loading {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .scroll-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Enhanced focus states for animations */
+[data-magnetic]:focus-visible {
+  outline: 2px solid rgb(var(--color-primary-500));
+  outline-offset: 4px;
+}
+
+/* Section spacing for scroll animations */
+.animated-section {
+  padding: 2rem 0;
+}
+
+.animated-section+.animated-section {
+  margin-top: 2rem;
+}
+
+/* Smooth color transitions for theme changes */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: var(--animation-duration-fast);
+  transition-timing-function: var(--animation-easing-bounce);
+}

@@ -1,0 +1,70 @@
+/* ==========================================================================
+   TABLES - Swiss Style
+   ========================================================================== */
+
+/* Standard HTML Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: var(--border-w-thin) solid var(--c-fg);
+  padding: .6rem .75rem;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Extended Table Styles (UTable) */
+.ui-table,
+.u-table,
+table[data-ui="table"] {
+  border: var(--border-w) solid var(--c-fg);
+  background: transparent;
+  color: var(--c-fg);
+  box-shadow: none;
+}
+
+.ui-table thead th,
+.u-table thead th,
+table[data-ui="table"] thead th {
+  text-transform: uppercase;
+  font-weight: 800;
+  border-bottom: var(--border-w) solid var(--c-fg);
+}
+
+.ui-table tbody td,
+.u-table tbody td,
+table[data-ui="table"] tbody td {
+  border-top: var(--border-w-thin) solid var(--c-fg);
+}
+
+.ui-table tfoot th,
+.u-table tfoot th {
+  border-top: var(--border-w) solid var(--c-fg);
+}
+
+/* Dense mode helper */
+.ui-table--dense td,
+.ui-table--dense th {
+  padding: .4rem .5rem !important;
+}
+
+/* Legacy Nuxt UI Table support */
+.ui-table {
+  border: var(--border-w) solid var(--c-fg);
+}
+
+.ui-table thead th {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.ui-table th,
+.ui-table td {
+  border-top: var(--border-w-thin) solid var(--c-fg);
+}

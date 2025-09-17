@@ -1,0 +1,358 @@
+/* ==========================================================================
+   FORMS & INPUTS - Swiss Style
+   ========================================================================== */
+
+/* Form Group Labels */
+.ui-form-group label,
+.ui-label {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .05em;
+  margin-bottom: .25rem;
+  display: block;
+}
+
+/* Help & Error Messages */
+.ui-form-group .ui-help {
+  font-size: .75rem;
+  text-transform: none;
+  font-weight: 400;
+  margin-top: .25rem;
+  color: var(--c-fg);
+  opacity: .7;
+}
+
+.ui-form-group .ui-error,
+.ui-error {
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: #d00;
+  /* klar rot für Swiss Warning */
+  margin-top: .25rem;
+}
+
+/* Buttons – Nuxt UI + native */
+.ui-button,
+.ui-btn,
+[type="button"]:not([role="tab"]):not([role="menuitem"]),
+[type="submit"],
+.btn {
+  --btn-bg: transparent;
+  --btn-fg: var(--c-fg);
+  --btn-bw: var(--border-w);
+  border: var(--btn-bw) solid var(--btn-fg);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+button.bg-transparent {
+  border: 0 !important;
+}
+
+button.hover\:bg-transparent:hover {
+  background: transparent !important;
+  color: currentColor !important;
+}
+
+[type="button"][aria-labelledby],
+[type="button"][aria-label="Increment"],
+[type="button"][aria-label="Decrement"],
+[type="button"][aria-controls]:not([aria-expanded="false"]),
+[type="submit"][aria-controls],
+[type="button"][data-reka-collection-item]:not([aria-checked]) {
+  border: none !important;
+}
+
+[type="button"][aria-labelledby],
+[type="button"][aria-label="Increment"],
+[type="button"][aria-label="Decrement"] {
+  padding: 1px;
+}
+
+[type="button"][role="menuitem"] span.iconify {
+  margin-right: 10px;
+  margin-bottom: -4px;
+}
+
+/* Hover inverted, aber Switches ausgenommen */
+.ui-button:hover,
+.ui-btn:hover,
+[type="button"]:hover:not([role="switch"]),
+[type="submit"]:hover,
+.btn:hover {
+  background: var(--c-fg);
+  color: var(--c-bg);
+}
+
+/* Disabled */
+.ui-button:disabled,
+button:disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+/* Tailwind Utility Classes for Buttons */
+.hover\:bg-accented\/75:hover {
+  background-color:
+    color-mix(in oklab, var(--ui-bg-accented) 75%, transparent) !important;
+  color: currentColor !important;
+}
+
+.text-error {
+  color: var(--ui-error) !important;
+}
+
+button.text-error {
+  border-color: var(--ui-error) !important;
+}
+
+.hover\:bg-error\/10 {
+  &:hover {
+    @media (hover: hover) {
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color:
+          color-mix(in oklab, var(--ui-error) 10%, transparent) !important;
+      }
+    }
+  }
+}
+
+/* Inputs / selects / textareas – Swiss Style */
+.ui-input,
+.ui-textarea,
+.ui-select,
+.ui-select select,
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  border: var(--border-w) solid var(--c-fg);
+  border-radius: 0 !important;
+  /* kantig */
+  color: var(--c-fg) !important;
+  font-weight: 500;
+  box-shadow: none !important;
+}
+
+.inputNoBorder input {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ui-input:focus,
+.ui-textarea:focus,
+.ui-select:focus,
+.ui-select select:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: var(--border-w) solid var(--c-fg) !important;
+  border-color: var(--c-fg);
+  background: var(--c-bg);
+}
+
+/* Disabled States */
+.ui-input:disabled,
+.ui-textarea:disabled,
+.ui-select select:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background: #e5e5e5 !important;
+  color: #777 !important;
+  border-color: #777 !important;
+  opacity: 1;
+}
+
+.dark .ui-input:disabled,
+.dark .ui-textarea:disabled,
+.dark .ui-select select:disabled,
+.dark input:disabled,
+.dark select:disabled,
+.dark textarea:disabled {
+  background: #222 !important;
+  color: #555 !important;
+  border-color: #555 !important;
+}
+
+
+/* Modern Checkboxes, Radios, Switches – Tailwind/ARIA DOM */
+[role="checkbox"],
+[role="radio"] {
+  /* Grundform: Größe, Border, Hintergrund */
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--c-fg);
+  background: transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+[role="checkbox"][data-state="checked"],
+[role="radio"][data-state="checked"] {
+  background: var(--c-fg);
+  border-color: var(--c-fg);
+}
+
+[role="checkbox"] [data-state="checked"],
+[role="radio"] [data-state="checked"] {
+  color: var(--c-bg);
+}
+
+[role="checkbox"]:focus-visible,
+[role="radio"]:focus-visible {
+  outline: 2px solid var(--c-primary);
+  outline-offset: 2px;
+}
+
+/* Checkbox/Radio Icon (z.B. Checkmark) */
+[role="checkbox"] [data-state="checked"] .iconify,
+[role="radio"] [data-state="checked"] .iconify {
+  color: var(--c-bg);
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Switches */
+[role="switch"],
+[role="switch"]:hover {
+  position: relative;
+  display: inline-block;
+  width: 2.25rem;
+  height: 1.25rem;
+  border: 1px solid currentColor !important;
+  background: none;
+  box-sizing: border-box;
+}
+
+[role="switch"] span,
+[role="switch"]:hover span {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 9999px;
+  background: currentColor;
+  transition: transform 0.2s;
+  box-sizing: border-box;
+  transform: translateY(-50%) translateX(0);
+}
+
+[role="switch"] span[data-state] {
+  border-radius: 0 !important;
+}
+
+[role="switch"][data-state="checked"] span {
+  transform: translateY(-50%) translateX(-0.1rem);
+}
+
+
+/* Label Anpassung */
+.ui-checkbox label,
+.ui-radio label,
+.ui-switch label,
+[role="checkbox"]+label,
+[role="radio"]+label,
+[role="switch"]+label {
+  font-size: .95rem;
+  text-transform: none;
+  font-weight: 500;
+  margin-left: .5rem;
+  color: var(--c-fg);
+}
+
+/* Select menu / dropdown / popover */
+.ui-dropdown,
+.ui-menu,
+.ui-popover,
+.ui-context-menu,
+.ui-select-menu,
+.ui-autocomplete {
+  border: var(--border-w) solid var(--c-fg) !important;
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+  box-shadow: none !important;
+}
+
+/* Slider / Range (URange) */
+.ui-range,
+.u-range,
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: var(--c-bg);
+  border: var(--border-w-thin) solid var(--c-fg);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -7px;
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: var(--c-bg);
+}
+
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  background: var(--c-bg);
+  border: var(--border-w-thin) solid var(--c-fg);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: var(--c-bg);
+}
+
+/* Enhanced Slider Styling */
+.ui-slider {
+  border: none;
+  height: 4px;
+  background: var(--c-fg);
+  border-radius: 0 !important;
+}
+
+.ui-slider::-webkit-slider-thumb {
+  appearance: none;
+  background: var(--c-bg);
+  border: var(--border-w) solid var(--c-fg);
+  width: 16px;
+  height: 16px;
+  border-radius: 0 !important;
+}
+
+.ui-slider::-moz-range-thumb {
+  background: var(--c-bg);
+  border: var(--border-w) solid var(--c-fg);
+  width: 16px;
+  height: 16px;
+  border-radius: 0 !important;
+}
+
+.ui-slider-thumb {
+  width: 16px;
+  height: 16px;
+  background: var(--c-bg);
+  border: var(--border-w) solid var(--c-fg);
+  border-radius: 0 !important;
+}

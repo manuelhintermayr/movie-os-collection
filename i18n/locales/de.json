@@ -1,0 +1,551 @@
+{
+    "header": {
+        "title": "Nuxt 4 + UI Template",
+        "switchToLight": "Zu hellem Modus wechseln",
+        "switchToDark": "Zu dunklem Modus wechseln"
+    },
+    "welcome": {
+    "title": "Nuxt 4 Template – Swiss Style",
+    "subtitle": "Ein Nuxt 4 Template mit Nuxt UI, Tailwind CSS und i18n-Unterstützung im Swiss Style (International Typographic Style).",
+    "repository": "Repository anzeigen",
+        "productionReady": "Produktionsreif",
+        "builtWith": "Entwickelt mit",
+        "by": "von",
+        "clickHere": "Hier klicken"
+    },
+    "features": {
+        "nuxt4": {
+            "title": "Nuxt 4",
+            "description": "Die neueste Version von Nuxt mit verbesserter Performance und neuen Features."
+        },
+        "nuxtUI": {
+            "title": "Nuxt UI",
+            "description": "Moderne UI-Komponenten basierend auf Tailwind CSS und Headless UI."
+        },
+        "mouseFollower": {
+            "title": "Mouse Follower",
+            "description": "Flüssige und professionelle Cursor-Effekte mit GSAP-Animationen."
+        },
+        "darkMode": {
+            "title": "Dark Mode",
+            "description": "Automatischer Dark Mode Support mit einfacher Umschaltung."
+        }
+    },
+    "examples": {
+        "title": "Beispiel-Komponenten",
+        "buttons": {
+            "title": "Buttons",
+            "description": "Interaktive Button-Komponenten mit verschiedenen Stilen und Zuständen",
+            "default": "Standard",
+            "primary": "Primär",
+            "softNeutral": "Soft Neutral",
+            "outlineError": "Outline Fehler",
+            "ghost": "Ghost",
+            "link": "Link",
+            "defaultSection": "Standard Buttons",
+            "buttonGroupsSection": "Button Gruppen",
+            "buttonGroups": {
+                "horizontal": "Horizontale Gruppe",
+                "vertical": "Vertikale Gruppe",
+                "input": "Input mit Button",
+                "edit": "Bearbeiten",
+                "share": "Teilen",
+                "delete": "Löschen",
+                "profile": "Profil",
+                "settings": "Einstellungen",
+                "logout": "Abmelden",
+                "emailPlaceholder": "E-Mail eingeben",
+                "subscribe": "Abonnieren"
+            }
+        },
+        "forms": {
+            "title": "Formulare",
+            "description": "Formular-Komponenten für Dateneingabe und Benutzerinteraktion",
+            "namePlaceholder": "Dein Name",
+            "messagePlaceholder": "Deine Nachricht...",
+            "basicSection": "Basis Formulare",
+            "submit": "Absenden"
+        },
+        "alert": {
+            "title": "Info",
+            "description": "Dies ist eine Beispiel-Benachrichtigung mit Nuxt UI!"
+        },
+        "accordion": {
+            "title": "Accordion-Komponenten",
+            "description": "Ausklappbare Panels zur Inhaltsorganisation mit flüssigen Animationen",
+            "basic": "Basis Accordion",
+            "multiple": "Mehrere Öffnen",
+            "items": {
+                "setup": {
+                    "title": "Schnelle Installation",
+                    "content": "Installiere Abhängigkeiten und konfiguriere dein Projekt mit unserem einfachen Setup-Guide."
+                },
+                "customization": {
+                    "title": "Anpassung",
+                    "content": "Passe Komponenten mit Klassen, Themes und Konfigurationsoptionen an."
+                },
+                "deployment": {
+                    "title": "Deployment",
+                    "content": "Stelle deine Anwendung mit optimierten Build-Konfigurationen bereit."
+                },
+                "features": {
+                    "title": "Hauptfunktionen",
+                    "content": "Entdecke alle leistungsstarken Features dieses Templates."
+                },
+                "support": {
+                    "title": "Community-Support",
+                    "content": "Tritt unserer Community für Hilfe, Diskussionen und Feature-Anfragen bei."
+                }
+            }
+        },
+        "avatar": {
+            "title": "Avatar-Komponenten",
+            "description": "Benutzerprofilbilder mit Fallbacks und Gruppenanzeigen",
+            "basic": "Verschiedene Größen",
+            "group": "Avatar-Gruppe",
+            "fallback": "Fallback-Optionen"
+        },
+        "formsAdvanced": {
+            "title": "Erweiterte Formulare",
+            "description": "Komplexe Formularkomponenten mit umfangreicher Funktionalität",
+            "calendar": {
+                "title": "Kalender",
+                "rangeTitle": "Datumsbereich",
+                "pickerTitle": "Datums-Auswahl",
+                "rangePickerTitle": "Datumsbereich-Auswahl",
+                "selectDate": "Datum auswählen",
+                "selectRange": "Datumsbereich auswählen",
+                "placeholder": "Datum auswählen",
+                "rangePlaceholder": "Datumsbereich auswählen"
+            },
+            "checkboxGroup": {
+                "title": "Checkbox-Gruppe",
+                "darkMode": "Dark Mode",
+                "animations": "Animationen",
+                "notifications": "Benachrichtigungen"
+            },
+            "radioGroup": {
+                "title": "Radio Gruppe",
+                "light": "Hell",
+                "dark": "Dunkel",
+                "system": "System"
+            },
+            "switch": {
+                "title": "Schalter",
+                "notifications": "Benachrichtigungen aktivieren",
+                "autoSave": "Änderungen automatisch speichern",
+                "autoSaveDesc": "Speichert deine Änderungen automatisch während der Arbeit."
+            },
+            "slider": {
+                "title": "Schieberegler",
+                "volume": "Lautstärke-Kontrolle",
+                "range": "Preisbereich"
+            },
+            "progress": {
+                "title": "Fortschritt",
+                "indeterminate": "Unbestimmter Fortschritt"
+            },
+            "colorPicker": {
+                "basic": "Einfacher Farbwähler",
+                "withPopover": "Farbwähler mit Popover",
+                "title": "Farbwähler"
+            },
+            "fileUpload": {
+                "title": "Datei-Upload",
+                "label": "Dateien hier ablegen",
+                "description": "SVG, PNG, JPG oder GIF (max. 2MB)"
+            },
+            "kbd": {
+                "title": "Tastenkürzel",
+                "color": "Farbe",
+                "variant": "Variante",
+                "selectColor": "Farbe wählen",
+                "selectVariant": "Variante wählen"
+            }
+        },
+        "layout": {
+            "title": "Layout-Komponenten",
+            "description": "Struktur- und Container-Komponenten für bessere Organisation",
+            "card": {
+                "title": "Karten-Varianten",
+                "default": "Standard-Karte",
+                "defaultDescription": "Dies ist eine Standard-Karte mit Header-, Inhalt- und Footer-Bereichen.",
+                "subtle": "Dezente Karte",
+                "subtleDescription": "Eine Karte mit dezentem Styling für weniger Betonung.",
+                "footer": "Karten-Footer",
+                "action": "Aktion",
+                "cancel": "Abbrechen",
+                "confirm": "Bestätigen"
+            },
+            "container": {
+                "title": "Container",
+                "responsive": "Responsiver Container",
+                "content": "Dieser Inhalt ist zentriert und innerhalb der Container-Grenzen begrenzt."
+            },
+            "chip": {
+                "title": "Chip-Indikatoren",
+                "withButton": "Mit Button",
+                "withAvatar": "Mit Avatar"
+            }
+        },
+        "dataDisplay": {
+            "title": "Datenanzeige",
+            "description": "Komponenten zur Anzeige und Organisation von Inhalten",
+            "carousel": {
+                "title": "Karussell"
+            },
+            "collapsible": {
+                "title": "Einklappbare Bereiche",
+                "firstToggle": "Ersten Bereich umschalten",
+                "firstContent": "Dies ist der Inhalt des ersten einklappbaren Bereichs. Du kannst hier beliebigen Inhalt einfügen.",
+                "secondToggle": "Zweiten Bereich umschalten",
+                "secondContent": "Dies ist der Inhalt des zweiten einklappbaren Bereichs mit einem Aktionsbutton.",
+                "action": "Aktion"
+            },
+            "contextMenu": {
+                "title": "Kontextmenü",
+                "rightClick": "Hier rechtsklicken",
+                "copy": "Kopieren",
+                "cut": "Ausschneiden",
+                "paste": "Einfügen"
+            },
+            "dropdownMenu": {
+                "title": "Dropdown-Menü",
+                "trigger": "Menü öffnen",
+                "profile": "Profil",
+                "settings": "Einstellungen",
+                "billing": "Abrechnung",
+                "logout": "Abmelden"
+            },
+            "drawer": {
+                "title": "Schublade",
+                "bottom": "Untere Schublade",
+                "right": "Rechte Schublade",
+                "contentTitle": "Schubladen-Inhalt",
+                "contentText": "Dies ist der Inhalt innerhalb der Schublade. Du kannst hier beliebige Komponenten einfügen.",
+                "sidebarTitle": "Navigation",
+                "profile": "Profil",
+                "settings": "Einstellungen",
+                "logout": "Abmelden"
+            },
+            "tree": {
+                "title": "Baum-Ansicht"
+            },
+            "table": {
+                "title": "Daten-Tabelle",
+                "nameColumn": "Name",
+                "roleColumn": "Rolle",
+                "statusColumn": "Status",
+                "emailColumn": "E-Mail"
+            },
+            "timeline": {
+                "title": "Zeitleiste",
+                "step1Title": "Projekt-Auftakt",
+                "step1Desc": "Projekt-Kick-off mit Team-Abstimmung. Meilensteine festgelegt.",
+                "step2Title": "Design-Phase",
+                "step2Desc": "Nutzerforschung und Design-Workshops. Wireframes und Prototypen erstellt.",
+                "step3Title": "Entwicklungs-Sprint",
+                "step3Desc": "Frontend- und Backend-Entwicklung. Kernfunktionen und APIs implementiert.",
+                "step4Title": "Test & Deployment",
+                "step4Desc": "QA-Tests und Performance-Optimierung. Produktions-Deployment durchgeführt."
+            }
+        },
+        "utility": {
+            "title": "Utility-Komponenten",
+            "description": "Hilfreiche Werkzeuge und interaktive Elemente",
+            "commandPalette": {
+                "title": "Befehlspalette",
+                "openButton": "Befehlspalette öffnen",
+                "openCollapsible": "Befehlspalette öffnen",
+                "placeholder": "Befehl eingeben oder suchen...",
+                "keyboardShortcut": "Tastaturkürzel verwenden:",
+                "groups": {
+                    "navigation": "Navigation",
+                    "actions": "Aktionen",
+                    "settings": "Einstellungen"
+                },
+                "commands": {
+                    "home": "Zur Startseite",
+                    "about": "Über-Seite",
+                    "contact": "Kontakt",
+                    "toggleTheme": "Theme wechseln",
+                    "copy": "Aktuelle URL kopieren",
+                    "refresh": "Seite aktualisieren",
+                    "language": "Sprache ändern",
+                    "preferences": "Einstellungen"
+                }
+            }
+        },
+        "navigation": {
+            "title": "Navigations-Elemente",
+            "description": "Badges, Breadcrumbs und Button-Gruppen für Interface-Navigation",
+            "badges": {
+                "title": "Badges",
+                "primary": "Neu",
+                "success": "Erfolg",
+                "warning": "Beta",
+                "error": "Fehler",
+                "featured": "Featured",
+                "next": "Weiter",
+                "small": "Klein",
+                "medium": "Mittel",
+                "large": "Groß"
+            },
+            "breadcrumb": {
+                "title": "Breadcrumb",
+                "home": "Startseite",
+                "components": "Komponenten",
+                "navigation": "Navigation"
+            }
+        },
+        "mouseFollower": {
+            "title": "Mouse Follower",
+            "description": "Interaktive Cursor-Effekte und Animationen mit GSAP",
+            "projectCards": "Projekt-Karten",
+            "project1": {
+                "title": "Web-Anwendung",
+                "description": "Eine moderne Web-App mit flüssigen Animationen und Interaktionen."
+            },
+            "project2": {
+                "title": "UI-Komponenten",
+                "description": "Schöne UI-Komponenten mit benutzerdefinierten Cursor-Effekten."
+            },
+            "textEffects": "Text-Effekte",
+            "textDemo": {
+                "intro": "Dies ist normaler Text mit einem",
+                "hoverText": "speziellen Hover-Effekt",
+                "middle": "und dieser Text hat einen",
+                "stickyText": "klebrigen Cursor-Effekt",
+                "outro": "der deiner Maus folgt."
+            },
+            "specialStates": "Spezielle Cursor-Zustände",
+            "states": {
+                "inverse": "Inverser Cursor",
+                "inverseDesc": "Heller Cursor auf dunklem Hintergrund",
+                "inverseDarkMode": "Diese Demo ist im Dark Mode nicht verfügbar",
+                "hidden": "Versteckter Cursor",
+                "hiddenDesc": "Cursor wird unsichtbar",
+                "theme": "Theme-Element",
+                "themeDesc": "Individueller Gradienten-Stil",
+                "opaque": "Transparenz-Zustand",
+                "opaqueDesc": "Halbtransparenter Cursor",
+                "pointer": "Zeiger-Zustand",
+                "pointerDesc": "Benutzerdefinierte Zeiger-Gestaltung",
+                "custom": "Individueller Zustand",
+                "customDesc": "Dynamische individuelle Gestaltung"
+            },
+            "mediaEffects": "Medien-Effekte (Bilder & Videos)",
+            "media": {
+                "image1": {
+                    "title": "Landschaftsfoto",
+                    "description": "Bewege die Maus, um ein schönes Landschaftsbild anzuzeigen"
+                },
+                "image2": {
+                    "title": "Portraitfoto",
+                    "description": "Bewege die Maus, um ein beeindruckendes Portraitfoto zu sehen"
+                },
+                "video": {
+                    "title": "Beispiel-Video",
+                    "description": "Bewege die Maus, um Big Buck Bunny Video anzuzeigen"
+                }
+            },
+            "stickyEffects": "Klebende Cursor-Effekte",
+            "sticky": {
+                "element1": "STICKY",
+                "element2": "ZIEL",
+                "hover": "Bewege die Maus hierher, um den Cursor am Ziel zu befestigen:",
+                "description": "Der Cursor wird magnetisch an Elementen mit Klebeffekt haften"
+            },
+            "skewingEffects": "Verzerrungs-Effekte",
+            "skewing": {
+                "light": "Leichte Verzerrung",
+                "lightDesc": "Subtiler Verzerrungseffekt",
+                "strong": "Starke Verzerrung",
+                "strongDesc": "Mittlerer Verzerrungseffekt",
+                "extreme": "Extreme Verzerrung",
+                "extremeDesc": "Maximaler Verzerrungseffekt"
+            },
+            "configuration": {
+                "title": "Konfigurationsoptionen",
+                "speed": "Cursor-Geschwindigkeit",
+                "slow": "Langsam",
+                "fast": "Schnell",
+                "currentSpeed": "Aktuelle Geschwindigkeit"
+            },
+            "cursorText": {
+                "viewDetails": "Details anzeigen",
+                "exploreProject": "Projekt erkunden",
+                "customMessage": "Eigene Nachricht!",
+                "stickyCursor": "Klebriger Cursor",
+                "themeElement": "Design-Element",
+                "lightSkewing": "Leichte Verzerrung",
+                "strongSkewing": "Starke Verzerrung",
+                "extremeSkewing": "Extreme Verzerrung"
+            }
+        },
+        "inputShowcase": {
+            "title": "Spezialisierte Eingabe-Komponenten",
+            "description": "Erweiterte Eingabesteuerungen und Dateneingabe-Komponenten",
+            "inputNumber": {
+                "title": "Zahleneingabe",
+                "basic": "Basis Zahleneingabe",
+                "step": "Schritt-Eingabe (Schritt 10)"
+            },
+            "inputTags": {
+                "title": "Eingabe Tags",
+                "skills": "Füge deine Fähigkeiten hinzu",
+                "placeholder": "Tippen und Enter drücken..."
+            },
+            "pinInput": {
+                "title": "PIN-Eingabe",
+                "otp": "OTP-Code",
+                "password": "PIN-Passwort"
+            },
+            "select": {
+                "title": "Auswahl-Komponenten",
+                "basic": "Basis Auswahl",
+                "multiple": "Mehrfachauswahl",
+                "multiplePlaceholder": "Wähle mehrere Optionen..."
+            },
+            "advancedInput": {
+                "title": "Erweiterte Eingabe",
+                "searchPlaceholder": "Suchen...",
+                "emailPlaceholder": "E-Mail eingeben",
+                "passwordPlaceholder": "Passwort eingeben"
+            },
+            "kbd": {
+                "title": "Tastaturkürzel",
+                "shortcuts": "Häufige Kürzel",
+                "commandPalette": "Befehlspalette",
+                "copy": "Kopieren",
+                "escape": "Escape"
+            },
+            "textarea": {
+                "title": "Textbereich",
+                "basic": "Basis Textbereich",
+                "placeholder": "Gib deine Nachricht ein...",
+                "autoresize": "Automatische Größenanpassung",
+                "autoPlaceholder": "Dieser Textbereich wächst mit deiner Eingabe...",
+                "sampleText": "Dies ist ein Beispieltext, der die automatische Größenanpassung des Textbereich-Komponenten demonstriert."
+            },
+            "tooltip": {
+                "title": "Tooltips",
+                "description": "Interaktive Tooltip-Beispiele",
+                "basicTooltip": "Dies ist ein Basis-Tooltip",
+                "hoverMe": "Berühre mich",
+                "withKbd": "Speichere deine Arbeit",
+                "save": "Speichern",
+                "withDelay": "Sofort-Tooltip",
+                "instant": "Sofort"
+            }
+        },
+        "navigationAdvanced": {
+            "title": "Erweiterte Navigation",
+            "description": "Komplexe Navigationsmuster und Overlay-Komponenten",
+            "tabs": {
+                "title": "Tab-Navigation",
+                "tab1": "Konto",
+                "tab1Content": "Verwalte hier deine Kontoeinstellungen und Präferenzen.",
+                "tab2": "Sicherheit",
+                "tab2Content": "Konfiguriere deine Sicherheitseinstellungen und Zwei-Faktor-Authentifizierung.",
+                "tab3": "Benachrichtigungen",
+                "tab3Content": "Steuere deine Benachrichtigungseinstellungen und E-Mail-Einstellungen."
+            },
+            "navigationMenu": {
+                "title": "Navigationsmenü",
+                "home": "Startseite",
+                "products": "Produkte",
+                "web": "Web-Entwicklung",
+                "webDesc": "Moderne Web-Lösungen",
+                "mobile": "Mobile Apps",
+                "mobileDesc": "Plattformübergreifende Entwicklung",
+                "about": "Über uns",
+                "contact": "Kontakt"
+            },
+            "pagination": {
+                "title": "Paginierung",
+                "showing": "Zeige {start}-{end} von {total} Einträgen"
+            },
+            "stepper": {
+                "title": "Fortschritts-Schritte",
+                "previous": "Zurück",
+                "next": "Weiter",
+                "step1": "Persönliche Daten",
+                "step1Desc": "Gib deine Details ein",
+                "step2": "Einstellungen",
+                "step2Desc": "Setze deine Präferenzen",
+                "step3": "Abschließen",
+                "step3Desc": "Überprüfe und fertigstellen"
+            },
+            "link": {
+                "title": "Link-Navigation",
+                "home": "Startseite",
+                "about": "Über uns",
+                "contact": "Kontakt",
+                "active": "Aktiv",
+                "external": "GitHub Repository"
+            },
+            "overlays": {
+                "title": "Overlay-Komponenten",
+                "openModal": "Modal öffnen",
+                "openSlideover": "Slideover öffnen",
+                "openPopover": "Popover anzeigen"
+            },
+            "modal": {
+                "title": "Modal Dialog",
+                "content": "Dies ist ein Modal Dialog mit benutzerdefiniertem Inhalt und Aktionen.",
+                "cancel": "Abbrechen",
+                "confirm": "Bestätigen"
+            },
+            "slideover": {
+                "title": "Slideover Panel",
+                "content": "Dies ist ein Slideover-Panel, das von der Seite hineinschiebt.",
+                "option1": "Option 1",
+                "option2": "Option 2",
+                "option3": "Option 3"
+            },
+            "popover": {
+                "title": "Popover Inhalt",
+                "content": "Dies ist ein einfaches Popover mit zusätzlichen Informationen.",
+                "close": "Schließen"
+            }
+        },
+        "overlay": {
+            "title": "Overlay-Komponenten",
+            "description": "Interaktive Overlays, Benachrichtigungen und Feedback-Komponenten",
+            "toast": {
+                "title": "Toast-Benachrichtigungen",
+                "success": "Erfolg Toast",
+                "error": "Fehler Toast",
+                "withAction": "Toast mit Aktion",
+                "withProgress": "Toast mit Fortschritt",
+                "successTitle": "Erfolgreich!",
+                "successDesc": "Deine Änderungen wurden erfolgreich gespeichert.",
+                "errorTitle": "Fehler aufgetreten",
+                "errorDesc": "Etwas ist schief gelaufen. Bitte versuche es erneut.",
+                "actionTitle": "Element gelöscht",
+                "actionDesc": "Das Element wurde aus deiner Liste entfernt.",
+                "undo": "Rückgängig",
+                "progressTitle": "Wird heruntergeladen...",
+                "progressDesc": "Bitte warte, während wir deine Anfrage bearbeiten."
+            },
+            "tooltip": {
+                "title": "Tooltip-Positionen",
+                "basic": "Basis-Tooltip-Nachricht",
+                "hoverTop": "Berühren (Oben)",
+                "left": "Links",
+                "right": "Rechts",
+                "withKbd": "Befehlspalette"
+            }
+        }
+    },
+    "components": {
+        "darkModeToggle": {
+            "label": "Dark Mode umschalten"
+        }
+    },
+    "loadingScreen": {
+        "title": "Nuxt 4 Template - Swiss Style",
+        "subtitle": "Template wird geladen..."
+    }
+}

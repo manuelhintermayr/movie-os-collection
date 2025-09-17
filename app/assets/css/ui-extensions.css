@@ -1,0 +1,341 @@
+/* ==========================================================================
+   UI EXTENSIONS - Swiss Style 
+   Component aliases, ARIA fallbacks, and enhanced UI support
+   ========================================================================== */
+
+/* Load order safeguard - Ensure this loads after index.css */
+
+/* ==========================================================================
+   1) U- PREFIX ALIASES FOR NUXT UI COMPONENTS
+   ========================================================================== */
+
+/* Basic Swiss styling applied to all component aliases */
+.u-button,
+.u-btn,
+.u-input,
+.u-textarea,
+.u-select,
+.u-card,
+.u-alert,
+.u-badge,
+.u-tag,
+.u-modal,
+.u-drawer,
+.u-sidebar,
+.u-navbar,
+.u-table,
+.u-tabs,
+.u-tab,
+.u-pagination,
+.u-breadcrumb,
+.u-calendar,
+.u-datepicker,
+.u-notification,
+.u-toast,
+.u-avatar,
+.u-accordion,
+.u-collapse {
+  /* Ensure Swiss Style consistency */
+  border-radius: 0 !important;
+  font-family: var(--font-sans);
+  letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   2) ARIA / ROLE FALLBACKS - Swiss Style
+   ========================================================================== */
+
+/* Tabs with ARIA roles */
+
+
+
+/* Pagination with ARIA */
+nav[aria-label="Pagination"] {
+  display: flex;
+  gap: var(--rhythm-1);
+  align-items: center;
+}
+
+nav[aria-label="Pagination"] a,
+nav[aria-label="Pagination"] button {
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: transparent;
+  color: var(--c-fg);
+  padding: 0.35rem 0.65rem;
+  min-width: 2.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: none;
+}
+
+nav[aria-label="Pagination"] a:hover,
+nav[aria-label="Pagination"] button:hover {
+  background: var(--c-fg);
+  color: var(--c-bg);
+}
+
+nav[aria-label="Pagination"] .is-active,
+nav[aria-label="Pagination"] [aria-current="page"] {
+  background: var(--c-fg);
+  color: var(--c-bg);
+  font-weight: 900;
+}
+
+/* Breadcrumb with ARIA */
+nav[aria-label="Breadcrumb"] {
+  display: flex;
+  gap: var(--rhythm-2);
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+nav[aria-label="Breadcrumb"] a {
+  text-decoration: none;
+  transition: none;
+}
+
+nav[aria-label="Breadcrumb"] a:hover {
+  text-decoration: underline;
+}
+
+nav[aria-label="Breadcrumb"] [aria-current="page"] {
+  font-weight: 900;
+}
+
+/* Menu / Dropdowns with ARIA roles */
+[role="menu"] {
+  border: var(--border-w) solid var(--c-fg) !important;
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+  box-shadow: none !important;
+  min-width: 12rem;
+  padding: var(--rhythm-1);
+}
+
+[role="menuitem"] {
+  padding: var(--rhythm-2) var(--rhythm-3);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  transition: none;
+}
+
+[role="menuitem"]:hover {
+  background: var(--c-fg);
+  color: var(--c-bg);
+}
+
+/* Tooltip with role */
+[role="tooltip"] {
+  border: var(--border-w-thin) solid var(--c-fg) !important;
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.35rem var(--rhythm-2);
+  box-shadow: none !important;
+  font-size: 0.875rem;
+}
+
+/* Calendar fallback */
+[data-component="UCalendar"] {
+  border: var(--border-w) solid var(--c-fg);
+  background: var(--c-bg);
+  color: var(--c-fg);
+  padding: var(--rhythm-3);
+}
+
+[data-component="UCalendar"] .calendar-header {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  padding-bottom: var(--rhythm-2);
+  border-bottom: var(--border-w-thin) solid var(--c-fg);
+  margin-bottom: var(--rhythm-2);
+}
+
+/* ==========================================================================
+   3) RANGE/SLIDER ENHANCED FALLBACKS
+   ========================================================================== */
+
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+  height: 2.5rem;
+}
+
+/* WebKit (Chrome/Safari) */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: var(--c-bg);
+  border: var(--border-w-thin) solid var(--c-fg);
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -7px;
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: var(--c-bg);
+  cursor: pointer;
+  transition: none;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: var(--c-fg);
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  background: var(--c-bg);
+  border: var(--border-w-thin) solid var(--c-fg);
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: var(--c-bg);
+  cursor: pointer;
+  appearance: none;
+  margin: 0;
+  transition: none;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: var(--c-fg);
+}
+
+/* ==========================================================================
+   4) STATUS & FOCUS SAFETY ENHANCEMENTS
+   ========================================================================== */
+
+/* Enhanced status notifications */
+[role="status"].ui-notification,
+[role="alert"].ui-notification {
+  border: var(--border-w) solid var(--c-fg);
+  background: var(--c-bg);
+  color: var(--c-fg);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Comprehensive focus states */
+:where(a, button, [role="button"], [role="menuitem"], [role="tab"],
+  input, select, textarea, [tabindex]):focus-visible {
+  outline: var(--ring-w) solid var(--c-fg);
+  outline-offset: 2px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--c-fg);
+  color: var(--c-bg);
+  padding: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: var(--border-w-thin) solid var(--c-fg);
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* ==========================================================================
+   5) ENHANCED UI STATES
+   ========================================================================== */
+
+/* Loading states */
+[aria-busy="true"] {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+/* Disabled states */
+[disabled],
+[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+[disabled]:hover,
+[aria-disabled="true"]:hover {
+  background: initial !important;
+  color: initial !important;
+}
+
+/* Expanded states */
+[aria-expanded="true"] {
+  font-weight: 900;
+}
+
+/* Selected states */
+[aria-selected="true"] {
+  font-weight: 900;
+}
+
+/* Pressed states */
+[aria-pressed="true"] {
+  background: var(--c-fg);
+  color: var(--c-bg);
+}
+
+/* ==========================================================================
+   6) RESPONSIVE ENHANCEMENTS
+   ========================================================================== */
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 768px) {
+  [role="tablist"] {
+    flex-direction: column;
+  }
+
+  nav[aria-label="Pagination"] {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav[aria-label="Breadcrumb"] {
+    flex-wrap: wrap;
+  }
+
+  [role="menu"] {
+    min-width: 100%;
+    max-width: 100vw;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+
+  [role="tab"],
+  [role="menuitem"],
+  nav[aria-label="Pagination"] a,
+  nav[aria-label="Pagination"] button {
+    border-width: var(--border-w);
+  }
+}

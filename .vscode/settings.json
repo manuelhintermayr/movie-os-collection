@@ -1,0 +1,14 @@
+{
+    "typescript.preferences.includePackageJsonAutoImports": "off",
+    "typescript.suggest.autoImports": true,
+    "typescript.format.enable": true,
+    "typescript.preferences.removeUnused": true,
+    "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
+    "editor.codeActionsOnSave": {
+        "source.removeUnused": "explicit",
+        "source.organizeImports": "explicit",
+        "source.fixAll": "explicit"
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000
+}
