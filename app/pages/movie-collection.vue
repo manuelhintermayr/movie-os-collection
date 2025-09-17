@@ -13,6 +13,17 @@
                 {{ $t('movieCollection.title') }}
               </h1>
             </div>
+            <div class="flex items-center space-x-4">
+              <LanguageSwitcher />
+              <div ref="darkModeButton" data-cursor-pointer>
+                <UButton 
+                  :icon="colorMode.preference === 'dark' ? 'i-heroicons-sun' : 'i-heroicons-moon'"
+                  variant="ghost" 
+                  @click="toggleColorMode"
+                  :aria-label="colorMode.preference === 'dark' ? $t('header.switchToLight') : $t('header.switchToDark')" 
+                />
+              </div>
+            </div>
           </div>
           
           <!-- Controls -->
@@ -25,7 +36,6 @@
               icon="i-heroicons-magnifying-glass"
               data-cursor-pointer
             />
-            <LanguageSwitcher />
             <UButton 
               @click="shuffleItems" 
               color="neutral" 
@@ -85,8 +95,8 @@
                 </div>
 
                 <!-- Description -->
-                <p v-if="item.desc" class="text-sm text-gray-700 dark:text-gray-300">
-                  {{ item.desc }}
+                <p v-if="getLocalizedDescription(item)" class="text-sm text-gray-700 dark:text-gray-300">
+                  {{ getLocalizedDescription(item) }}
                 </p>
 
                 <!-- Tech Stack -->
@@ -161,6 +171,14 @@ useHead({
   ]
 })
 
+// Color mode and dark mode toggle
+const colorMode = useColorMode()
+const darkModeButton = ref<HTMLElement>()
+
+const toggleColorMode = () => {
+  colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
+}
+
 // Loading state
 const isLoading = ref(true)
 const loadingFinished = ref(false)
@@ -182,7 +200,10 @@ const movieItems = ref([
     repo: "https://github.com/iiegor/jurassic-park-terminal",
     image: "https://raw.githubusercontent.com/iiegor/jurassic-park-terminal/master/screenshot.png",
     stack: "HTML, CSS, JavaScript",
-    desc: "Replika der ikonischen Konsole inkl. 'You didn't say the magic word'.",
+    desc: {
+      de: "Replika der ikonischen Konsole inkl. 'You didn't say the magic word'.",
+      en: "Replica of the iconic console including 'You didn't say the magic word'."
+    },
     tags: ["terminal", "fan-recreation"]
   },
   {
@@ -192,7 +213,10 @@ const movieItems = ref([
     repo: "https://github.com/Giuseppetm/syndrome-main-computer",
     image: "https://raw.githubusercontent.com/Giuseppetm/syndrome-main-computer/master/public/og-image.jpg",
     stack: "React, TypeScript, Vite",
-    desc: "Nachbildung der Kronos/Authentication-Sequenz.",
+    desc: {
+      de: "Nachbildung der Kronos/Authentication-Sequenz.",
+      en: "Recreation of the Kronos/Authentication sequence."
+    },
     tags: ["react", "animation"]
   },
   {
@@ -202,7 +226,10 @@ const movieItems = ref([
     repo: "https://github.com/arscan/encom-boardroom",
     image: "https://raw.githubusercontent.com/arscan/encom-boardroom/master/img/screenshot.jpg",
     stack: "HTML5, WebGL, JavaScript",
-    desc: "WebGL-Visualisierung inspiriert von der Encom-Boardroom-Szene.",
+    desc: {
+      de: "WebGL-Visualisierung inspiriert von der Encom-Boardroom-Szene.",
+      en: "WebGL visualization inspired by the Encom boardroom scene."
+    },
     tags: ["webgl", "data-viz"]
   },
   {
@@ -212,7 +239,10 @@ const movieItems = ref([
     repo: "https://github.com/Rezmason/matrix",
     image: "https://raw.githubusercontent.com/Rezmason/matrix/main/docs/demo.gif",
     stack: "JavaScript, WebGL (REGL)",
-    desc: "Ikonischer grüner Code-Regen als performante Shader-Demo.",
+    desc: {
+      de: "Ikonischer grüner Code-Regen als performante Shader-Demo.",
+      en: "Iconic green code rain as a performant shader demo."
+    },
     tags: ["shader", "canvas"]
   },
   {
@@ -222,7 +252,10 @@ const movieItems = ref([
     repo: "https://github.com/brenns10/alien-console",
     image: "https://raw.githubusercontent.com/brenns10/alien-console/master/docs/demo.gif",
     stack: "C, ncurses",
-    desc: "Terminal-UI im Stil der Alien-Rechner.",
+    desc: {
+      de: "Terminal-UI im Stil der Alien-Rechner.",
+      en: "Terminal UI in the style of Alien computers."
+    },
     tags: ["terminal"]
   },
   {
@@ -232,7 +265,10 @@ const movieItems = ref([
     repo: "https://github.com/lawrenceabaeo/back-to-the-future-time-circuits",
     image: "https://raw.githubusercontent.com/lawrenceabaeo/back-to-the-future-time-circuits/master/screenshot.png",
     stack: "HTML, CSS, JavaScript",
-    desc: "Zeitanzeige mit Destination/Present/Last Time.",
+    desc: {
+      de: "Zeitanzeige mit Destination/Present/Last Time.",
+      en: "Time display with Destination/Present/Last Time."
+    },
     tags: ["retro", "ui"]
   },
   {
@@ -242,7 +278,10 @@ const movieItems = ref([
     repo: "https://github.com/joernweissenborn/lcars",
     image: "https://raw.githubusercontent.com/joernweissenborn/lcars/master/docs/assets/lcars-ui.jpg",
     stack: "HTML, CSS, JS",
-    desc: "Klassisches LCARS-Interface (Film/TV-Universum).",
+    desc: {
+      de: "Klassisches LCARS-Interface (Film/TV-Universum).",
+      en: "Classic LCARS interface (movie/TV universe)."
+    },
     tags: ["ui", "design-system"]
   },
   {
@@ -252,7 +291,10 @@ const movieItems = ref([
     repo: null,
     image: "https://assets.codepen.io/416221/internal/screenshots/pens/MWeJrP.default.png",
     stack: "HTML, CSS",
-    desc: "Statisches HAL-Panel (Web-Nachbau).",
+    desc: {
+      de: "Statisches HAL-Panel (Web-Nachbau).",
+      en: "Static HAL panel (web recreation)."
+    },
     tags: ["codepen", "iconic"]
   },
   {
@@ -262,7 +304,10 @@ const movieItems = ref([
     repo: "https://github.com/aherbez/wopr",
     image: "https://raw.githubusercontent.com/aherbez/wopr/master/screenshot.png",
     stack: "JavaScript, Canvas",
-    desc: "Terminal-Spielerei inspiriert von WOPR.",
+    desc: {
+      de: "Terminal-Spielerei inspiriert von WOPR.",
+      en: "Terminal game inspired by WOPR."
+    },
     tags: ["terminal", "game"]
   },
   {
@@ -272,7 +317,10 @@ const movieItems = ref([
     repo: null,
     image: "https://assets.codepen.io/32887/internal/screenshots/pens/xwQZbM.default.png",
     stack: "HTML, CSS, JS",
-    desc: "HUD-Stil-UI inspiriert von Jarvis.",
+    desc: {
+      de: "HUD-Stil-UI inspiriert von Jarvis.",
+      en: "HUD-style UI inspired by Jarvis."
+    },
     tags: ["hud", "codepen"]
   },
   {
@@ -282,7 +330,10 @@ const movieItems = ref([
     repo: null,
     image: "https://assets.codepen.io/1462889/internal/screenshots/pens/wvQpWp.default.png",
     stack: "HTML, CSS",
-    desc: "Rotes Terminator-HUD als CSS-Demo.",
+    desc: {
+      de: "Rotes Terminator-HUD als CSS-Demo.",
+      en: "Red Terminator HUD as CSS demo."
+    },
     tags: ["hud", "css"]
   },
   {
@@ -292,10 +343,24 @@ const movieItems = ref([
     repo: null,
     image: "https://assets.codepen.io/174675/internal/screenshots/pens/yenmEK.default.png",
     stack: "Canvas, JS",
-    desc: "Zielcomputer-UI inspiriert vom Todesstern-Anflug.",
+    desc: {
+      de: "Zielcomputer-UI inspiriert vom Todesstern-Anflug.",
+      en: "Targeting computer UI inspired by Death Star approach."
+    },
     tags: ["canvas", "animation"]
   }
 ])
+
+// Get current locale
+const { locale } = useI18n()
+
+// Function to get localized description
+const getLocalizedDescription = (item: any) => {
+  if (typeof item.desc === 'object') {
+    return item.desc[locale.value] || item.desc.en || ''
+  }
+  return item.desc || ''
+}
 
 // Computed filtered items
 const filteredItems = computed(() => {
@@ -303,11 +368,12 @@ const filteredItems = computed(() => {
   if (!query) return movieItems.value
   
   return movieItems.value.filter(item => {
+    const localizedDesc = getLocalizedDescription(item)
     const searchableText = [
       item.title,
       item.film,
       item.stack,
-      item.desc,
+      localizedDesc,
       ...(item.tags || [])
     ].join(' ').toLowerCase()
     
@@ -358,6 +424,11 @@ onMounted(async () => {
           // Add tilt effects to all cards on the page
           if ('addTiltToAllCards' in utils) {
             utils.addTiltToAllCards()
+          }
+
+          // Add magnetic effect to dark mode button
+          if ('addMagneticEffect' in utils && darkModeButton.value) {
+            utils.addMagneticEffect([darkModeButton.value])
           }
         }
       })
