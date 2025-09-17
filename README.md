@@ -1,30 +1,31 @@
-# Nuxt 4 Template – Swiss Style
+# Movie Computer Screens Collection
 
-A Nuxt 4 template with nuxt/ui (including Tailwind CSS) and i18n support in the Swiss Style (International Typographic Style). Modern, production-ready starter for web applications with a focus on clarity, grid, and internationalization.
+A curated collection of computer interfaces from movies recreated for the web. Built with Nuxt 4, featuring GSAP animations and Swiss Style design principles. Explore iconic movie computer screens, from futuristic HUDs to retro terminals, all faithfully recreated as interactive web experiences.
 
 ![Preview](public/media/preview.jpg)
 
-**🌐 Live Demo:** [http://projects.manuelhintermayr.com/nuxt4-template-swiss-style](http://projects.manuelhintermayr.com/nuxt4-template-swiss-style)
+**🌐 Live Demo:** [https://projects.manuelhintermayr.com/movie-os-collection](https://projects.manuelhintermayr.com/movie-os-collection)
 
 **Developed by:** [Manuel Hintermayr](https://github.com/manuelhintermayr)  
-**Repository:** [https://github.com/manuelhintermayr/nuxt4-template-swiss-style](https://github.com/manuelhintermayr/nuxt4-template-swiss-style)
-_Based on [nuxt4-template](https://github.com/manuelhintermayr/nuxt4-template)_
+**Repository:** [https://github.com/manuelhintermayr/movie-os-collection](https://github.com/manuelhintermayr/movie-os-collection)
+
+## 🎬 About
+
+This project showcases computer interfaces and operating systems featured in movies, recreated as interactive web experiences. From the sleek interfaces of *Minority Report* to the retro terminals of *WarGames*, discover how filmmakers envisioned technology and bring these iconic screens to life in your browser.
 
 ## 🚀 Features
 
+- 🎬 **Movie OS Collection** - Curated selection of computer interfaces from films
 - ⚡️ **Nuxt 4** - Latest version with improved performance and new features
-- 🎨 **Nuxt UI** - Modern UI components based on Tailwind CSS and Headless UI
-- 🖼️ **Swiss Style** - Layout and design inspired by the International Typographic Style (Swiss Style)
-- 🌍 **Internationalization** - Full i18n support with @nuxtjs/i18n
+- 🎨 **Swiss Style Design** - Clean, grid-based layout with typography focus
+- 🎭 **GSAP Animations** - Smooth entrance animations and interactive effects
+- 🐭 **Mouse Follower** - Dynamic cursor effects with custom states
+- 🌍 **Internationalization** - Full i18n support (English/German)
 - 🌙 **Dark Mode** - Built-in dark/light mode toggle
 - 📱 **Responsive Design** - Mobile-first approach
-- 🔧 **TypeScript** - Full TypeScript support with type safety
-- 🎯 **Component Architecture** - Modular, reusable Vue components
-- 🎭 **Heroicons** - Beautiful SVG icons from the Heroicons library
-- 🐭 **Mouse Follower** - Smooth mouse cursor effects with GSAP animations
-- 🏗️ **Developer Experience** - Hot module replacement and fast refresh
-- 🔍 **Code Quality Tools** - Automated unused variable detection and i18n management
-- ⚙️ **VS Code Integration** - Pre-configured settings for optimal development experience
+- � **Search & Filter** - Find projects by title, film, or technology stack
+- � **Shuffle Feature** - Randomize project display
+- � **TypeScript** - Full TypeScript support with type safety
 
 ![Preview](public/media/preview.gif)
 
@@ -37,17 +38,17 @@ _Based on [nuxt4-template](https://github.com/manuelhintermayr/nuxt4-template)_
 ### UI & Styling
 - **[Nuxt UI](https://ui.nuxt.com/)** - Fully styled and customizable components
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- **Swiss Style Principles** - Grid-based layouts, clarity, and typographic hierarchy following the International Typographic Style
-- **All UI components implemented based on [Nuxt UI Documentation](https://ui.nuxt.com/components/app)**
+- **Swiss Style Principles** - Grid-based layouts, clarity, and typographic hierarchy
 
 ### Animation & Effects
 - **[GSAP](https://greensock.com/gsap/)** - Professional-grade animation library
 - **[ScrollTrigger](https://greensock.com/scrolltrigger/)** - Scroll-based animation trigger
-- **[Mouse Follower](https://github.com/Cuberto/mouse-follower)** - Smooth mouse cursor effects
+- **[Mouse Follower](https://github.com/Cuberto/mouse-follower)** - Dynamic cursor effects
 
-### Internationalization
+### Data & Internationalization
 - **[@nuxtjs/i18n](https://i18n.nuxtjs.org/)** - Internationalization module
-- **Support for:** English (en) and German (de) out of the box
+- **JSON Data Structure** - Centralized project data management
+- **Support for:** English (en) and German (de)
 - **Lazy loading** - Translation files loaded on demand
 
 ### Icons & Assets
@@ -75,6 +76,27 @@ yarn install
 # or
 bun install
 ```
+
+## 🎮 Collection Highlights
+
+### Featured Movie Interfaces
+- **Iron Man (2008)** - Tony Stark's Holographic Interface
+- **Minority Report (2002)** - PreCrime System Interface  
+- **The Matrix (1999)** - Digital Rain Terminal
+- **WarGames (1983)** - WOPR Military Computer
+- **Alien (1979)** - Nostromo Ship Computer
+- **Blade Runner (1982)** - Voight-Kampff Test Interface
+- **And many more...**
+
+### Project Data Structure
+Each movie computer interface includes:
+- **Title** - Interface name
+- **Film** - Source movie
+- **Description** - Detailed background (English/German)
+- **Tech Stack** - Technologies used in recreation
+- **Live Demo** - Interactive web version
+- **Source Code** - GitHub repository link
+- **Screenshots** - Visual previews
 
 ## 🚦 Development
 
@@ -110,35 +132,37 @@ npm run preview                   # Preview production build
 ## 🏗️ Project Structure
 
 ```
-nuxt4-template-swiss-style/
+movie-os-collection/
 ├── app/
 │   ├── app.config.ts           # App configuration
 │   ├── app.vue                 # Root application component
 │   ├── assets/
-│   │   └── css/               # Global styles and CSS files
-│   ├── components/             # Reusable Vue components for showcase (including a language switcher)
+│   │   ├── css/               # Global styles and CSS files
+│   │   └── data/              # Project data and type definitions
+│   │       ├── projects.json   # Movie interface collection data
+│   │       └── types.ts        # TypeScript interfaces
+│   ├── components/             # Reusable Vue components
+│   │   ├── MovieCollectionHeader.vue # Header with search and controls
+│   │   ├── MovieCollectionHero.vue   # Hero section
+│   │   ├── ProjectCard.vue            # Individual project card
+│   │   ├── ProjectGrid.vue            # Grid layout for projects
+│   │   ├── LanguageSwitcher.vue       # Language toggle component
+│   │   └── LoadingScreen.vue          # Loading animation
 │   ├── layouts/
 │   │   └── default.vue         # Default layout template
 │   ├── pages/
-│   │   └── index.vue           # Main landing page
+│   │   └── index.vue           # Main collection page
 │   └── plugins/
-│       ├── mouse-follower.client.ts # Mouse cursor effects initialization
-│       └── gsap-animations.client.ts # GSAP animations and scroll effects
+│       └── mouse-follower.client.ts # Mouse cursor effects
 ├── i18n/
 │   ├── i18n.config.ts         # i18n configuration
 │   └── locales/               # Translation files
 │       ├── en.json            # English translations
 │       └── de.json            # German translations
-├── scripts/                   # Utility scripts for development and maintenance
-│   ├── analyze-i18n-strings.js # Analyze i18n string usage across codebase
-│   ├── cleanup-i18n-strings.js # Remove unused i18n strings automatically
-│   ├── check-unused-vars.js    # Check for unused variables in all files
-│   ├── check-unused-vars-enhanced.js # Enhanced unused variable analysis
-│   └── README.md              # Documentation for utility scripts
-├── public/                    # Static assets
+├── scripts/                   # Utility scripts for development
+├── public/                    # Static assets and media
 ├── nuxt.config.ts            # Nuxt configuration
 ├── package.json              # Dependencies and scripts
-├── package-lock.json         # Lock file for dependencies
 └── tsconfig.json             # TypeScript configuration
 ```
 
@@ -152,80 +176,131 @@ All UI elements are extracted into reusable components following Vue.js best pra
 - **TypeScript interfaces** - Fully typed props and component APIs
 - **Scoped styling** - Component-specific styles when needed
 
-### Available Components
+### Movie Collection Components
 
-#### Layout Components
-- `AppHeader` - Navigation header with logo, title, language switcher, and dark mode toggle
-- `WelcomeSection` - Hero section with internationalized welcome message
+#### Core Collection Components
+- **MovieCollectionHeader** - Search interface, language switching, and dark mode toggle
+- **MovieCollectionHero** - Main title section with animated GSAP entrance effects  
+- **ProjectCard** - Individual movie interface cards with hover effects and localized descriptions
+- **ProjectGrid** - Responsive grid layout with scroll-triggered reveal animations
+
+#### Supporting Components
+- **LanguageSwitcher** - Seamless language switching with localStorage persistence
+- **LoadingScreen** - Animated loading experience with GSAP transitions
+
+### Component Features
+- **Props-based Architecture** - TypeScript interfaces for type-safe component APIs
+- **Mouse Follower Integration** - Custom cursor effects with data attributes
+- **GSAP Animation Support** - Scroll-triggered reveals and interactive hover effects
+- **Internationalization Ready** - All text content supports English/German translations
 
 ## 🐭 Mouse Follower Integration
 
-This template includes **Mouse Follower** by Cuberto, providing smooth and professional cursor effects.
+Professional cursor effects powered by **Mouse Follower** by Cuberto with GSAP animations.
 
-### Features:
-- **Pointer Detection** - Automatic cursor changes on interactive elements (buttons, links)
-- **State Detection** - Custom cursor states for different element types
-- **GSAP Integration** - Smooth animations powered by GreenSock
-- **Performance Optimized** - Efficient animation loops and event handling
-
-### Usage:
-Add data attributes to elements for custom cursor behavior:
-
+### Interactive States:
 ```html
-<!-- Pointer cursor -->
-<button data-cursor-pointer>Click me</button>
+<!-- Project exploration -->
+<div data-cursor-text="Explore project" data-cursor-img="/media/project-thumb.jpg">
+  <ProjectCard :project="movieInterface" />
+</div>
 
-<!-- Text cursor -->
-<p data-cursor-text>Selectable text</p>
+<!-- Search functionality -->
+<input data-cursor-text="Search projects" />
 
-<!-- Hidden cursor -->
-<div data-cursor="-hidden">No cursor here</div>
+<!-- Action buttons -->
+<button data-cursor-stick>Shuffle Collection</button>
 
-<!-- Inverse cursor -->
-<div data-cursor="-inverse">Inverted cursor</div>
+<!-- Navigation links -->
+<a data-cursor-pointer href="/project">View Details</a>
 ```
 
-The cursor automatically detects:
-- `a, button` elements → pointer cursor
-- Form inputs → text cursor
-- Custom data attributes → specific states
+### Automatic Detection:
+- **Interactive Elements** - Buttons and links automatically get pointer cursors
+- **Form Inputs** - Text cursor for search and input fields
+- **Custom States** - Data attributes override default behavior
+- **Image Preview** - Project cards show thumbnail images on hover
 
 ## 🎭 GSAP Animations
 
-This template includes a comprehensive **GSAP (GreenSock Animation Platform)** integration with advanced scroll-based animations and interactive effects.
+Comprehensive animation system featuring scroll-triggered effects and interactive elements.
+
+### Hero Section Animations
+```javascript
+// Entrance effects with staggered timing
+gsap.from(heroRef.value, {
+  duration: 1.2,
+  y: 50,
+  opacity: 0,
+  ease: "power2.out"
+})
+
+// Text reveals with delay
+gsap.from(".hero-title", {
+  duration: 1,
+  y: 30,
+  opacity: 0,
+  delay: 0.3
+})
+```
+
+### Scroll-Triggered Project Reveals
+```javascript
+// Grid items appear as they enter viewport
+ScrollTrigger.batch(gridRef.value.querySelectorAll('.project-card'), {
+  onEnter: (elements) => {
+    gsap.from(elements, {
+      duration: 0.8,
+      y: 60,
+      opacity: 0,
+      stagger: 0.15,
+      ease: "power2.out"
+    })
+  },
+  start: "top bottom-=100"
+})
+```
+
+### Interactive Card Effects
+- **3D Tilt Animation** - Mouse movement creates realistic card rotation
+- **Smooth Hover States** - GSAP handles all transition animations
+- **Performance Optimized** - Uses transform3d for hardware acceleration
 
 ## 🌍 Internationalization
 
+Multi-language support for global accessibility with movie-focused content.
+
 ### Supported Languages
-- **English (en)** - Default language
-- **German (de)** - Secondary language
+- **English (en)** - Default language, comprehensive movie collection terminology
+- **German (de)** - Full translation including movie titles and descriptions
 
-### Language Persistence
-The `LanguageSwitcher` component includes advanced locale management:
-
-- **Default Behavior**: Always defaults to English on first visit
-- **Persistence**: User's language choice is saved to localStorage
-- **Restoration**: Automatically restores saved language preference on page reload
-- **Type Safety**: Only accepts valid locale codes ('en', 'de')
-- **Props Support**: Accepts `isBlack` prop for styling variations
-
-### Translation Structure
+### Movie Collection Translations
 ```json
 {
-  "header": {
-    "title": "Page title"
-  },
-  "welcome": {
-    "title": "Welcome message",
-    "subtitle": "Description"
-  },
-  "features": {
-    "nuxt4": {
-      "title": "Feature title",
-      "description": "Feature description"
+  "movieCollection": {
+    "title": "Movie Computer Screens",
+    "subtitle": "Iconic interfaces from cinema",
+    "search": "Search by title, film, technology stack…",
+    "projects": {
+      "minority_report": {
+        "title": "Minority Report Interface",
+        "description": "Futuristic gesture-based computing system"
+      }
+    },
+    "cursorText": {
+      "viewProject": "Explore interface",
+      "search": "Search collection",
+      "shuffle": "Randomize order"
     }
   }
 }
+```
+
+### Language Features
+- **Persistent Selection** - localStorage saves user's language choice
+- **Dynamic Content** - All project descriptions localized
+- **Cursor Text Translation** - Mouse Follower text adapts to selected language
+- **Search Integration** - Search functionality works across both languages
 ```
 
 ### Adding New Languages
@@ -238,73 +313,138 @@ locales: [
   { code: 'fr', name: 'Français', file: 'fr.json' }
 ]
 ```
+3. Update the `LanguageSwitcher` component to include the new language option
+4. Translate all movie project descriptions and interface text
 
-### Maintenance Scripts
-The template includes utility scripts for development and maintenance:
+### Project Data Structure
+Each movie interface project follows this TypeScript interface:
+```typescript
+interface MovieProject {
+  id: string
+  title: string
+  film: string
+  year: number
+  image: string
+  video?: string
+  description: {
+    en: string
+    de: string
+  }
+  stack: string[]
+  features: string[]
+  demo?: string
+  github?: string
+}
+```
 
-#### i18n Management:
-- **`scripts/analyze-i18n-strings.js`** - Analyze string usage and identify unused translations
-- **`scripts/cleanup-i18n-strings.js`** - Automatically remove unused strings from translation files
+## 🛠️ Development Tools
 
-#### Code Quality:
-- **`scripts/check-unused-vars.js`** - Check for unused variables across all TypeScript/Vue files
-- **`scripts/check-unused-vars-enhanced.js`** - Enhanced analysis with import checking
+### i18n Management Scripts:
+- **`scripts/analyze-i18n-strings.js`** - Analyze translation usage and find unused strings
+- **`scripts/cleanup-i18n-strings.js`** - Remove unused translations automatically
 
-See [`scripts/README.md`](scripts/README.md) for detailed usage instructions.
+### Code Quality Scripts:
+- **`scripts/check-unused-vars.js`** - Detect unused variables in TypeScript/Vue files
+- **`scripts/check-unused-vars-enhanced.js`** - Enhanced analysis with import tracking
 
-## 🏭 Production
+See [`scripts/README.md`](scripts/README.md) for detailed script usage.
 
-Build the application for production:
+## 🚀 Deployment
 
+### Build for Production:
 ```bash
 npm run build
-# or
-pnpm build
-# or
-yarn build
-# or
-bun run build
 ```
 
-Preview the production build locally:
-
+### Preview Production Build:
 ```bash
 npm run preview
-# or
-pnpm preview
-# or
-yarn preview
-# or
-bun run preview
 ```
 
-## 📚 Documentation
+### Deploy to GitHub Pages:
+The project is configured for GitHub Pages deployment with:
+- **Base URL**: `/movie-os-collection/`
+- **Static Generation**: All routes pre-rendered
+- **Asset Optimization**: Images and media properly referenced
 
-- **[Nuxt 4 Documentation](https://nuxt.com/docs/getting-started/introduction)** - Learn about Nuxt features
-- **[Nuxt UI Documentation](https://ui.nuxt.com/)** - UI component library
-- **[Vue 3 Documentation](https://vuejs.org/guide/)** - Vue.js framework guide
-- **[Tailwind CSS Documentation](https://tailwindcss.com/docs)** - Utility-first CSS
-- **[GSAP Documentation](https://greensock.com/docs/)** - Animation library guide
-- **[ScrollTrigger Documentation](https://greensock.com/docs/v3/Plugins/ScrollTrigger)** - Scroll animations
-- **[Nuxt i18n Documentation](https://i18n.nuxtjs.org/)** - Internationalization guide
-- **[TypeScript Documentation](https://www.typescriptlang.org/docs/)** - TypeScript handbook
-- **[Mouse Follower Documentation](https://github.com/Cuberto/mouse-follower/blob/dev/README.MD)** - Smooth cursor effects library
+### Live Demo:
+🎬 **[View Collection →](https://projects.manuelhintermayr.com/movie-os-collection/)**
+
+### Repository:
+📦 **[GitHub Repository](https://github.com/manuelhintermayr/movie-os-collection)**
+
+## 📚 Documentation & Resources
+
+### Framework Documentation:
+- **[Nuxt 4 Documentation](https://nuxt.com/docs/getting-started/introduction)** - Latest Nuxt features and SSR capabilities
+- **[Vue 3 Documentation](https://vuejs.org/guide/)** - Vue.js Composition API and reactivity
+- **[Nuxt UI Documentation](https://ui.nuxt.com/)** - Component library for modern interfaces
+
+### Animation & Interaction Libraries:
+- **[GSAP Documentation](https://greensock.com/docs/)** - Professional animation library
+- **[ScrollTrigger Documentation](https://greensock.com/docs/v3/Plugins/ScrollTrigger)** - Scroll-based animations
+- **[Mouse Follower Documentation](https://github.com/Cuberto/mouse-follower)** - Smooth cursor effects
+
+### Styling & Internationalization:
+- **[Tailwind CSS Documentation](https://tailwindcss.com/docs)** - Utility-first CSS framework
+- **[Nuxt i18n Documentation](https://i18n.nuxtjs.org/)** - Multi-language support
+- **[TypeScript Documentation](https://www.typescriptlang.org/docs/)** - Type safety and interfaces
 
 ## 🤝 Contributing
 
-This template is designed to be a starting point for Nuxt 4 projects. Feel free to:
+Contributions to expand the movie interface collection are welcome:
 
-- Fork the repository
-- Customize components and styling
-- Add new features and integrations
-- Submit pull requests for improvements
-- Report issues and suggestions
+### Adding New Movie Interfaces:
+1. Add project data to `app/assets/data/projects.json`
+2. Include high-quality screenshots in `public/media/`
+3. Add localized descriptions for English and German
+4. Submit pull request with new interface details
+
+### Code Improvements:
+- Fork the repository and create feature branches
+- Follow Vue.js and TypeScript best practices
+- Test animations and responsive behavior
+- Ensure accessibility standards are met
+
+### Feedback & Issues:
+- Report bugs via GitHub Issues
+- Suggest new movie interfaces to include
+- Share ideas for animation improvements
+- Request additional language translations
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ## 💝 Acknowledgments
+
+### Technology Stack:
+- **[Nuxt.js](https://nuxt.com/)** - The intuitive Vue framework
+- **[Vue.js](https://vuejs.org/)** - Progressive JavaScript framework  
+- **[GSAP](https://greensock.com/)** - Professional animation library
+- **[Mouse Follower](https://github.com/Cuberto/mouse-follower)** - Smooth cursor effects by Cuberto
+- **[Nuxt UI](https://ui.nuxt.com/)** - Beautiful and accessible component library
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+
+### Design Inspiration:
+- **Movie Interface Archives** - Various film databases and UI collections
+- **Swiss Design Principles** - Clean typography and grid-based layouts
+- **Modern Web Interactions** - Contemporary animation and user experience patterns
+
+### Special Thanks:
+- Cinema UI designers and developers who created these iconic interfaces
+- Open source community for excellent tools and libraries
+- Movie enthusiasts who appreciate great interface design
+
+---
+
+<div align="center">
+
+**[🎬 Explore the Collection](https://projects.manuelhintermayr.com/movie-os-collection/) • [📦 View Source](https://github.com/manuelhintermayr/movie-os-collection) • [🐛 Report Issues](https://github.com/manuelhintermayr/movie-os-collection/issues)**
+
+*Built with ❤️ for movie and interface design enthusiasts*
+
+</div>
 
 - **Nuxt Team** for the amazing framework
 - **Tailwind Labs** for Tailwind CSS and Headless UI
