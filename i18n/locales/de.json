@@ -1,17 +1,9 @@
 {
-    "header": {
-        "title": "Nuxt 4 + UI Template",
-        "switchToLight": "Zu hellem Modus wechseln",
-        "switchToDark": "Zu dunklem Modus wechseln"
-    },
-    "welcome": {
-        "title": "Nuxt 4 Template – Swiss Style",
-        "subtitle": "Ein Nuxt 4 Template mit Nuxt UI, Tailwind CSS und i18n-Unterstützung im Swiss Style (International Typographic Style).",
-        "repository": "Repository anzeigen",
-        "productionReady": "Produktionsreif",
+    "loadingScreen": {
+        "title": "Movie Computer Screens Collection",
+        "subtitle": "Sammlung wird geladen...",
         "builtWith": "Entwickelt mit",
-        "by": "von",
-        "clickHere": "Hier klicken"
+        "by": "von"
     },
     "movieCollection": {
         "title": "Movie Computer Screens",
@@ -32,14 +24,5 @@
             "openPage": "Seite öffnen",
             "openRepo": "GitHub Repository"
         }
-    },
-    "components": {
-        "darkModeToggle": {
-            "label": "Dark Mode umschalten"
-        }
-    },
-    "loadingScreen": {
-        "title": "Nuxt 4 Template - Swiss Style",
-        "subtitle": "Template wird geladen..."
     }
 }
