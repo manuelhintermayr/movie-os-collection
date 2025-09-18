@@ -188,50 +188,6 @@
     ]
   },
   {
-    "title": "Minority Report Interface",
-    "film": {
-      "de": "Minority Report (2002)",
-      "en": "Minority Report (2002)"
-    },
-    "url": "https://codepen.io/chris-creditdesign/pen/bGrvLa",
-    "repo": null,
-    "website_url": null,
-    "image": "https://assets.codepen.io/25771/internal/screenshots/pens/bGrvLa.default.png",
-    "animated_image": null,
-    "stack": "HTML, CSS, JavaScript",
-    "desc": {
-      "de": "Futuristische Gestensteuerungs-Oberfläche mit Crime-Daten.",
-      "en": "Futuristic gesture-controlled interface with crime data."
-    },
-    "tags": [
-      "gesture",
-      "ui",
-      "futuristic"
-    ]
-  },
-  {
-    "title": "Blade Runner 2049 UI",
-    "film": {
-      "de": "Blade Runner 2049 (2017)",
-      "en": "Blade Runner 2049 (2017)"
-    },
-    "url": "https://codepen.io/carlosvega20/pen/BYWWRg",
-    "repo": null,
-    "website_url": null,
-    "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/BYWWRg.default.png",
-    "animated_image": null,
-    "stack": "HTML, CSS, JavaScript",
-    "desc": {
-      "de": "Cyberpunk-Interface mit animierten Hologrammen und Datenstreams.",
-      "en": "Cyberpunk interface with animated holograms and data streams."
-    },
-    "tags": [
-      "cyberpunk",
-      "hologram",
-      "animation"
-    ]
-  },
-  {
     "title": "Ghost in the Shell Terminal",
     "film": {
       "de": "Ghost in the Shell (1995)",
