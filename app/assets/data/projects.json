@@ -105,7 +105,7 @@
     ]
   },
   {
-    "title": "LCARS Web",
+    "title": "LCARS Web by joern weissenborn",
     "film": {
       "de": "Star Trek (diverse Filme)",
       "en": "Star Trek (various movies)"
@@ -113,16 +113,37 @@
     "url": "https://www.lcars.org.uk/lcars",
     "repo": "https://github.com/joernweissenborn/lcars",
     "website_url": null,
-    "image": "https://raw.githubusercontent.com/joernweissenborn/lcars/master/docs/assets/lcars-ui.jpg",
-    "animated_image": null,
+    "image": "projects/lcars-joernweissenborn.jpg",
+    "animated_image": "projects/lcars.jpg",
     "stack": "HTML, CSS, JS",
     "desc": {
-      "de": "Klassisches LCARS-Interface (Film/TV-Universum).",
-      "en": "Classic LCARS interface (movie/TV universe)."
+      "de": "Klassisches LCARS-Interface (Film/TV-Universum) als UI-Framework.",
+      "en": "Classic LCARS interface (movie/TV universe) as a UI framework."
     },
     "tags": [
       "ui",
       "design-system"
+    ]
+  },
+  {
+    "title": "LCARS Web by Michael Okuda",
+    "film": {
+      "de": "Star Trek (diverse Filme)",
+      "en": "Star Trek (various movies)"
+    },
+    "url": "https://www.lcars.org.uk/lcars",
+    "repo": "https://github.com/joernweissenborn/lcars",
+    "website_url": null,
+    "image": "projects/lcars-michaelokuda.jpg",
+    "animated_image": "projects/lcars.jpg",
+    "stack": "HTML, CSS, JS",
+    "desc": {
+      "de": "Klassisches LCARS-Interface (Film/TV-Universum) als Web Template.",
+      "en": "Classic LCARS interface (movie/TV universe) as a web template."
+    },
+    "tags": [
+      "ui",
+      "template"
     ]
   },
   {
