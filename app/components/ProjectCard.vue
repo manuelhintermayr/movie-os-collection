@@ -1,18 +1,11 @@
 <template>
-  <UCard 
-    class="card-tilt overflow-hidden project-card" 
-    :ui="{ body: 'p-0' }"
-    :data-cursor-img="project.image || placeholderImage"
-  >
+  <UCard class="card-tilt overflow-hidden project-card" :ui="{ body: 'p-0' }"
+    :data-cursor-img="project.image || placeholderImage">
     <!-- Image -->
-    <div class="aspect-video bg-gray-100 dark:bg-gray-800 overflow-hidden" :data-cursor-text="$t('movieCollection.cursorText.viewProject')">
-      <img 
-        :src="project.image || placeholderImage" 
-        :alt="`${project.title} – ${project.film}`"
-        class="w-full h-full object-cover"
-        loading="lazy"
-        data-cursor="-media"
-      />
+    <div class="aspect-video bg-gray-100 dark:bg-gray-800 overflow-hidden"
+      :data-cursor-text="$t('movieCollection.cursorText.viewProject')">
+      <img :src="project.image || placeholderImage" :alt="`${project.title} – ${project.film}`"
+        class="w-full h-full object-cover" loading="lazy" data-cursor="-media" />
     </div>
 
     <!-- Content -->
@@ -39,43 +32,21 @@
 
       <!-- Tags -->
       <div v-if="project.tags && project.tags.length" class="flex flex-wrap gap-2">
-        <UBadge 
-          v-for="tag in project.tags" 
-          :key="tag" 
-          variant="outline" 
-          size="xs"
-          color="neutral"
-        >
+        <UBadge v-for="tag in project.tags" :key="tag" variant="outline" size="xs" color="neutral">
           {{ tag }}
         </UBadge>
       </div>
 
       <!-- Links -->
       <div class="flex gap-2 pt-2">
-        <UButton 
-          v-if="project.url" 
-          :to="project.url" 
-          external 
-          target="_blank"
-          size="sm" 
-          color="primary" 
-          variant="outline"
-          icon="i-heroicons-arrow-top-right-on-square"
-          :data-cursor-text="$t('movieCollection.cursorText.openPage')"
-        >
+        <UButton v-if="project.url" :to="project.url" external target="_blank" size="sm" color="primary"
+          variant="outline" icon="i-heroicons-arrow-top-right-on-square"
+          :data-cursor-text="$t('movieCollection.cursorText.openPage')">
           {{ $t('movieCollection.openPage') }}
         </UButton>
-        <UButton 
-          v-if="project.repo" 
-          :to="project.repo" 
-          external 
-          target="_blank"
-          size="sm" 
-          color="neutral" 
-          variant="outline"
-          icon="i-heroicons-code-bracket"
-          :data-cursor-text="$t('movieCollection.cursorText.openRepo')"
-        >
+        <UButton v-if="project.repo" :to="project.repo" external target="_blank" size="sm" color="neutral"
+          variant="outline" icon="i-heroicons-code-bracket"
+          :data-cursor-text="$t('movieCollection.cursorText.openRepo')">
           {{ $t('movieCollection.openRepo') }}
         </UButton>
       </div>

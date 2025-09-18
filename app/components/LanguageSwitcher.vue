@@ -1,8 +1,7 @@
 <template>
     <div class="relative">
         <UButton :label="currentLocaleName" color="neutral" variant="ghost" size="md" icon="i-heroicons-language"
-            class="!h-10 !min-h-10 !max-h-10"
-            data-cursor-pointer @click="toggleDropdown" />
+            class="!h-10 !min-h-10 !max-h-10" data-cursor-pointer @click="toggleDropdown" />
 
         <div v-if="isOpen"
             class="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">

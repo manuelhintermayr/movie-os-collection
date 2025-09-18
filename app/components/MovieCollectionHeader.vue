@@ -11,36 +11,19 @@
         <div class="flex items-center space-x-4">
           <LanguageSwitcher />
           <div ref="darkModeButton">
-            <UButton 
-              :icon="colorMode.preference === 'dark' ? 'i-heroicons-sun' : 'i-heroicons-moon'"
-              variant="ghost" 
-              size="md"
-              class="!h-10 !min-h-10 !max-h-10"
-              @click="toggleColorMode"
-            />
+            <UButton :icon="colorMode.preference === 'dark' ? 'i-heroicons-sun' : 'i-heroicons-moon'" variant="ghost"
+              size="md" class="!h-10 !min-h-10 !max-h-10" @click="toggleColorMode" />
           </div>
         </div>
       </div>
-      
+
       <!-- Controls -->
       <div class="flex gap-4 items-center pb-6 flex-wrap">
-        <UInput 
-          :model-value="searchQuery" 
-          @update:model-value="$emit('update:search-query', $event)"
-          :placeholder="$t('movieCollection.search')" 
-          class="flex-1 min-w-72" 
-          size="lg"
-          icon="i-heroicons-magnifying-glass"
-          :data-cursor-text="$t('movieCollection.cursorText.search')"
-        />
-        <UButton 
-          @click="$emit('shuffle')" 
-          color="neutral" 
-          variant="outline" 
-          size="lg"
-          icon="i-heroicons-arrow-path"
-          :data-cursor-text="$t('movieCollection.cursorText.shuffle')"
-        >
+        <UInput :model-value="searchQuery" @update:model-value="$emit('update:search-query', $event)"
+          :placeholder="$t('movieCollection.search')" class="flex-1 min-w-72" size="lg"
+          icon="i-heroicons-magnifying-glass" :data-cursor-text="$t('movieCollection.cursorText.search')" />
+        <UButton @click="$emit('shuffle')" color="neutral" variant="outline" size="lg" icon="i-heroicons-arrow-path"
+          :data-cursor-text="$t('movieCollection.cursorText.shuffle')">
           {{ $t('movieCollection.shuffle') }}
         </UButton>
       </div>

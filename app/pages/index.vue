@@ -4,11 +4,7 @@
 
     <div v-show="!isLoading" class="min-h-screen swiss-grid">
       <!-- Header -->
-      <MovieCollectionHeader 
-        ref="headerRef"
-        v-model:search-query="searchQuery"
-        @shuffle="shuffleItems"
-      />
+      <MovieCollectionHeader ref="headerRef" v-model:search-query="searchQuery" @shuffle="shuffleItems" />
 
       <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div class="space-y-8">
@@ -41,7 +37,7 @@ import type { MovieProjects } from '~/assets/data/types'
 
 // Component refs
 const headerRef = ref()
-const heroRef = ref() 
+const heroRef = ref()
 const gridRef = ref()
 
 // Reactive data
@@ -56,13 +52,13 @@ const movieItems = ref<MovieProjects>(projectsData as MovieProjects)
 const filteredItems = computed(() => {
   const query = searchQuery.value.toLowerCase().trim()
   if (!query) return movieItems.value
-  
+
   return movieItems.value.filter(item => {
     const { locale } = useI18n()
-    const localizedDesc = typeof item.desc === 'object' 
+    const localizedDesc = typeof item.desc === 'object'
       ? item.desc[locale.value as keyof typeof item.desc] || item.desc.en || ''
       : item.desc || ''
-    
+
     const searchableText = [
       item.title,
       item.film,
@@ -70,7 +66,7 @@ const filteredItems = computed(() => {
       localizedDesc,
       ...(item.tags || [])
     ].join(' ').toLowerCase()
-    
+
     return searchableText.includes(query)
   })
 })
@@ -81,13 +77,13 @@ const animateCards = () => {
     const gridContainer = gridRef.value?.gridContainer
     if (gridContainer) {
       const projectCards = Array.from(gridContainer.querySelectorAll('.project-card'))
-      
+
       if (projectCards.length > 0) {
         // Reset and animate cards
         projectCards.forEach((card: any, index: number) => {
           card.style.opacity = '0'
           card.style.transform = 'translateY(20px)'
-          
+
           setTimeout(() => {
             card.style.opacity = '1'
             card.style.transform = 'translateY(0)'
@@ -323,7 +319,7 @@ onMounted(async () => {
   .hero-section {
     padding: 2rem 1rem;
   }
-  
+
   .project-card {
     margin-bottom: 1rem;
   }
