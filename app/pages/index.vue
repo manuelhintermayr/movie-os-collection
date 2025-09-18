@@ -19,11 +19,7 @@
           <ProjectGrid ref="gridRef" :projects="filteredItems" />
 
           <!-- Footer -->
-          <div class="border-t-2 border-current pt-8 mt-12">
-            <p class="text-sm text-gray-500 dark:text-gray-400 text-center">
-              {{ $t('movieCollection.disclaimer') }}
-            </p>
-          </div>
+          <MovieCollectionFooter />
         </div>
       </main>
     </div>

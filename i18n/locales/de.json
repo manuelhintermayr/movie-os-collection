@@ -14,15 +14,23 @@
         "openPage": "Seite öffnen",
         "openRepo": "GitHub öffnen",
         "stack": "Tech-Stack",
-        "disclaimer": "Alle Marken/Filmtitel gehören ihren jeweiligen Rechteinhabern. Diese Seite verlinkt Fan-Nachbauten und Demonstrationen.",
+        "disclaimer": "Alle Marken/Filmtitel gehören ihren jeweiligen Rechteinhabern. Diese Seite verlinkt Fan-Nachbauten und Demonstrationen. Auf Wunsch werden weitere oder aktuelle Projekte hinzugefügt oder entfernt.",
+        "contribute": {
+            "title": "Du kennst noch ein Projekt?",
+            "description": "Kennst du weitere ikonische Computer-Interfaces aus Filmen, TV-Serien oder Spielen, die hier fehlen? Wir freuen uns über Ergänzungen zur Sammlung!",
+            "action": "Projekt auf GitHub vorschlagen",
+            "repository": "Repository anzeigen"
+        },
         "cursorText": {
             "viewProject": "Projekt erkunden",
-            "search": "Suche in Projekten",
-            "shuffle": "Sammlung mischen",
+            "search": "Projekten suchen",
+            "shuffle": "Durch- mischen",
             "lightMode": "Zum Lichtmodus wechseln",
             "darkMode": "Zum Dunkelmodus wechseln",
             "openPage": "Seite öffnen",
-            "openRepo": "GitHub Repository"
+            "openRepo": "GitHub Repository",
+            "suggestProject": "Auf GitHub",
+            "viewRepo": "Repo anzeigen"
         }
     }
 }

@@ -14,15 +14,23 @@
         "openPage": "Open page",
         "openRepo": "Open GitHub",
         "stack": "Tech stack",
-        "disclaimer": "All trademarks/movies belong to their rights holders. This page links to fan recreations and demos.",
+        "disclaimer": "All trademarks/movies belong to their rights holders. This page links to fan recreations and demos. Additional or existing projects will be added or removed upon request.",
+        "contribute": {
+            "title": "Know another project?",
+            "description": "Do you know of other iconic computer interfaces from movies, TV shows, or games that are missing here? We'd love to add them to the collection!",
+            "action": "Suggest project on GitHub",
+            "repository": "View repository"
+        },
         "cursorText": {
             "viewProject": "Explore project",
             "search": "Search projects",
-            "shuffle": "Shuffle collection",
+            "shuffle": "Shuffle projects",
             "lightMode": "Switch to light mode",
             "darkMode": "Switch to dark mode",
             "openPage": "View live demo",
-            "openRepo": "View source code"
+            "openRepo": "View source code",
+            "suggestProject": "Go to GitHub",
+            "viewRepo": "View repo"
         }
     }
 }
