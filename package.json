@@ -1,7 +1,7 @@
 {
   "name": "movie-os-collection",
   "version": "1.0.0",
-  "description": "A collection of computer interfaces from movies recreated for the web. Built with Nuxt 4, featuring GSAP animations and Swiss Style design.",
+  "description": "A comprehensive collection of computer interfaces from movies (1968-2024) recreated for the web. Features GSAP animations, Swiss Style design, full i18n support, and responsive components. Built with Nuxt 4 and Vue 3.",
   "author": "Manuel Hintermayr - https://github.com/manuelhintermayr/movie-os-collection",
   "homepage": "https://projects.manuelhintermayr.com/movie-os-collection",
   "repository": {
@@ -18,7 +18,15 @@
     "vue3",
     "gsap",
     "swiss-style",
-    "ui-recreation"
+    "ui-recreation",
+    "internationalization",
+    "responsive-design",
+    "dark-mode",
+    "search-functionality",
+    "movie-ui",
+    "film-interfaces",
+    "retro-computing",
+    "sci-fi-ui"
   ],
   "type": "module",
   "private": true,
