@@ -39,7 +39,7 @@
       </div>
 
       <!-- Links -->
-      <div class="flex gap-2 pt-2">
+      <div class="flex flex-wrap gap-2 pt-2">
         <UButton v-if="project.url" :to="project.url" external target="_blank" size="sm" color="neutral"
           variant="outline" icon="i-heroicons-arrow-top-right-on-square"
           :data-cursor-text="$t('movieCollection.cursorText.openPage')">
