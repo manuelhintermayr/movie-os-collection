@@ -10,14 +10,13 @@
         </div>
         <div class="flex items-center space-x-4">
           <LanguageSwitcher />
-          <div ref="darkModeButton" 
-               data-cursor-stick
-               :data-cursor-text="colorMode.preference === 'dark' ? $t('movieCollection.cursorText.lightMode') : $t('movieCollection.cursorText.darkMode')">
+          <div ref="darkModeButton">
             <UButton 
               :icon="colorMode.preference === 'dark' ? 'i-heroicons-sun' : 'i-heroicons-moon'"
               variant="ghost" 
+              size="md"
+              class="!h-10 !min-h-10 !max-h-10"
               @click="toggleColorMode"
-              :aria-label="colorMode.preference === 'dark' ? $t('header.switchToLight') : $t('header.switchToDark')" 
             />
           </div>
         </div>

@@ -145,7 +145,6 @@ onMounted(async () => {
         if (!reduce) {
           // Get component containers
           const heroContainer = heroRef.value?.heroContainer
-          const gridContainer = gridRef.value?.gridContainer
           const darkModeButton = headerRef.value?.darkModeButton
 
           // Hero entrance animation (like in Alba Emoting)
