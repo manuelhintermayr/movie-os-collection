@@ -167,20 +167,20 @@
     ]
   },
   {
-    "title": "J.A.R.V.I.S. (UI Demo)",
+    "title": "J.A.R.V.I.S. – UI Demo by FlyingEmu",
     "film": {
       "de": "Iron Man (2008)",
       "en": "Iron Man (2008)"
     },
-    "url": "https://codepen.io/markhillard/pen/xwQZbM",
+    "url": "https://codepen.io/FlyingEmu/pen/DZNqEj",
     "repo": null,
     "website_url": null,
-    "image": "https://assets.codepen.io/32887/internal/screenshots/pens/xwQZbM.default.png",
-    "animated_image": null,
+    "image": "projects/jarvis.jpg",
+    "animated_image": "projects/jarvis.gif",
     "stack": "HTML, CSS, JS",
     "desc": {
-      "de": "HUD-Stil-UI inspiriert von Jarvis.",
-      "en": "HUD-style UI inspired by Jarvis."
+      "de": "UI inspiriert von Tony Starks Jarvis aus dem Film Iron Man.",
+      "en": "UI inspired by Tony Stark's Jarvis from the film Iron Man."
     },
     "tags": [
       "hud",
