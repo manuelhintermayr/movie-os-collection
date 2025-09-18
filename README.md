@@ -11,7 +11,7 @@ A curated collection of computer interfaces from movies recreated for the web. B
 
 ## 🎬 About
 
-This project showcases computer interfaces and operating systems featured in movies, recreated as interactive web experiences. From the sleek interfaces of *Minority Report* to the retro terminals of *WarGames*, discover how filmmakers envisioned technology and bring these iconic screens to life in your browser.
+This project showcases computer interfaces and operating systems featured in movies, recreated as interactive web experiences. From the sleek interfaces of *The Incredibles* to the retro terminals of *Tron*, discover how filmmakers envisioned technology and bring these iconic screens to life in your browser.
 
 ## 🚀 Features
 
@@ -22,10 +22,12 @@ This project showcases computer interfaces and operating systems featured in mov
 - 🐭 **Mouse Follower** - Dynamic cursor effects with custom states
 - 🌍 **Internationalization** - Full i18n support (English/German)
 - 🌙 **Dark Mode** - Built-in dark/light mode toggle
-- 📱 **Responsive Design** - Mobile-first approach
-- � **Search & Filter** - Find projects by title, film, or technology stack
-- � **Shuffle Feature** - Randomize project display
-- � **TypeScript** - Full TypeScript support with type safety
+- 📱 **Responsive Design** - Mobile-first approach with optimized breakpoints
+- 🔍 **Search & Filter** - Find projects by title, film, or technology stack
+- 🎲 **Shuffle Feature** - Randomize project display
+- 📄 **Empty States** - User-friendly no results messaging
+- ⬆️ **Back to Top** - Smooth scroll navigation with magnetic effects
+- 🔧 **TypeScript** - Full TypeScript support with type safety
 
 ![Preview](public/media/preview.gif)
 
@@ -38,7 +40,7 @@ This project showcases computer interfaces and operating systems featured in mov
 ### UI & Styling
 - **[Nuxt UI](https://ui.nuxt.com/)** - Fully styled and customizable components
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- **Swiss Style Principles** - Grid-based layouts, clarity, and typographic hierarchy
+- **Swiss Style Principles** (International Typographic Style) - Grid-based layouts, clarity, and typographic hierarchy
 
 ### Animation & Effects
 - **[GSAP](https://greensock.com/gsap/)** - Professional-grade animation library
@@ -80,13 +82,14 @@ bun install
 ## 🎮 Collection Highlights
 
 ### Featured Movie Interfaces
-- **Iron Man (2008)** - Tony Stark's Holographic Interface
-- **Minority Report (2002)** - PreCrime System Interface  
-- **The Matrix (1999)** - Digital Rain Terminal
-- **WarGames (1983)** - WOPR Military Computer
-- **Alien (1979)** - Nostromo Ship Computer
-- **Blade Runner (1982)** - Voight-Kampff Test Interface
-- **And many more...**
+- **Jurassic Park (1993)** - Iconic park control terminal with Unix filesystem navigation
+- **The Incredibles (2004)** - Syndrome's sleek villain command computer interface  
+- **TRON: Legacy (2010)** - Futuristic Encom boardroom data visualization dashboard
+- **The Matrix (1999)** - Digital rain code terminal with performant shader effects
+- **Back to the Future (1985)** - DeLorean time circuits with destination/present/last time display
+- **Star Trek (various)** - LCARS interfaces by original designer Michael Okuda
+- **2001: A Space Odyssey (1968)** - HAL 9000 control panel recreation
+- **Iron Man (2008)** - J.A.R.V.I.S. holographic HUD interface
 
 ### Project Data Structure
 Each movie computer interface includes:
@@ -144,10 +147,12 @@ movie-os-collection/
 │   ├── components/             # Reusable Vue components
 │   │   ├── MovieCollectionHeader.vue # Header with search and controls
 │   │   ├── MovieCollectionHero.vue   # Hero section
+│   │   ├── MovieCollectionFooter.vue # Footer with GitHub section
 │   │   ├── ProjectCard.vue            # Individual project card
 │   │   ├── ProjectGrid.vue            # Grid layout for projects
+│   │   ├── NoResultsMessage.vue       # Empty state for search results
 │   │   ├── LanguageSwitcher.vue       # Language toggle component
-│   │   └── LoadingScreen.vue          # Loading animation
+│   │   └── LoadingScreen.vue          # Loading animation at the beginning
 │   ├── layouts/
 │   │   └── default.vue         # Default layout template
 │   ├── pages/
@@ -179,163 +184,26 @@ All UI elements are extracted into reusable components following Vue.js best pra
 ### Movie Collection Components
 
 #### Core Collection Components
-- **MovieCollectionHeader** - Search interface, language switching, and dark mode toggle
+- **MovieCollectionHeader** - Search interface, language switching, dark mode toggle, and responsive layout
 - **MovieCollectionHero** - Main title section with animated GSAP entrance effects  
-- **ProjectCard** - Individual movie interface cards with hover effects and localized descriptions
+- **ProjectCard** - Individual movie interface cards with hover effects, localized descriptions, and responsive button layout
 - **ProjectGrid** - Responsive grid layout with scroll-triggered reveal animations
+- **NoResultsMessage** - User-friendly empty state for search results with clear action
 
 #### Supporting Components
-- **LanguageSwitcher** - Seamless language switching with localStorage persistence
+- **LanguageSwitcher** - Seamless language switching with localStorage persistence and compact display
+- **MovieCollectionFooter** - GitHub contribution section with social links and disclaimer
 - **LoadingScreen** - Animated loading experience with GSAP transitions
+
+#### UI Enhancement Components
+- **Back-to-Top Button** - Smooth scroll-to-top with magnetic hover effects and fade transitions
+- **Responsive Design Elements** - Mobile-optimized layouts with breakpoint-specific behavior
 
 ### Component Features
 - **Props-based Architecture** - TypeScript interfaces for type-safe component APIs
 - **Mouse Follower Integration** - Custom cursor effects with data attributes
 - **GSAP Animation Support** - Scroll-triggered reveals and interactive hover effects
 - **Internationalization Ready** - All text content supports English/German translations
-
-## 🐭 Mouse Follower Integration
-
-Professional cursor effects powered by **Mouse Follower** by Cuberto with GSAP animations.
-
-### Interactive States:
-```html
-<!-- Project exploration -->
-<div data-cursor-text="Explore project" data-cursor-img="/media/project-thumb.jpg">
-  <ProjectCard :project="movieInterface" />
-</div>
-
-<!-- Search functionality -->
-<input data-cursor-text="Search projects" />
-
-<!-- Action buttons -->
-<button data-cursor-stick>Shuffle Collection</button>
-
-<!-- Navigation links -->
-<a data-cursor-pointer href="/project">View Details</a>
-```
-
-### Automatic Detection:
-- **Interactive Elements** - Buttons and links automatically get pointer cursors
-- **Form Inputs** - Text cursor for search and input fields
-- **Custom States** - Data attributes override default behavior
-- **Image Preview** - Project cards show thumbnail images on hover
-
-## 🎭 GSAP Animations
-
-Comprehensive animation system featuring scroll-triggered effects and interactive elements.
-
-### Hero Section Animations
-```javascript
-// Entrance effects with staggered timing
-gsap.from(heroRef.value, {
-  duration: 1.2,
-  y: 50,
-  opacity: 0,
-  ease: "power2.out"
-})
-
-// Text reveals with delay
-gsap.from(".hero-title", {
-  duration: 1,
-  y: 30,
-  opacity: 0,
-  delay: 0.3
-})
-```
-
-### Scroll-Triggered Project Reveals
-```javascript
-// Grid items appear as they enter viewport
-ScrollTrigger.batch(gridRef.value.querySelectorAll('.project-card'), {
-  onEnter: (elements) => {
-    gsap.from(elements, {
-      duration: 0.8,
-      y: 60,
-      opacity: 0,
-      stagger: 0.15,
-      ease: "power2.out"
-    })
-  },
-  start: "top bottom-=100"
-})
-```
-
-### Interactive Card Effects
-- **3D Tilt Animation** - Mouse movement creates realistic card rotation
-- **Smooth Hover States** - GSAP handles all transition animations
-- **Performance Optimized** - Uses transform3d for hardware acceleration
-
-## 🌍 Internationalization
-
-Multi-language support for global accessibility with movie-focused content.
-
-### Supported Languages
-- **English (en)** - Default language, comprehensive movie collection terminology
-- **German (de)** - Full translation including movie titles and descriptions
-
-### Movie Collection Translations
-```json
-{
-  "movieCollection": {
-    "title": "Movie Computer Screens",
-    "subtitle": "Iconic interfaces from cinema",
-    "search": "Search by title, film, technology stack…",
-    "projects": {
-      "minority_report": {
-        "title": "Minority Report Interface",
-        "description": "Futuristic gesture-based computing system"
-      }
-    },
-    "cursorText": {
-      "viewProject": "Explore interface",
-      "search": "Search collection",
-      "shuffle": "Randomize order"
-    }
-  }
-}
-```
-
-### Language Features
-- **Persistent Selection** - localStorage saves user's language choice
-- **Dynamic Content** - All project descriptions localized
-- **Cursor Text Translation** - Mouse Follower text adapts to selected language
-- **Search Integration** - Search functionality works across both languages
-```
-
-### Adding New Languages
-1. Create a new JSON file in `i18n/locales/` (e.g., `fr.json`)
-2. Add the locale configuration in `nuxt.config.ts`:
-```typescript
-locales: [
-  { code: 'en', name: 'English', file: 'en.json' },
-  { code: 'de', name: 'Deutsch', file: 'de.json' },
-  { code: 'fr', name: 'Français', file: 'fr.json' }
-]
-```
-3. Update the `LanguageSwitcher` component to include the new language option
-4. Translate all movie project descriptions and interface text
-
-### Project Data Structure
-Each movie interface project follows this TypeScript interface:
-```typescript
-interface MovieProject {
-  id: string
-  title: string
-  film: string
-  year: number
-  image: string
-  video?: string
-  description: {
-    en: string
-    de: string
-  }
-  stack: string[]
-  features: string[]
-  demo?: string
-  github?: string
-}
-```
 
 ## 🛠️ Development Tools
 
@@ -396,7 +264,7 @@ Contributions to expand the movie interface collection are welcome:
 
 ### Adding New Movie Interfaces:
 1. Add project data to `app/assets/data/projects.json`
-2. Include high-quality screenshots in `public/media/`
+2. Include screenshots in `public/media/`
 3. Add localized descriptions for English and German
 4. Submit pull request with new interface details
 
@@ -426,26 +294,10 @@ This project is open source and available under the [MIT License](LICENSE).
 - **[Nuxt UI](https://ui.nuxt.com/)** - Beautiful and accessible component library
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
 
-### Design Inspiration:
-- **Movie Interface Archives** - Various film databases and UI collections
-- **Swiss Design Principles** - Clean typography and grid-based layouts
-- **Modern Web Interactions** - Contemporary animation and user experience patterns
-
 ### Special Thanks:
-- Cinema UI designers and developers who created these iconic interfaces
-- Open source community for excellent tools and libraries
-- Movie enthusiasts who appreciate great interface design
-
----
-
-<div align="center">
-
-**[🎬 Explore the Collection](https://projects.manuelhintermayr.com/movie-os-collection/) • [📦 View Source](https://github.com/manuelhintermayr/movie-os-collection) • [🐛 Report Issues](https://github.com/manuelhintermayr/movie-os-collection/issues)**
-
-*Built with ❤️ for movie and interface design enthusiasts*
-
-</div>
-
+- **Cinema UI designers** and **developers** who created these iconic interfaces
+- **Open source community** for excellent tools and libraries
+- **Movie enthusiasts** who appreciate and build great interface design
 - **Nuxt Team** for the amazing framework
 - **Tailwind Labs** for Tailwind CSS and Headless UI
 - **Heroicons** for the beautiful icon set
