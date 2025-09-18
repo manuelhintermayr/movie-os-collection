@@ -13,11 +13,11 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'A collection of computer interfaces from movies recreated for the web' },
-        { name: 'keywords', content: 'movie computer screens, movie interfaces, web recreation, UI collection, movie tech' },
+        { name: 'description', content: 'A comprehensive collection of computer interfaces from movies (1968-2024) recreated for the web. Features GSAP animations, Swiss Style design, and full internationalization.' },
+        { name: 'keywords', content: 'movie computer screens, movie interfaces, web recreation, UI collection, movie tech, film interfaces, sci-fi UI, retro computing, GSAP animations' },
         { name: 'author', content: 'Manuel Hintermayr' },
         { property: 'og:title', content: 'Movie Computer Screens Collection' },
-        { property: 'og:description', content: 'A collection of computer interfaces from movies recreated for the web' },
+        { property: 'og:description', content: 'A comprehensive collection of computer interfaces from movies (1968-2024) recreated for the web. Features GSAP animations, Swiss Style design, and full internationalization.' },
         { property: 'og:url', content: 'https://projects.manuelhintermayr.com/movie-os-collection' },
         { property: 'og:type', content: 'website' }
       ],
