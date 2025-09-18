@@ -12,7 +12,7 @@
     "animated_image": "projects/jurassic-park.gif",
     "stack": "HTML, CSS, jQuery",
     "desc": {
-      "de": "Replika der ikonischen Konsole aus dem ersten Film mit dem der Park gesteuert wurde.",
+      "de": "Replika der Konsole aus dem ersten Film mit dem der Park gesteuert wurde.",
       "en": "Replica of the iconic console from the first movie with which the park was controlled."
     },
     "tags": [
@@ -89,15 +89,15 @@
       "de": "Zurück in die Zukunft (1985)",
       "en": "Back to the Future (1985)"
     },
-    "url": "https://lawrenceabaeo.github.io/back-to-the-future-time-circuits/",
-    "repo": "https://github.com/lawrenceabaeo/back-to-the-future-time-circuits",
-    "website_url": null,
-    "image": "https://raw.githubusercontent.com/lawrenceabaeo/back-to-the-future-time-circuits/master/screenshot.png",
-    "animated_image": null,
+    "url": "https://lawrenceabaeo.github.io/back-to-the-future-time-circuits-using-front-end-tech/project/index.html",
+    "repo": "https://github.com/lawrenceabaeo/back-to-the-future-time-circuits-using-front-end-tech",
+    "website_url": "https://lawrenceabaeo.github.io/back-to-the-future-time-circuits-using-front-end-tech/",
+    "image": "https://lawrenceabaeo.github.io/back-to-the-future-time-circuits-using-front-end-tech/img/bttf_screenshot_320_thumb.png",
+    "animated_image": "projects/back-to-the-future.gif",
     "stack": "HTML, CSS, JavaScript",
     "desc": {
-      "de": "Zeitanzeige mit Destination/Present/Last Time.",
-      "en": "Time display with Destination/Present/Last Time."
+      "de": "Emmets DeLorean-Zeitanzeige mit Destination/Present/Last Time.",
+      "en": "Emmet's DeLorean \"Time display\" with Destination/Present/Last Time."
     },
     "tags": [
       "retro",
