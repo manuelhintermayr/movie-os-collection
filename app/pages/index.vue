@@ -79,11 +79,8 @@ const filteredItems = computed(() => {
   })
 })
 
-// Shuffle functionality
-const shuffleItems = () => {
-  movieItems.value = [...movieItems.value].sort(() => Math.random() - 0.5)
-  
-  // Reinitialize animations after shuffle
+// Animation function for cards
+const animateCards = () => {
   nextTick(() => {
     const gridContainer = gridRef.value?.gridContainer
     if (gridContainer) {
@@ -99,11 +96,22 @@ const shuffleItems = () => {
             card.style.opacity = '1'
             card.style.transform = 'translateY(0)'
             card.style.transition = 'opacity 0.4s ease, transform 0.4s ease'
-          }, index * 50) // Faster staggered effect for shuffle
+          }, index * 50) // Staggered effect
         })
       }
     }
   })
+}
+
+// Watch for search changes and animate cards
+watch(searchQuery, () => {
+  animateCards()
+})
+
+// Shuffle functionality
+const shuffleItems = () => {
+  movieItems.value = [...movieItems.value].sort(() => Math.random() - 0.5)
+  animateCards()
 }
 
 // Loading management and GSAP animations
