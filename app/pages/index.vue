@@ -48,7 +48,10 @@
 useHead({
   title: 'Movie Computer Screens Collection',
   meta: [
-    { name: 'description', content: 'A collection of computer interfaces from movies recreated for the web' }
+    { name: 'description', content: 'Explore computer interfaces from movies (1968-2024) recreated as interactive web experiences. From Jurassic Park terminals to Matrix code rain - iconic movie tech brought to life.' },
+    { name: 'keywords', content: 'movie computer screens, film interfaces, Jurassic Park terminal, Matrix code, TRON legacy, sci-fi UI, retro computing, movie tech recreation' },
+    { property: 'og:title', content: 'Movie Computer Screens Collection' },
+    { property: 'og:description', content: 'computer interfaces from movies (1968-2024) recreated as interactive web experiences. From Jurassic Park terminals to Matrix code rain.' }
   ]
 })
 
