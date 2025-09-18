@@ -40,13 +40,7 @@ export default defineNuxtConfig({
     'mouse-follower/dist/mouse-follower.min.css',
     '~/assets/css/main.css',
     '~/assets/css/forms.css',
-    '~/assets/css/components.css',
-    '~/assets/css/navigation.css',
-    '~/assets/css/tables.css',
-    '~/assets/css/layout.css',
     '~/assets/css/mouse-follower.css',
-    '~/assets/css/ui-extensions.css',
-    '~/assets/css/animations.css'
   ],
 
   components: [
