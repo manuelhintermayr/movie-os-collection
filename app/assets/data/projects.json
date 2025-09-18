@@ -167,27 +167,6 @@
     ]
   },
   {
-    "title": "WOPR / WarGames Terminal",
-    "film": {
-      "de": "WarGames (1983)",
-      "en": "WarGames (1983)"
-    },
-    "url": "https://wopr.adrianherbez.net/",
-    "repo": "https://github.com/aherbez/wopr",
-    "website_url": null,
-    "image": "https://raw.githubusercontent.com/aherbez/wopr/master/screenshot.png",
-    "animated_image": null,
-    "stack": "JavaScript, Canvas",
-    "desc": {
-      "de": "Terminal-Spielerei inspiriert von WOPR.",
-      "en": "Terminal game inspired by WOPR."
-    },
-    "tags": [
-      "terminal",
-      "game"
-    ]
-  },
-  {
     "title": "J.A.R.V.I.S. (UI Demo)",
     "film": {
       "de": "Iron Man (2008)",
