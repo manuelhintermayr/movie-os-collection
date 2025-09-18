@@ -2,6 +2,20 @@
   <div id="movie-collection-page" class="relative min-h-screen">
     <LoadingScreen :is-loading="!loadingFinished" />
 
+    <!-- Back to Top Button -->
+    <Transition name="fade-slide">
+      <UButton
+        v-if="showBackToTop"
+        @click="scrollToTop"
+        icon="i-heroicons-arrow-up"
+        color="neutral"
+        variant="outline"
+        size="lg"
+        class="fixed bottom-8 right-8 z-40 !w-12 !h-12 !p-0 shadow-lg border-2 border-current flex items-center justify-center"
+        ref="backToTopButton"
+      />
+    </Transition>
+
     <div v-show="!isLoading" class="min-h-screen swiss-grid">
       <!-- Header -->
       <MovieCollectionHeader ref="headerRef" v-model:search-query="searchQuery" @shuffle="shuffleItems" />
@@ -39,11 +53,13 @@ import type { MovieProjects } from '~/assets/data/types'
 const headerRef = ref()
 const heroRef = ref()
 const gridRef = ref()
+const backToTopButton = ref()
 
 // Reactive data
 const isLoading = ref(true)
 const loadingFinished = ref(false)
 const searchQuery = ref('')
+const showBackToTop = ref(false)
 
 // Movie OS Collection Data from JSON
 const movieItems = ref<MovieProjects>(projectsData as MovieProjects)
@@ -106,8 +122,24 @@ const shuffleItems = () => {
   animateCards()
 }
 
+// Back to top functionality
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
+// Handle scroll events for back to top button
+const handleScroll = () => {
+  showBackToTop.value = window.scrollY > 300
+}
+
 // Loading management and GSAP animations
 onMounted(async () => {
+  // Add scroll event listener for back to top button
+  window.addEventListener('scroll', handleScroll)
+  
   // Hide loading screen when page is fully loaded
   if (document.readyState === 'complete') {
     isLoading.value = false
@@ -215,10 +247,42 @@ onMounted(async () => {
 
             makeMagnet(darkModeButton)
           }
+
+          // Add magnetic effect to back to top button
+          if (backToTopButton.value) {
+            const makeMagnet = (el: HTMLElement) => {
+              const magnetic = gsap.quickTo(el, 'x', { duration: 0.3, ease: 'power2.out' })
+              const magneticY = gsap.quickTo(el, 'y', { duration: 0.3, ease: 'power2.out' })
+
+              el.addEventListener('mouseenter', () => {
+                gsap.to(el, { scale: 1.1, duration: 0.3, ease: 'power2.out' })
+              })
+
+              el.addEventListener('mouseleave', () => {
+                gsap.to(el, { scale: 1, x: 0, y: 0, duration: 0.3, ease: 'power2.out' })
+              })
+
+              el.addEventListener('mousemove', (e: MouseEvent) => {
+                const rect = el.getBoundingClientRect()
+                const x = e.clientX - rect.left - rect.width / 2
+                const y = e.clientY - rect.top - rect.height / 2
+
+                magnetic(x * 0.3)
+                magneticY(y * 0.3)
+              })
+            }
+
+            makeMagnet(backToTopButton.value)
+          }
         }
       })
     }
   })
+})
+
+// Cleanup scroll event listener
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
 })
 </script>
 
@@ -329,6 +393,22 @@ onMounted(async () => {
 .project-card,
 .dark-mode-button {
   will-change: transform;
+}
+
+/* Back to top button transition */
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+}
+
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
 }
 
 /* Smooth transitions for all interactive elements */
