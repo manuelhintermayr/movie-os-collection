@@ -15,31 +15,3 @@
   height: var(--mf-size);
   border-width: var(--border-w-thin);
 }
-
-.mf-cursor.-inverse .mf-cursor-inner {
-  background: #fff !important;
-  border-color: #000 !important;
-}
-
-:root.dark .mf-cursor.-inverse .mf-cursor-inner {
-  background: #000 !important;
-  border-color: #fff !important;
-}
-
-.mf-cursor.-hidden {
-  opacity: 0 !important;
-}
-
-/* only hide follower */
-.mf-cursor.-opaque .mf-cursor-inner {
-  opacity: .4;
-}
-
-.mf-cursor.-pointer .mf-cursor-inner {
-  transform: scale(1.08);
-}
-
-.mf-cursor.-custom .mf-cursor-inner {
-  transform: scale(1.2) rotate(1.5deg);
-  border-width: var(--border-w-thin);
-}
