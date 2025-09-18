@@ -132,7 +132,6 @@
       "en": "Star Trek (various movies)"
     },
     "url": "https://www.lcars.org.uk/lcars",
-    "repo": "https://github.com/joernweissenborn/lcars",
     "website_url": null,
     "image": "projects/lcars-michaelokuda.jpg",
     "animated_image": "projects/lcars.jpg",
@@ -147,20 +146,20 @@
     ]
   },
   {
-    "title": "HAL 9000 Panel",
+    "title": "HAL 9000 Panel by marcobe sagni",
     "film": {
       "de": "2001: Odyssee im Weltraum (1968)",
       "en": "2001: A Space Odyssey (1968)"
     },
-    "url": "https://codepen.io/jkantner/pen/MWeJrP",
+    "url": "https://codepen.io/marcobesagni/pen/aLoYob",
     "repo": null,
     "website_url": null,
-    "image": "https://assets.codepen.io/416221/internal/screenshots/pens/MWeJrP.default.png",
+    "image": "projects/hal.jpg",
     "animated_image": null,
     "stack": "HTML, CSS",
     "desc": {
-      "de": "Statisches HAL-Panel (Web-Nachbau).",
-      "en": "Static HAL panel (web recreation)."
+      "de": "Statische Web-Nachbildung des HAL-Panels in reinem HTML & CSS.",
+      "en": "Static web recreation of the HAL panel in pure html & css."
     },
     "tags": [
       "codepen",
