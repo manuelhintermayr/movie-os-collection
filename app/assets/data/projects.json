@@ -63,7 +63,7 @@
     ]
   },
   {
-    "title": "Matrix Digital Rain",
+    "title": "Matrix Digital Rain Code & Numbers",
     "film": {
       "de": "Matrix (1999)",
       "en": "The Matrix (1999)"
@@ -71,16 +71,16 @@
     "url": "https://rezmason.github.io/matrix/",
     "repo": "https://github.com/Rezmason/matrix",
     "website_url": null,
-    "image": "https://raw.githubusercontent.com/Rezmason/matrix/main/docs/demo.gif",
-    "animated_image": null,
-    "stack": "JavaScript, WebGL (REGL)",
+    "image": "https://github.com/Rezmason/matrix/raw/master/screenshot.png?raw=true",
+    "animated_image": "projects/matrix.gif",
+    "stack": "HTML, JavaScript",
     "desc": {
       "de": "Ikonischer grüner Code-Regen als performante Shader-Demo.",
       "en": "Iconic green code rain as a performant shader demo."
     },
     "tags": [
-      "shader",
-      "canvas"
+      "matrix",
+      "fan-recreation"
     ]
   },
   {
