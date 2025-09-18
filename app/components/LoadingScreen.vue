@@ -31,7 +31,7 @@
 
                         <!-- Built with love and author link -->
                         <div class="text-xs text-gray-400 dark:text-gray-600">
-                            {{ t('welcome.builtWith') }} ❤️ {{ t('welcome.by') }}
+                            {{ t('loadingScreen.builtWith') }} ❤️ {{ t('loadingScreen.by') }}
                             <a href="https://github.com/manuelhintermayr" target="_blank" rel="noopener noreferrer"
                                 class="font-medium text-black dark:text-white transition-colors duration-200"
                                 data-cursor-pointer>

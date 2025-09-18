@@ -1,0 +1,190 @@
+[
+  {
+    "title": "Jurassic Park – Main Terminal",
+    "film": {
+      "de": "Jurassic Park (1993)",
+      "en": "Jurassic Park (1993)"
+    },
+    "url": "https://archive.quenq.com/jurassic-park/",
+    "repo": null,
+    "website_url": "https://archive.quenq.com/",
+    "image": "projects/jurassic-park.jpg",
+    "animated_image": "projects/jurassic-park.gif",
+    "stack": "HTML, CSS, jQuery",
+    "desc": {
+      "de": "Replika der Konsole aus dem ersten Film mit dem der Park gesteuert wurde.",
+      "en": "Replica of the iconic console from the first movie with which the park was controlled."
+    },
+    "tags": [
+      "terminal",
+      "fan-recreation"
+    ]
+  },
+  {
+    "title": "Syndrome – Main Computer",
+    "film": {
+      "de": "Die Unglaublichen (2004)",
+      "en": "The Incredibles (2004)"
+    },
+    "url": "https://syndromemaincomputer.netlify.app/authentication",
+    "repo": "https://github.com/Giuseppetm/syndrome-main-computer",
+    "website_url": null,
+    "image": "https://github.com/user-attachments/assets/f9448e2e-d2a6-4e0e-8038-2a2168c4c4e4",
+    "animated_image": "https://github.com/user-attachments/assets/f38cf82d-9b7b-42b3-b693-b6e83ea720f9",
+    "stack": "React, TypeScript, NextJS",
+    "desc": {
+      "de": "Nachbildung des kultigen Hauptcomputers des Syndroms aus dem Film.",
+      "en": "Recreation of the Syndrome’s iconic main computer from the movie."
+    },
+    "tags": [
+      "react",
+      "fan-recreation"
+    ]
+  },
+  {
+    "title": "Tron: Legacy – Encom Boardroom",
+    "film": {
+      "de": "TRON: Legacy (2010)",
+      "en": "TRON: Legacy (2010)"
+    },
+    "url": "https://arscan.github.io/encom-boardroom/",
+    "repo": "https://github.com/arscan/encom-boardroom",
+    "website_url": null,
+    "image": "https://github.com/arscan/encom-boardroom/blob/master/images/screenshot.jpg?raw=true",
+    "animated_image": "projects/tron.gif",
+    "stack": "HTML5, Three.js, JavaScript",
+    "desc": {
+      "de": "Dashboard Visualisierung inspiriert von der Encom-Boardroom-Szene.",
+      "en": "Dashboard visualization inspired by the Encom boardroom scene."
+    },
+    "tags": [
+      "three.js",
+      "fan-recreation"
+    ]
+  },
+  {
+    "title": "Matrix Digital Rain Code & Numbers",
+    "film": {
+      "de": "Matrix (1999)",
+      "en": "The Matrix (1999)"
+    },
+    "url": "https://rezmason.github.io/matrix/",
+    "repo": "https://github.com/Rezmason/matrix",
+    "website_url": null,
+    "image": "https://github.com/Rezmason/matrix/raw/master/screenshot.png?raw=true",
+    "animated_image": "projects/matrix.gif",
+    "stack": "HTML, JavaScript",
+    "desc": {
+      "de": "Ikonischer grüner Code-Regen als performante Shader-Demo.",
+      "en": "Iconic green code rain as a performant shader demo."
+    },
+    "tags": [
+      "matrix",
+      "fan-recreation"
+    ]
+  },
+  {
+    "title": "Back to the Future – Time Circuits",
+    "film": {
+      "de": "Zurück in die Zukunft (1985)",
+      "en": "Back to the Future (1985)"
+    },
+    "url": "https://lawrenceabaeo.github.io/back-to-the-future-time-circuits-using-front-end-tech/project/index.html",
+    "repo": "https://github.com/lawrenceabaeo/back-to-the-future-time-circuits-using-front-end-tech",
+    "website_url": "https://lawrenceabaeo.github.io/back-to-the-future-time-circuits-using-front-end-tech/",
+    "image": "https://lawrenceabaeo.github.io/back-to-the-future-time-circuits-using-front-end-tech/img/bttf_screenshot_320_thumb.png",
+    "animated_image": "projects/back-to-the-future.gif",
+    "stack": "HTML, CSS, JavaScript",
+    "desc": {
+      "de": "Emmets DeLorean-Zeitanzeige mit Destination/Present/Last Time.",
+      "en": "Emmet's DeLorean \"Time display\" with Destination/Present/Last Time."
+    },
+    "tags": [
+      "retro",
+      "ui"
+    ]
+  },
+  {
+    "title": "LCARS Web by joern weissenborn",
+    "film": {
+      "de": "Star Trek (diverse Filme)",
+      "en": "Star Trek (various movies)"
+    },
+    "url": "https://www.lcars.org.uk/lcars",
+    "repo": "https://github.com/joernweissenborn/lcars",
+    "website_url": null,
+    "image": "projects/lcars-joernweissenborn.jpg",
+    "animated_image": "projects/lcars.jpg",
+    "stack": "HTML, CSS, JS",
+    "desc": {
+      "de": "Klassisches LCARS-Interface (Film/TV-Universum) als UI-Framework.",
+      "en": "Classic LCARS interface (movie/TV universe) as a UI framework."
+    },
+    "tags": [
+      "ui",
+      "design-system"
+    ]
+  },
+  {
+    "title": "LCARS Web by Michael Okuda",
+    "film": {
+      "de": "Star Trek (diverse Filme)",
+      "en": "Star Trek (various movies)"
+    },
+    "url": "https://www.lcars.org.uk/lcars",
+    "website_url": null,
+    "image": "projects/lcars-michaelokuda.jpg",
+    "animated_image": "projects/lcars.jpg",
+    "stack": "HTML, CSS, JS",
+    "desc": {
+      "de": "Klassisches LCARS-Interface (Film/TV-Universum) als Web Template.",
+      "en": "Classic LCARS interface (movie/TV universe) as a web template."
+    },
+    "tags": [
+      "ui",
+      "template"
+    ]
+  },
+  {
+    "title": "HAL 9000 Panel by marcobe sagni",
+    "film": {
+      "de": "2001: Odyssee im Weltraum (1968)",
+      "en": "2001: A Space Odyssey (1968)"
+    },
+    "url": "https://codepen.io/marcobesagni/pen/aLoYob",
+    "repo": null,
+    "website_url": null,
+    "image": "projects/hal.jpg",
+    "animated_image": "projects/hal.jpg",
+    "stack": "HTML, CSS",
+    "desc": {
+      "de": "Statische Web-Nachbildung des HAL-Panels in reinem HTML & CSS.",
+      "en": "Static web recreation of the HAL panel in pure html & css."
+    },
+    "tags": [
+      "codepen",
+      "iconic"
+    ]
+  },
+  {
+    "title": "J.A.R.V.I.S. – UI Demo by FlyingEmu",
+    "film": {
+      "de": "Iron Man (2008)",
+      "en": "Iron Man (2008)"
+    },
+    "url": "https://codepen.io/FlyingEmu/pen/DZNqEj",
+    "repo": null,
+    "website_url": null,
+    "image": "projects/jarvis.jpg",
+    "animated_image": "projects/jarvis.gif",
+    "stack": "HTML, CSS, JS",
+    "desc": {
+      "de": "UI inspiriert von Tony Starks Jarvis aus dem Film Iron Man.",
+      "en": "UI inspired by Tony Stark's Jarvis from the film Iron Man."
+    },
+    "tags": [
+      "hud",
+      "codepen"
+    ]
+  }
+]
