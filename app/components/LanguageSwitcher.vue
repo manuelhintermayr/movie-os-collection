@@ -29,7 +29,7 @@ const isOpen = ref(false)
 // Get current locale display name
 const currentLocaleName = computed(() => {
     const currentLoc = locales.value.find((loc: any) => loc.code === locale.value)
-    return currentLoc ? currentLoc.name : locale.value.toUpperCase()
+    return currentLoc ? (currentLoc.name?.substring(0, 2) || locale.value.substring(0, 2).toUpperCase()) : locale.value.substring(0, 2).toUpperCase()
 })
 
 const setLocaleWithStorage = (newLocale: LocaleType) => {

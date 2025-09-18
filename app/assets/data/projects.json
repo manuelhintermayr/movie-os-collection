@@ -50,16 +50,16 @@
     "url": "https://arscan.github.io/encom-boardroom/",
     "repo": "https://github.com/arscan/encom-boardroom",
     "website_url": null,
-    "image": "https://raw.githubusercontent.com/arscan/encom-boardroom/master/img/screenshot.jpg",
-    "animated_image": null,
-    "stack": "HTML5, WebGL, JavaScript",
+    "image": "https://github.com/arscan/encom-boardroom/blob/master/images/screenshot.jpg?raw=true",
+    "animated_image": "projects/tron.gif",
+    "stack": "HTML5, Three.js, JavaScript",
     "desc": {
-      "de": "WebGL-Visualisierung inspiriert von der Encom-Boardroom-Szene.",
-      "en": "WebGL visualization inspired by the Encom boardroom scene."
+      "de": "Dashboard Visualisierung inspiriert von der Encom-Boardroom-Szene.",
+      "en": "Dashboard visualization inspired by the Encom boardroom scene."
     },
     "tags": [
-      "webgl",
-      "data-viz"
+      "three.js",
+      "fan-recreation"
     ]
   },
   {
