@@ -13,6 +13,7 @@
         "shuffle": "Zufall",
         "openPage": "Seite öffnen",
         "openRepo": "GitHub öffnen",
+        "openProjectPage": "Projektseite öffnen",
         "stack": "Tech-Stack",
         "disclaimer": "Alle Marken/Filmtitel gehören ihren jeweiligen Rechteinhabern. Diese Seite verlinkt Fan-Nachbauten und Demonstrationen. Auf Wunsch werden weitere oder aktuelle Projekte hinzugefügt oder entfernt.",
         "contribute": {
@@ -27,8 +28,9 @@
             "shuffle": "Durch- mischen",
             "lightMode": "Zum Lichtmodus wechseln",
             "darkMode": "Zum Dunkelmodus wechseln",
-            "openPage": "Seite öffnen",
+            "openPage": "Demo öffnen",
             "openRepo": "GitHub Repository",
+            "openProjectPage": "Projekt -seite öffnen",
             "suggestProject": "Auf GitHub",
             "viewRepo": "Repo anzeigen"
         }

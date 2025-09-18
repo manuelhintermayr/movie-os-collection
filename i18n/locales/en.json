@@ -13,6 +13,7 @@
         "shuffle": "Shuffle",
         "openPage": "Open page",
         "openRepo": "Open GitHub",
+        "openProjectPage": "Open project page",
         "stack": "Tech stack",
         "disclaimer": "All trademarks/movies belong to their rights holders. This page links to fan recreations and demos. Additional or existing projects will be added or removed upon request.",
         "contribute": {
@@ -29,6 +30,7 @@
             "darkMode": "Switch to dark mode",
             "openPage": "View live demo",
             "openRepo": "View source code",
+            "openProjectPage": "Visit project page",
             "suggestProject": "Go to GitHub",
             "viewRepo": "View repo"
         }

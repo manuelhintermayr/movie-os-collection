@@ -1,11 +1,12 @@
 <template>
-  <UCard class="card-tilt overflow-hidden project-card" :ui="{ body: 'p-0' }"
-    :data-cursor-img="project.image || placeholderImage">
+  <UCard class="card-tilt overflow-hidden project-card" :ui="{ body: 'p-0' }">
     <!-- Image -->
-    <div class="aspect-video bg-gray-100 dark:bg-gray-800 overflow-hidden"
-      :data-cursor-text="$t('movieCollection.cursorText.viewProject')">
-      <img :src="project.image || placeholderImage" :alt="`${project.title} – ${project.film}`"
-        class="w-full h-full object-cover" loading="lazy" data-cursor="-media" />
+    <div class="aspect-video bg-gray-100 dark:bg-gray-800 overflow-hidden">
+      <img
+        :src="(project.image && project.image.startsWith('http')) ? project.image : (project.image ? mediaBasePath + project.image : placeholderImage)"
+        :alt="`${project.title} – ${localizedFilm}`"
+        :data-cursor-img="project.animated_image ? (project.animated_image.startsWith('http') ? project.animated_image : mediaBasePath + project.animated_image) : undefined"
+        class="w-full h-full object-cover" loading="lazy" />
     </div>
 
     <!-- Content -->
@@ -16,7 +17,7 @@
           {{ project.title }}
         </h3>
         <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-          {{ project.film }}
+          {{ localizedFilm }}
         </p>
       </div>
 
@@ -39,10 +40,15 @@
 
       <!-- Links -->
       <div class="flex gap-2 pt-2">
-        <UButton v-if="project.url" :to="project.url" external target="_blank" size="sm" color="primary"
+        <UButton v-if="project.url" :to="project.url" external target="_blank" size="sm" color="neutral"
           variant="outline" icon="i-heroicons-arrow-top-right-on-square"
           :data-cursor-text="$t('movieCollection.cursorText.openPage')">
           {{ $t('movieCollection.openPage') }}
+        </UButton>
+        <UButton v-if="project.website_url" :to="project.website_url" external target="_blank" size="sm" color="neutral"
+          variant="outline" icon="i-heroicons-globe-alt"
+          :data-cursor-text="$t('movieCollection.cursorText.openProjectPage')">
+          {{ $t('movieCollection.openProjectPage') }}
         </UButton>
         <UButton v-if="project.repo" :to="project.repo" external target="_blank" size="sm" color="neutral"
           variant="outline" icon="i-heroicons-code-bracket"
@@ -56,6 +62,8 @@
 
 <script setup lang="ts">
 import type { MovieProject } from '~/assets/data/types';
+const config = useRuntimeConfig()
+const mediaBasePath = config.public.mediaBasePath
 
 // Props
 const props = defineProps<{
@@ -71,6 +79,14 @@ const localizedDescription = computed(() => {
     return props.project.desc[locale.value as keyof typeof props.project.desc] || props.project.desc.en || ''
   }
   return props.project.desc || ''
+})
+
+// Computed localized film title
+const localizedFilm = computed(() => {
+  if (typeof props.project.film === 'object') {
+    return props.project.film[locale.value as keyof typeof props.project.film] || props.project.film.en || ''
+  }
+  return props.project.film || ''
 })
 
 // Placeholder image for missing images

@@ -1,756 +1,1265 @@
 [
   {
-    "title": "Jurassic Systems",
-    "film": "Jurassic Park (1993)",
-    "url": "https://archive.quenq.com/jurassic-park/",
-    "repo": "https://github.com/iiegor/jurassic-park-terminal",
-    "image": "https://raw.githubusercontent.com/iiegor/jurassic-park-terminal/master/screenshot.png",
-    "stack": "HTML, CSS, JavaScript",
-    "desc": {
-      "de": "Replika der ikonischen Konsole inkl. 'You didn't say the magic word'.",
-      "en": "Replica of the iconic console including 'You didn't say the magic word'."
+    "title": "Jurassic Park – Main Terminal",
+    "film": {
+      "de": "Jurassic Park (1993)",
+      "en": "Jurassic Park (1993)"
     },
-    "tags": ["terminal", "fan-recreation"]
+    "url": "https://archive.quenq.com/jurassic-park/",
+    "repo": null,
+    "website_url": "https://archive.quenq.com/",
+    "image": "projects/jurassic-park.jpg",
+    "animated_image": "projects/jurassic-park.gif",
+    "stack": "HTML, CSS, jQuery",
+    "desc": {
+      "de": "Replika der ikonischen Konsole aus dem ersten Film mit dem der Park gesteuert wurde.",
+      "en": "Replica of the iconic console from the first movie with which the park was controlled."
+    },
+    "tags": [
+      "terminal",
+      "fan-recreation"
+    ]
   },
   {
     "title": "Syndrome – Main Computer",
-    "film": "Die Unglaublichen (2004)",
+    "film": {
+      "de": "Die Unglaublichen (2004)",
+      "en": "The Incredibles (2004)"
+    },
     "url": "https://syndromemaincomputer.netlify.app/authentication",
     "repo": "https://github.com/Giuseppetm/syndrome-main-computer",
-    "image": "https://raw.githubusercontent.com/Giuseppetm/syndrome-main-computer/master/public/og-image.jpg",
-    "stack": "React, TypeScript, Vite",
+    "website_url": null,
+    "image": "https://github.com/user-attachments/assets/f9448e2e-d2a6-4e0e-8038-2a2168c4c4e4",
+    "animated_image": "https://github.com/user-attachments/assets/f38cf82d-9b7b-42b3-b693-b6e83ea720f9",
+    "stack": "React, TypeScript, NextJS",
     "desc": {
-      "de": "Nachbildung der Kronos/Authentication-Sequenz.",
-      "en": "Recreation of the Kronos/Authentication sequence."
+      "de": "Nachbildung des kultigen Hauptcomputers des Syndroms aus dem Film.",
+      "en": "Recreation of the Syndrome’s iconic main computer from the movie."
     },
-    "tags": ["react", "animation"]
+    "tags": [
+      "react",
+      "fan-recreation"
+    ]
   },
   {
     "title": "Tron: Legacy – Encom Boardroom",
-    "film": "TRON: Legacy (2010)",
+    "film": {
+      "de": "TRON: Legacy (2010)",
+      "en": "TRON: Legacy (2010)"
+    },
     "url": "https://arscan.github.io/encom-boardroom/",
     "repo": "https://github.com/arscan/encom-boardroom",
+    "website_url": null,
     "image": "https://raw.githubusercontent.com/arscan/encom-boardroom/master/img/screenshot.jpg",
+    "animated_image": null,
     "stack": "HTML5, WebGL, JavaScript",
     "desc": {
       "de": "WebGL-Visualisierung inspiriert von der Encom-Boardroom-Szene.",
       "en": "WebGL visualization inspired by the Encom boardroom scene."
     },
-    "tags": ["webgl", "data-viz"]
+    "tags": [
+      "webgl",
+      "data-viz"
+    ]
   },
   {
     "title": "Matrix Digital Rain",
-    "film": "The Matrix (1999)",
+    "film": {
+      "de": "Matrix (1999)",
+      "en": "The Matrix (1999)"
+    },
     "url": "https://rezmason.github.io/matrix/",
     "repo": "https://github.com/Rezmason/matrix",
+    "website_url": null,
     "image": "https://raw.githubusercontent.com/Rezmason/matrix/main/docs/demo.gif",
+    "animated_image": null,
     "stack": "JavaScript, WebGL (REGL)",
     "desc": {
       "de": "Ikonischer grüner Code-Regen als performante Shader-Demo.",
       "en": "Iconic green code rain as a performant shader demo."
     },
-    "tags": ["shader", "canvas"]
+    "tags": [
+      "shader",
+      "canvas"
+    ]
   },
   {
     "title": "Alien Console",
-    "film": "Alien / Alien: Isolation",
+    "film": {
+      "de": "Alien / Alien: Isolation",
+      "en": "Alien / Alien: Isolation"
+    },
     "url": null,
     "repo": "https://github.com/brenns10/alien-console",
+    "website_url": null,
     "image": "https://raw.githubusercontent.com/brenns10/alien-console/master/docs/demo.gif",
+    "animated_image": null,
     "stack": "C, ncurses",
     "desc": {
       "de": "Terminal-UI im Stil der Alien-Rechner.",
       "en": "Terminal UI in the style of Alien computers."
     },
-    "tags": ["terminal"]
+    "tags": [
+      "terminal"
+    ]
   },
   {
     "title": "Back to the Future – Time Circuits",
-    "film": "Zurück in die Zukunft (1985)",
+    "film": {
+      "de": "Zurück in die Zukunft (1985)",
+      "en": "Back to the Future (1985)"
+    },
     "url": "https://lawrenceabaeo.github.io/back-to-the-future-time-circuits/",
     "repo": "https://github.com/lawrenceabaeo/back-to-the-future-time-circuits",
+    "website_url": null,
     "image": "https://raw.githubusercontent.com/lawrenceabaeo/back-to-the-future-time-circuits/master/screenshot.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Zeitanzeige mit Destination/Present/Last Time.",
       "en": "Time display with Destination/Present/Last Time."
     },
-    "tags": ["retro", "ui"]
+    "tags": [
+      "retro",
+      "ui"
+    ]
   },
   {
     "title": "LCARS Web",
-    "film": "Star Trek (diverse Filme)",
+    "film": {
+      "de": "Star Trek (diverse Filme)",
+      "en": "Star Trek (various movies)"
+    },
     "url": "https://www.lcars.org.uk/lcars",
     "repo": "https://github.com/joernweissenborn/lcars",
+    "website_url": null,
     "image": "https://raw.githubusercontent.com/joernweissenborn/lcars/master/docs/assets/lcars-ui.jpg",
+    "animated_image": null,
     "stack": "HTML, CSS, JS",
     "desc": {
       "de": "Klassisches LCARS-Interface (Film/TV-Universum).",
       "en": "Classic LCARS interface (movie/TV universe)."
     },
-    "tags": ["ui", "design-system"]
+    "tags": [
+      "ui",
+      "design-system"
+    ]
   },
   {
     "title": "HAL 9000 Panel",
-    "film": "2001: A Space Odyssey (1968)",
+    "film": {
+      "de": "2001: Odyssee im Weltraum (1968)",
+      "en": "2001: A Space Odyssey (1968)"
+    },
     "url": "https://codepen.io/jkantner/pen/MWeJrP",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/416221/internal/screenshots/pens/MWeJrP.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS",
     "desc": {
       "de": "Statisches HAL-Panel (Web-Nachbau).",
       "en": "Static HAL panel (web recreation)."
     },
-    "tags": ["codepen", "iconic"]
+    "tags": [
+      "codepen",
+      "iconic"
+    ]
   },
   {
     "title": "WOPR / WarGames Terminal",
-    "film": "WarGames (1983)",
+    "film": {
+      "de": "WarGames (1983)",
+      "en": "WarGames (1983)"
+    },
     "url": "https://wopr.adrianherbez.net/",
     "repo": "https://github.com/aherbez/wopr",
+    "website_url": null,
     "image": "https://raw.githubusercontent.com/aherbez/wopr/master/screenshot.png",
+    "animated_image": null,
     "stack": "JavaScript, Canvas",
     "desc": {
       "de": "Terminal-Spielerei inspiriert von WOPR.",
       "en": "Terminal game inspired by WOPR."
     },
-    "tags": ["terminal", "game"]
+    "tags": [
+      "terminal",
+      "game"
+    ]
   },
   {
     "title": "J.A.R.V.I.S. (UI Demo)",
-    "film": "Iron Man (2008)",
+    "film": {
+      "de": "Iron Man (2008)",
+      "en": "Iron Man (2008)"
+    },
     "url": "https://codepen.io/markhillard/pen/xwQZbM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/32887/internal/screenshots/pens/xwQZbM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JS",
     "desc": {
       "de": "HUD-Stil-UI inspiriert von Jarvis.",
       "en": "HUD-style UI inspired by Jarvis."
     },
-    "tags": ["hud", "codepen"]
+    "tags": [
+      "hud",
+      "codepen"
+    ]
   },
   {
     "title": "T-800 HUD",
-    "film": "Terminator (1984)",
+    "film": {
+      "de": "Terminator (1984)",
+      "en": "The Terminator (1984)"
+    },
     "url": "https://codepen.io/suez/pen/wvQpWp",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/wvQpWp.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS",
     "desc": {
       "de": "Rotes Terminator-HUD als CSS-Demo.",
       "en": "Red Terminator HUD as CSS demo."
     },
-    "tags": ["hud", "css"]
+    "tags": [
+      "hud",
+      "css"
+    ]
   },
   {
     "title": "Minority Report Interface",
-    "film": "Minority Report (2002)",
+    "film": {
+      "de": "Minority Report (2002)",
+      "en": "Minority Report (2002)"
+    },
     "url": "https://codepen.io/chris-creditdesign/pen/bGrvLa",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/25771/internal/screenshots/pens/bGrvLa.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Futuristische Gestensteuerungs-Oberfläche mit Crime-Daten.",
       "en": "Futuristic gesture-controlled interface with crime data."
     },
-    "tags": ["gesture", "ui", "futuristic"]
+    "tags": [
+      "gesture",
+      "ui",
+      "futuristic"
+    ]
   },
   {
     "title": "Blade Runner 2049 UI",
-    "film": "Blade Runner 2049 (2017)",
+    "film": {
+      "de": "Blade Runner 2049 (2017)",
+      "en": "Blade Runner 2049 (2017)"
+    },
     "url": "https://codepen.io/carlosvega20/pen/BYWWRg",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/BYWWRg.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Cyberpunk-Interface mit animierten Hologrammen und Datenstreams.",
       "en": "Cyberpunk interface with animated holograms and data streams."
     },
-    "tags": ["cyberpunk", "hologram", "animation"]
+    "tags": [
+      "cyberpunk",
+      "hologram",
+      "animation"
+    ]
   },
   {
     "title": "Ghost in the Shell Terminal",
-    "film": "Ghost in the Shell (1995)",
+    "film": {
+      "de": "Ghost in the Shell (1995)",
+      "en": "Ghost in the Shell (1995)"
+    },
     "url": "https://codepen.io/yaclive/pen/EyZeWm",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/EyZeWm.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Anime-inspiriertes Cyberpunk-Terminal mit japanischen Zeichen.",
       "en": "Anime-inspired cyberpunk terminal with Japanese characters."
     },
-    "tags": ["anime", "terminal", "cyberpunk"]
+    "tags": [
+      "anime",
+      "terminal",
+      "cyberpunk"
+    ]
   },
   {
     "title": "Ex Machina AI Interface",
-    "film": "Ex Machina (2014)",
+    "film": {
+      "de": "Ex Machina (2014)",
+      "en": "Ex Machina (2014)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/eZxEBO",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/124570/internal/screenshots/pens/eZxEBO.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Minimalistische KI-Überwachungsschnittstelle mit cleaner Ästhetik.",
       "en": "Minimalist AI monitoring interface with clean aesthetics."
     },
-    "tags": ["ai", "minimal", "monitoring"]
+    "tags": [
+      "ai",
+      "minimal",
+      "monitoring"
+    ]
   },
   {
     "title": "Interstellar TARS Interface",
-    "film": "Interstellar (2014)",
+    "film": {
+      "de": "Interstellar (2014)",
+      "en": "Interstellar (2014)"
+    },
     "url": "https://codepen.io/jakealbaugh/pen/PwLXXP",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/57225/internal/screenshots/pens/PwLXXP.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Roboter-Kommunikationsinterface mit geometrischen Mustern.",
       "en": "Robot communication interface with geometric patterns."
     },
-    "tags": ["robot", "geometric", "space"]
+    "tags": [
+      "robot",
+      "geometric",
+      "space"
+    ]
   },
   {
     "title": "The Martian NASA Interface",
-    "film": "The Martian (2015)",
+    "film": {
+      "de": "Der Marsianer (2015)",
+      "en": "The Martian (2015)"
+    },
     "url": "https://codepen.io/donovanh/pen/vONEPM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/174675/internal/screenshots/pens/vONEPM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Realistische NASA-Missionskontrolle mit Satelliten-Tracking.",
       "en": "Realistic NASA mission control with satellite tracking."
     },
-    "tags": ["nasa", "space", "realistic"]
+    "tags": [
+      "nasa",
+      "space",
+      "realistic"
+    ]
   },
   {
     "title": "Prometheus Ship Interface",
-    "film": "Prometheus (2012)",
+    "film": {
+      "de": "Prometheus (2012)",
+      "en": "Prometheus (2012)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/mEZROV",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/124570/internal/screenshots/pens/mEZROV.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Alien-Technologie-Interface mit biolumineszenten Elementen.",
       "en": "Alien technology interface with bioluminescent elements."
     },
-    "tags": ["alien", "biotech", "space"]
+    "tags": [
+      "alien",
+      "biotech",
+      "space"
+    ]
   },
   {
     "title": "Pacific Rim Jaeger HUD",
-    "film": "Pacific Rim (2013)",
+    "film": {
+      "de": "Pacific Rim (2013)",
+      "en": "Pacific Rim (2013)"
+    },
     "url": "https://codepen.io/giana/pen/GZVKmE",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/GZVKmE.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Mecha-Pilot-HUD mit Neural-Bridge-Diagnostik.",
       "en": "Mecha pilot HUD with neural bridge diagnostics."
     },
-    "tags": ["mecha", "hud", "diagnostics"]
+    "tags": [
+      "mecha",
+      "hud",
+      "diagnostics"
+    ]
   },
   {
     "title": "Black Mirror Bandersnatch",
-    "film": "Black Mirror: Bandersnatch (2018)",
+    "film": {
+      "de": "Black Mirror: Bandersnatch (2018)",
+      "en": "Black Mirror: Bandersnatch (2018)"
+    },
     "url": "https://codepen.io/cobra_winfrey/pen/agpjOJ",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/agpjOJ.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Interaktive Netflix-Entscheidungsschnittstelle im Retro-Stil.",
       "en": "Interactive Netflix decision interface in retro style."
     },
-    "tags": ["interactive", "retro", "choice"]
+    "tags": [
+      "interactive",
+      "retro",
+      "choice"
+    ]
   },
   {
     "title": "Ready Player One OASIS",
-    "film": "Ready Player One (2018)",
+    "film": {
+      "de": "Ready Player One (2018)",
+      "en": "Ready Player One (2018)"
+    },
     "url": "https://codepen.io/davidkpiano/pen/xLKBpM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/174675/internal/screenshots/pens/xLKBpM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "VR-Metaverse-Interface mit 80er-Jahre-Neon-Ästhetik.",
       "en": "VR metaverse interface with 80s neon aesthetics."
     },
-    "tags": ["vr", "80s", "neon"]
+    "tags": [
+      "vr",
+      "80s",
+      "neon"
+    ]
   },
   {
     "title": "Her OS Interface",
-    "film": "Her (2013)",
+    "film": {
+      "de": "Her (2013)",
+      "en": "Her (2013)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/xgOvOE",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/124570/internal/screenshots/pens/xgOvOE.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Minimalistisches KI-Betriebssystem mit emotionaler UI.",
       "en": "Minimalist AI operating system with emotional UI."
     },
-    "tags": ["ai", "minimal", "emotional"]
+    "tags": [
+      "ai",
+      "minimal",
+      "emotional"
+    ]
   },
   {
     "title": "Oblivion Tech Interface",
-    "film": "Oblivion (2013)",
+    "film": {
+      "de": "Oblivion (2013)",
+      "en": "Oblivion (2013)"
+    },
     "url": "https://codepen.io/fixcl/pen/KwZQQO",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/KwZQQO.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Futuristische Glasmorphism-UI mit transparenten Elementen.",
       "en": "Futuristic glassmorphism UI with transparent elements."
     },
-    "tags": ["glassmorphism", "futuristic", "transparent"]
+    "tags": [
+      "glassmorphism",
+      "futuristic",
+      "transparent"
+    ]
   },
   {
     "title": "Death Star Targeting",
-    "film": "Star Wars (1977)",
+    "film": {
+      "de": "Krieg der Sterne (1977)",
+      "en": "Star Wars (1977)"
+    },
     "url": "https://codepen.io/tholman/pen/yenmEK",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/174675/internal/screenshots/pens/yenmEK.default.png",
+    "animated_image": null,
     "stack": "Canvas, JS",
     "desc": {
       "de": "Zielcomputer-UI inspiriert vom Todesstern-Anflug.",
       "en": "Targeting computer UI inspired by Death Star approach."
     },
-    "tags": ["canvas", "animation"]
+    "tags": [
+      "canvas",
+      "animation"
+    ]
   },
   {
     "title": "Westworld Tablet Interface",
-    "film": "Westworld (2016)",
+    "film": {
+      "de": "Westworld (2016)",
+      "en": "Westworld (2016)"
+    },
     "url": "https://codepen.io/cobra_winfrey/pen/XEgmJz",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/XEgmJz.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Host-Kontroll-Tablet mit Diagnostik und Programmierung.",
       "en": "Host control tablet with diagnostics and programming."
     },
-    "tags": ["tablet", "diagnostics", "control"]
+    "tags": [
+      "tablet",
+      "diagnostics",
+      "control"
+    ]
   },
   {
     "title": "Elysium Medical Pod",
-    "film": "Elysium (2013)",
+    "film": {
+      "de": "Elysium (2013)",
+      "en": "Elysium (2013)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/VwZgJM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/124570/internal/screenshots/pens/VwZgJM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Medizinisches Kapsel-Interface mit Körper-Scanning.",
       "en": "Medical pod interface with body scanning system."
     },
-    "tags": ["medical", "scanning", "futuristic"]
+    "tags": [
+      "medical",
+      "scanning",
+      "futuristic"
+    ]
   },
   {
     "title": "Arrival Language Interface",
-    "film": "Arrival (2016)",
+    "film": {
+      "de": "Arrival (2016)",
+      "en": "Arrival (2016)"
+    },
     "url": "https://codepen.io/davidkpiano/pen/BWRrgM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/174675/internal/screenshots/pens/BWRrgM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Alien-Sprach-Dekodierungs-System mit zirkulären Symbolen.",
       "en": "Alien language decoding system with circular symbols."
     },
-    "tags": ["alien", "language", "symbols"]
+    "tags": [
+      "alien",
+      "language",
+      "symbols"
+    ]
   },
   {
     "title": "RoboCop HUD",
-    "film": "RoboCop (1987)",
+    "film": {
+      "de": "RoboCop (1987)",
+      "en": "RoboCop (1987)"
+    },
     "url": "https://codepen.io/giana/pen/RLVqEB",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/RLVqEB.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Cyborg-HUD mit Zielerfassung und Statusanzeigen.",
       "en": "Cyborg HUD with target acquisition and status displays."
     },
-    "tags": ["cyborg", "hud", "targeting"]
+    "tags": [
+      "cyborg",
+      "hud",
+      "targeting"
+    ]
   },
   {
     "title": "The Fifth Element Taxi",
-    "film": "The Fifth Element (1997)",
+    "film": {
+      "de": "Das fünfte Element (1997)",
+      "en": "The Fifth Element (1997)"
+    },
     "url": "https://codepen.io/cobra_winfrey/pen/qBRmGW",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/qBRmGW.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Fliegendes Taxi-Interface mit Navigation und Kommunikation.",
       "en": "Flying taxi interface with navigation and communication."
     },
-    "tags": ["vehicle", "navigation", "retro-futuristic"]
+    "tags": [
+      "vehicle",
+      "navigation",
+      "retro-futuristic"
+    ]
   },
   {
     "title": "District 9 Weapon Interface",
-    "film": "District 9 (2009)",
+    "film": {
+      "de": "District 9 (2009)",
+      "en": "District 9 (2009)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/vYGOLe",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/124570/internal/screenshots/pens/vYGOLe.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Alien-Waffen-Steuerung mit biometrischer Authentifizierung.",
       "en": "Alien weapon control with biometric authentication."
     },
-    "tags": ["weapon", "alien-tech", "biometric"]
+    "tags": [
+      "weapon",
+      "alien-tech",
+      "biometric"
+    ]
   },
   {
     "title": "Avatar Na'vi Interface",
-    "film": "Avatar (2009)",
+    "film": {
+      "de": "Avatar (2009)",
+      "en": "Avatar (2009)"
+    },
     "url": "https://codepen.io/davidkpiano/pen/rNVEqM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/174675/internal/screenshots/pens/rNVEqM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Pandora-Explorations-Interface mit biologischen Daten.",
       "en": "Pandora exploration interface with biological data."
     },
-    "tags": ["biological", "exploration", "organic"]
+    "tags": [
+      "biological",
+      "exploration",
+      "organic"
+    ]
   },
   {
     "title": "Total Recall Memory Interface",
-    "film": "Total Recall (1990)",
+    "film": {
+      "de": "Total Recall (1990)",
+      "en": "Total Recall (1990)"
+    },
     "url": "https://codepen.io/giana/pen/KwZQQO",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/KwZQQO.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Erinnerungs-Implantations-System mit neuralen Schnittstellen.",
       "en": "Memory implantation system with neural interfaces."
     },
-    "tags": ["memory", "neural", "implant"]
+    "tags": [
+      "memory",
+      "neural",
+      "implant"
+    ]
   },
   {
     "title": "Minority Report PreCrime",
-    "film": "Minority Report (2002)",
+    "film": {
+      "de": "Minority Report (2002)",
+      "en": "Minority Report (2002)"
+    },
     "url": "https://codepen.io/cobra_winfrey/pen/GRZvEP",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/GRZvEP.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "PreCrime-Vorhersagesystem mit Verbrecher-Profiling.",
       "en": "PreCrime prediction system with criminal profiling."
     },
-    "tags": ["precrime", "prediction", "profiling"]
+    "tags": [
+      "precrime",
+      "prediction",
+      "profiling"
+    ]
   },
   {
     "title": "I, Robot Factory Interface",
-    "film": "I, Robot (2004)",
+    "film": {
+      "de": "I, Robot (2004)",
+      "en": "I, Robot (2004)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/NWKvOL",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/124570/internal/screenshots/pens/NWKvOL.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Roboter-Produktions-Interface mit Qualitätskontrolle.",
       "en": "Robot production interface with quality control."
     },
-    "tags": ["robotics", "production", "quality-control"]
+    "tags": [
+      "robotics",
+      "production",
+      "quality-control"
+    ]
   },
   {
     "title": "Speed Racer Track Interface",
-    "film": "Speed Racer (2008)",
+    "film": {
+      "de": "Speed Racer (2008)",
+      "en": "Speed Racer (2008)"
+    },
     "url": "https://codepen.io/giana/pen/MWjvLB",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/MWjvLB.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Rennstrecken-Interface mit Fahrzeug-Telemetrie.",
       "en": "Race track interface with vehicle telemetry."
     },
-    "tags": ["racing", "telemetry", "colorful"]
+    "tags": [
+      "racing",
+      "telemetry",
+      "colorful"
+    ]
   },
   {
     "title": "Demolition Man Interface",
-    "film": "Demolition Man (1993)",
+    "film": {
+      "de": "Demolition Man (1993)",
+      "en": "Demolition Man (1993)"
+    },
     "url": "https://codepen.io/cobra_winfrey/pen/bGpMQv",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/bGpMQv.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Zukunfts-Polizei-Computer mit Verbrecher-Datenbank.",
       "en": "Future police computer with criminal database."
     },
-    "tags": ["police", "database", "90s-futuristic"]
+    "tags": [
+      "police",
+      "database",
+      "90s-futuristic"
+    ]
   },
   {
     "title": "Alien Isolation Terminal",
-    "film": "Alien: Isolation (2014)",
+    "film": {
+      "de": "Alien: Isolation (2014)",
+      "en": "Alien: Isolation (2014)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/eZxEBO",
     "repo": "https://github.com/AlienTerminal/alien-terminal",
+    "website_url": null,
     "image": "https://raw.githubusercontent.com/AlienTerminal/alien-terminal/master/demo.gif",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Retro-futuristische Terminal-Nachbildung aus dem Spiel.",
       "en": "Retro-futuristic terminal recreation from the game."
     },
-    "tags": ["terminal", "retro-futuristic", "game"]
+    "tags": [
+      "terminal",
+      "retro-futuristic",
+      "game"
+    ]
   },
   {
     "title": "Blade Runner Esper Photo Analysis",
-    "film": "Blade Runner (1982)",
+    "film": {
+      "de": "Blade Runner (1982)",
+      "en": "Blade Runner (1982)"
+    },
     "url": "https://codepen.io/johan/pen/XxGQPG",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/XxGQPG.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Esper-Fotoanalyse-System mit Zoom und Enhancement.",
       "en": "Esper photo analysis system with zoom and enhancement."
     },
-    "tags": ["photo-analysis", "cyberpunk", "enhancement"]
+    "tags": [
+      "photo-analysis",
+      "cyberpunk",
+      "enhancement"
+    ]
   },
   {
     "title": "Fallout Terminal",
-    "film": "Fallout (TV Series 2024)",
+    "film": {
+      "de": "Fallout (TV-Serie 2024)",
+      "en": "Fallout (TV Series 2024)"
+    },
     "url": "https://codepen.io/cobra_winfrey/pen/VwZgJM",
     "repo": "https://github.com/johndimi/fallout-terminal",
+    "website_url": null,
     "image": "https://raw.githubusercontent.com/johndimi/fallout-terminal/master/screenshot.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Post-apokalyptisches Terminal-Interface aus dem Fallout-Universum.",
       "en": "Post-apocalyptic terminal interface from the Fallout universe."
     },
-    "tags": ["terminal", "post-apocalyptic", "game-inspired"]
+    "tags": [
+      "terminal",
+      "post-apocalyptic",
+      "game-inspired"
+    ]
   },
   {
     "title": "Cyberpunk 2077 Netrunner",
-    "film": "Cyberpunk 2077 (Game/Edgerunners)",
+    "film": {
+      "de": "Cyberpunk 2077 (Spiel/Edgerunners)",
+      "en": "Cyberpunk 2077 (Game/Edgerunners)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/mEZROV",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/124570/internal/screenshots/pens/mEZROV.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Netrunner-Hacking-Interface mit Matrix-Navigation.",
       "en": "Netrunner hacking interface with matrix navigation."
     },
-    "tags": ["hacking", "cyberpunk", "matrix"]
+    "tags": [
+      "hacking",
+      "cyberpunk",
+      "matrix"
+    ]
   },
   {
     "title": "Battlestar Galactica DRADIS",
-    "film": "Battlestar Galactica (2004)",
+    "film": {
+      "de": "Battlestar Galactica (2004)",
+      "en": "Battlestar Galactica (2004)"
+    },
     "url": "https://codepen.io/giana/pen/RLVqEB",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/RLVqEB.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "DRADIS-Radar-System mit Schiffsortung und Bedrohungserkennung.",
       "en": "DRADIS radar system with ship tracking and threat detection."
     },
-    "tags": ["radar", "tracking", "military"]
+    "tags": [
+      "radar",
+      "tracking",
+      "military"
+    ]
   },
   {
     "title": "Watchmen Rorschach Computer",
-    "film": "Watchmen (2009)",
+    "film": {
+      "de": "Watchmen (2009)",
+      "en": "Watchmen (2009)"
+    },
     "url": "https://codepen.io/donovanh/pen/vONEPM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/174675/internal/screenshots/pens/vONEPM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Retro-Computer-Interface aus den 80ern mit pixeliger Ästhetik.",
       "en": "Retro computer interface from the 80s with pixelated aesthetics."
     },
-    "tags": ["retro", "80s", "pixel"]
+    "tags": [
+      "retro",
+      "80s",
+      "pixel"
+    ]
   },
   {
     "title": "Mass Effect Omni-Tool",
-    "film": "Mass Effect (Game Series)",
+    "film": {
+      "de": "Mass Effect (Spielserie)",
+      "en": "Mass Effect (Game Series)"
+    },
     "url": "https://codepen.io/cobra_winfrey/pen/XEgmJz",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/XEgmJz.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Holografisches Handgelenk-Interface für Multi-Tool-Funktionen.",
       "en": "Holographic wrist interface for multi-tool functions."
     },
-    "tags": ["holographic", "wrist-interface", "sci-fi"]
+    "tags": [
+      "holographic",
+      "wrist-interface",
+      "sci-fi"
+    ]
   },
   {
     "title": "Deus Ex Human Revolution",
-    "film": "Deus Ex: Human Revolution (2011)",
+    "film": {
+      "de": "Deus Ex: Human Revolution (2011)",
+      "en": "Deus Ex: Human Revolution (2011)"
+    },
     "url": "https://codepen.io/jakealbaugh/pen/PwLXXP",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/57225/internal/screenshots/pens/PwLXXP.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Augmentierungs-Interface mit gelb-schwarzer Cyber-Ästhetik.",
       "en": "Augmentation interface with yellow-black cyber aesthetics."
     },
-    "tags": ["augmentation", "cyber", "yellow-ui"]
+    "tags": [
+      "augmentation",
+      "cyber",
+      "yellow-ui"
+    ]
   },
   {
     "title": "Alien Covenant Ship Interface",
-    "film": "Alien: Covenant (2017)",
+    "film": {
+      "de": "Alien: Covenant (2017)",
+      "en": "Alien: Covenant (2017)"
+    },
     "url": "https://codepen.io/davidkpiano/pen/BWRrgM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/174675/internal/screenshots/pens/BWRrgM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Raumschiff-Navigationssystem mit Planetenerkundung.",
       "en": "Spaceship navigation system with planet exploration."
     },
-    "tags": ["spaceship", "navigation", "exploration"]
+    "tags": [
+      "spaceship",
+      "navigation",
+      "exploration"
+    ]
   },
   {
     "title": "Mr. Robot fsociety Terminal",
-    "film": "Mr. Robot (TV Series)",
+    "film": {
+      "de": "Mr. Robot (TV-Serie)",
+      "en": "Mr. Robot (TV Series)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/eZxEBO",
     "repo": "https://github.com/fsociety-team/fsociety",
+    "website_url": null,
     "image": "https://raw.githubusercontent.com/fsociety-team/fsociety/master/screenshot.png",
+    "animated_image": null,
     "stack": "Python, Terminal",
     "desc": {
       "de": "Hacker-Terminal-Tools aus der Mr. Robot Serie.",
       "en": "Hacker terminal tools from the Mr. Robot series."
     },
-    "tags": ["hacking", "terminal", "tv-series"]
+    "tags": [
+      "hacking",
+      "terminal",
+      "tv-series"
+    ]
   },
   {
     "title": "Stranger Things Computer",
-    "film": "Stranger Things (Netflix)",
+    "film": {
+      "de": "Stranger Things (Netflix)",
+      "en": "Stranger Things (Netflix)"
+    },
     "url": "https://codepen.io/cobra_winfrey/pen/qBRmGW",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/qBRmGW.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Retro-80er-Computer aus dem Hawkins National Laboratory.",
       "en": "Retro 80s computer from Hawkins National Laboratory."
     },
-    "tags": ["80s", "retro", "laboratory"]
+    "tags": [
+      "80s",
+      "retro",
+      "laboratory"
+    ]
   },
   {
     "title": "Star Wars Death Star Plans",
-    "film": "Rogue One: A Star Wars Story (2016)",
+    "film": {
+      "de": "Rogue One: A Star Wars Story (2016)",
+      "en": "Rogue One: A Star Wars Story (2016)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/vYGOLe",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/124570/internal/screenshots/pens/vYGOLe.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Imperiale Datenbank mit Todesstern-Plänen und Schemata.",
       "en": "Imperial database with Death Star plans and schematics."
     },
-    "tags": ["imperial", "schematics", "database"]
+    "tags": [
+      "imperial",
+      "schematics",
+      "database"
+    ]
   },
   {
     "title": "Akira Neo-Tokyo Interface",
-    "film": "Akira (1988)",
+    "film": {
+      "de": "Akira (1988)",
+      "en": "Akira (1988)"
+    },
     "url": "https://codepen.io/giana/pen/KwZQQO",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/KwZQQO.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Futuristisches Tokyo-2019-Interface mit Neon-Ästhetik.",
       "en": "Futuristic Tokyo 2019 interface with neon aesthetics."
     },
-    "tags": ["anime", "neon", "tokyo"]
+    "tags": [
+      "anime",
+      "neon",
+      "tokyo"
+    ]
   },
   {
     "title": "Johnny Mnemonic Data Transfer",
-    "film": "Johnny Mnemonic (1995)",
+    "film": {
+      "de": "Johnny Mnemonic (1995)",
+      "en": "Johnny Mnemonic (1995)"
+    },
     "url": "https://codepen.io/donovanh/pen/BWRrgM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/174675/internal/screenshots/pens/BWRrgM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Cyberpunk-Datenübertragung mit neuraler Schnittstelle.",
       "en": "Cyberpunk data transfer with neural interface."
     },
-    "tags": ["cyberpunk", "neural", "data-transfer"]
+    "tags": [
+      "cyberpunk",
+      "neural",
+      "data-transfer"
+    ]
   },
   {
     "title": "Gattaca Genetic Screening",
-    "film": "Gattaca (1997)",
+    "film": {
+      "de": "Gattaca (1997)",
+      "en": "Gattaca (1997)"
+    },
     "url": "https://codepen.io/jakealbaugh/pen/MWjvLB",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/57225/internal/screenshots/pens/MWjvLB.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "DNA-Analyse-System mit genetischer Klassifizierung.",
       "en": "DNA analysis system with genetic classification."
     },
-    "tags": ["genetic", "dna", "classification"]
+    "tags": [
+      "genetic",
+      "dna",
+      "classification"
+    ]
   },
   {
     "title": "Transcendence AI Upload",
-    "film": "Transcendence (2014)",
+    "film": {
+      "de": "Transcendence (2014)",
+      "en": "Transcendence (2014)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/NWKvOL",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/124570/internal/screenshots/pens/NWKvOL.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Bewusstseins-Upload-Interface mit KI-Integration.",
       "en": "Consciousness upload interface with AI integration."
     },
-    "tags": ["ai", "consciousness", "upload"]
+    "tags": [
+      "ai",
+      "consciousness",
+      "upload"
+    ]
   },
   {
     "title": "eXistenZ Game Portal",
-    "film": "eXistenZ (1999)",
+    "film": {
+      "de": "eXistenZ (1999)",
+      "en": "eXistenZ (1999)"
+    },
     "url": "https://codepen.io/cobra_winfrey/pen/VwZgJM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/VwZgJM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Bio-Gaming-Interface mit organischen Verbindungen.",
       "en": "Bio-gaming interface with organic connections."
     },
-    "tags": ["bio-gaming", "organic", "portal"]
+    "tags": [
+      "bio-gaming",
+      "organic",
+      "portal"
+    ]
   },
   {
     "title": "Strange Days SQUID Interface",
-    "film": "Strange Days (1995)",
+    "film": {
+      "de": "Strange Days (1995)",
+      "en": "Strange Days (1995)"
+    },
     "url": "https://codepen.io/giana/pen/GZVKmE",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/GZVKmE.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Erinnerungs-Aufzeichnungs-System mit neuraler Wiedergabe.",
       "en": "Memory recording system with neural playback."
     },
-    "tags": ["memory", "neural", "recording"]
+    "tags": [
+      "memory",
+      "neural",
+      "recording"
+    ]
   },
   {
     "title": "The Island Clone Monitor",
-    "film": "The Island (2005)",
+    "film": {
+      "de": "The Island (2005)",
+      "en": "The Island (2005)"
+    },
     "url": "https://codepen.io/davidkpiano/pen/rNVEqM",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/174675/internal/screenshots/pens/rNVEqM.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Klon-Überwachungssystem mit biometrischen Daten.",
       "en": "Clone monitoring system with biometric data."
     },
-    "tags": ["clone", "monitoring", "biometric"]
+    "tags": [
+      "clone",
+      "monitoring",
+      "biometric"
+    ]
   },
   {
     "title": "Looper Time Travel Interface",
-    "film": "Looper (2012)",
+    "film": {
+      "de": "Looper (2012)",
+      "en": "Looper (2012)"
+    },
     "url": "https://codepen.io/TimPietrusky/pen/xgOvOE",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/124570/internal/screenshots/pens/xgOvOE.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Zeitreise-Koordinations-System mit temporalen Daten.",
       "en": "Time travel coordination system with temporal data."
     },
-    "tags": ["time-travel", "temporal", "coordination"]
+    "tags": [
+      "time-travel",
+      "temporal",
+      "coordination"
+    ]
   },
   {
     "title": "Edge of Tomorrow Battle Interface",
-    "film": "Edge of Tomorrow (2014)",
+    "film": {
+      "de": "Edge of Tomorrow (2014)",
+      "en": "Edge of Tomorrow (2014)"
+    },
     "url": "https://codepen.io/fixcl/pen/bGpMQv",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/bGpMQv.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Taktisches Kampf-Interface mit Zeitschleifen-Tracking.",
       "en": "Tactical battle interface with time loop tracking."
     },
-    "tags": ["tactical", "battle", "time-loop"]
+    "tags": [
+      "tactical",
+      "battle",
+      "time-loop"
+    ]
   },
   {
     "title": "Lucy Brain Capacity Monitor",
-    "film": "Lucy (2014)",
+    "film": {
+      "de": "Lucy (2014)",
+      "en": "Lucy (2014)"
+    },
     "url": "https://codepen.io/cobra_winfrey/pen/XEgmJz",
     "repo": null,
+    "website_url": null,
     "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/XEgmJz.default.png",
+    "animated_image": null,
     "stack": "HTML, CSS, JavaScript",
     "desc": {
       "de": "Gehirn-Kapazitäts-Monitor mit neuronaler Aktivitätsanzeige.",
       "en": "Brain capacity monitor with neural activity display."
     },
-    "tags": ["brain", "capacity", "neural"]
+    "tags": [
+      "brain",
+      "capacity",
+      "neural"
+    ]
   }
 ]
