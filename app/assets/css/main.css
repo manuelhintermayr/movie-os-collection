@@ -314,3 +314,132 @@ textarea:focus-visible {
     text-decoration: underline;
   }
 }
+
+/* Swiss Style Design - Clean and minimalist */
+.page-container {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero section styling */
+.hero-section {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.dark .hero-section {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+/* Project cards styling - Enhanced for GSAP animations */
+.project-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  /* GSAP will handle the initial animation state */
+}
+
+/* Magnetic button effect */
+.dark-mode-button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Search input styling */
+.search-input {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.search-input:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.dark .search-input:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+/* Swiss style buttons */
+.swiss-button {
+  transition: all 0.2s ease;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+.swiss-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dark .swiss-button:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+/* Card hover effects */
+.project-card:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.dark .project-card:hover {
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.1);
+}
+
+/* Additional card hover effects in Swiss Style */
+.card-tilt {
+  transition: transform 0.2s ease-out;
+}
+
+.card-tilt:hover {
+  transform: translateY(-4px);
+}
+
+/* Ensure proper grid spacing */
+.grid {
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    gap: 2rem;
+  }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .project-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Animation performance optimizations */
+.project-card,
+.dark-mode-button {
+  will-change: transform;
+}
+
+/* Back to top button transition */
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+}
+
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

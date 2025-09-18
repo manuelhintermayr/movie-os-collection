@@ -15,6 +15,11 @@
         "openRepo": "Open GitHub repository",
         "openProjectPage": "Open project page",
         "stack": "Tech stack",
+        "noResults": {
+            "title": "No projects found",
+            "message": "No projects match your search for \"{query}\". Try a different search term.",
+            "clearSearch": "Clear search"
+        },
         "disclaimer": "All trademarks/movies belong to their rights holders. This page links to fan recreations and demos. Additional or existing projects will be added or removed upon request.",
         "contribute": {
             "title": "Know another project?",

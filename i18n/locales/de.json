@@ -15,6 +15,11 @@
         "openRepo": "GitHub Repo öffnen",
         "openProjectPage": "Projektseite öffnen",
         "stack": "Tech-Stack",
+        "noResults": {
+            "title": "Keine Projekte gefunden",
+            "message": "Keine Projekte entsprechen deiner Suche nach \"{query}\". Versuche einen anderen Suchbegriff.",
+            "clearSearch": "Suche zurücksetzen"
+        },
         "disclaimer": "Alle Marken/Filmtitel gehören ihren jeweiligen Rechteinhabern. Diese Seite verlinkt Fan-Nachbauten und Demonstrationen. Auf Wunsch werden weitere oder aktuelle Projekte hinzugefügt oder entfernt.",
         "contribute": {
             "title": "Du kennst noch ein Projekt?",
