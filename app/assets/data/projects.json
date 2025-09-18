@@ -188,27 +188,6 @@
     ]
   },
   {
-    "title": "T-800 HUD",
-    "film": {
-      "de": "Terminator (1984)",
-      "en": "The Terminator (1984)"
-    },
-    "url": "https://codepen.io/suez/pen/wvQpWp",
-    "repo": null,
-    "website_url": null,
-    "image": "https://assets.codepen.io/1462889/internal/screenshots/pens/wvQpWp.default.png",
-    "animated_image": null,
-    "stack": "HTML, CSS",
-    "desc": {
-      "de": "Rotes Terminator-HUD als CSS-Demo.",
-      "en": "Red Terminator HUD as CSS demo."
-    },
-    "tags": [
-      "hud",
-      "css"
-    ]
-  },
-  {
     "title": "Minority Report Interface",
     "film": {
       "de": "Minority Report (2002)",
