@@ -84,26 +84,6 @@
     ]
   },
   {
-    "title": "Alien Console",
-    "film": {
-      "de": "Alien / Alien: Isolation",
-      "en": "Alien / Alien: Isolation"
-    },
-    "url": null,
-    "repo": "https://github.com/brenns10/alien-console",
-    "website_url": null,
-    "image": "https://raw.githubusercontent.com/brenns10/alien-console/master/docs/demo.gif",
-    "animated_image": null,
-    "stack": "C, ncurses",
-    "desc": {
-      "de": "Terminal-UI im Stil der Alien-Rechner.",
-      "en": "Terminal UI in the style of Alien computers."
-    },
-    "tags": [
-      "terminal"
-    ]
-  },
-  {
     "title": "Back to the Future – Time Circuits",
     "film": {
       "de": "Zurück in die Zukunft (1985)",
