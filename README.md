@@ -13,6 +13,8 @@ A curated collection of computer interfaces from movies recreated for the web. B
 
 This project showcases computer interfaces and operating systems featured in movies, recreated as interactive web experiences. From the sleek interfaces of *The Incredibles* to the retro terminals of *Tron*, discover how filmmakers envisioned technology and bring these iconic screens to life in your browser.
 
+**Note:** This is a curated collection of fan-made recreations and open source projects. All movie rights belong to their respective owners. External links are provided for educational purposes.
+
 ## 🚀 Features
 
 - 🎬 **Movie OS Collection** - Curated selection of computer interfaces from films
@@ -283,6 +285,16 @@ Contributions to expand the movie interface collection are welcome:
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## ⚖️ Legal Disclaimer
+
+**Trademarks & Copyright:** All movie titles, trademarks, and copyrighted materials belong to their respective rights holders. This collection links to fan recreations and educational demonstrations created by the open source community.
+
+**External Links:** Manuel Hintermayr assumes no responsibility for external links and their content. Opening external links is at your own risk. The operators of the linked pages are solely responsible for their content, accuracy, and availability.
+
+**Fair Use:** This project is created for educational and demonstration purposes under fair use provisions. Projects may be added or removed upon request from rights holders.
+
+**No Warranty:** The collection is provided "as is" without any warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.
 
 ## 💝 Acknowledgments
 
